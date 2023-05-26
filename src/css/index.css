@@ -1,0 +1,62 @@
+        /* Style for the navbar */
+    
+        body{
+            font-family: 'Urbanist', sans-serif;
+                overflow: hidden;
+      margin: 0;
+      padding: 0;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            color: #fff;
+            padding: 10px;
+            transition: top 0.3s;
+        }
+        
+        /* Style for the content */
+        .content {
+            height:100vh;
+            width:100%;
+        }
+        .banner1{
+          height:100vh;
+          width:100%;
+        }
+ 
+        .headline1{
+          font-family: 'Urbanist', sans-serif;
+          letter-spacing: 0;
+          font-size: 3rem;
+          line-height: 3rem;
+          /* font-size-adjust: 1; */
+        }
+        
+        .animated-title {
+          font-size: 10rem;
+        }
+        #changingtext2, #changingtext3 , #changingtext4{
+            display: none;
+        }
+        .changingtext {
+            animation: changeWordAnimation 1s ease-in-out;
+          }
+      
+          @keyframes changeWordAnimation {
+            0% {
+              /* opacity: 1; */
+              transform: translateY(0%);
+            }
+            50% {
+              /* opacity: 0; */
+              transform: translateY(50%);
+            }
+            100% {
+              /* opacity: 1; */
+              transform: translateY(100%);
+            }
+          }
+
