@@ -20,44 +20,78 @@
 
 <body>
     <header>
-    <nav id="navbar" class="">
-        <div class="row justify-content-lg-between p-0 m-0">
-            <div class="col-auto">
-                <img src="../src/images/logo.png" href="index.html" alt="aartas.com">
+        <nav id="navbar" class=" pt-2">
+            <div class="row justify-content-lg-between p-0 m-0">
+                <div class="col-auto logo">
+                    <img src="../src/images/logo.png" href="index.html" alt="aartas.com">
+                </div>
+                <div class="col-auto links">
+                    <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Locations</a>
+                    <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Doctors</a>
+                </div>
             </div>
-            <div class="col-auto links">
-                <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Locations</a>
-                <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Doctors</a>
-            </div>
-        </div>
-
-    </nav>
-
-</header>
+            <p class="container-fluid text-white bg-burntumber text-center p-0 m-0 mt-2 p-1">Download
+                the Aartas Healthcare App</p>
+        </nav>
+    </header>
 
     <!-- Content -->
-    <section class="  ">
-        <p class="container-fluid text-white bg-burntumber text-center p-0 m-0 d-inline-block mt-3 px-5 mt-5">Download the Aartas Healthcare App X-X-X-></p>
-        <div class=" content d-flex align-items-center">
-            <h1 class="animated-title mx-auto">Leading Doctors<br /> of
-                <span id="changingtext1" class="text-burntumber">Delhi</span>
-                <span id="changingtext2">Gurgeon</span>
-                <span id="changingtext3">Mumbai</span>
-                <span id="changingtext4">Aartas</span>
+    <section class="position-relative">
+    <section class="content d-flex align-items-center">
+            <h1 class="animated-title mx-auto fw-semibold position-relative text-center">Leading
+                Doctors<br /> <span class="of">of</span>
+                <span id="hidder1" class=" position-absolute">hidder</span>
+                <span id="changingtext1" class="text-burntumber position-absolute">Delhi</span>
+                <span id="changingtext2" class="text-burntumber position-absolute">Gurgeon</span>
+                <span id="changingtext3" class="text-burntumber position-absolute">Mumbai</span>
+                <span id="changingtext4" class="text-burntumber position-absolute">Aartas</span>
+                <span id="hidder2" class=" position-absolute">hidder</span>
             </h1>
-        </div>
-
     </section>
-    <article class="row bg-charcoal p-0 m-0 p-5 ps-3 banner1 justify-content-between">
+    <article class="row banner1 justify-content-between align-items-center">
         <section class="col-5 p-0 m-0 ms-5  align-self-center">
-            <h2 class="headline1 fw-bold mb-2 "> Headline about how Drs<br/> of all specialities are<br/> present in Aartas </h1>
-                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam laudantium provident culpa voluptatum, iusto tempore voluptate doloremque? Et illum quisquam</h4>
+            <h2 class="headline1 fw-bold mb-4 "> Headline about how Drs<br /> of all specialities are<br /> present in
+                Aartas </h2>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam laudantium provident culpa
+                    voluptatum, iusto tempore voluptate doloremque? Et illum quisquam</h4>
         </section>
         <section class="col-6 cartoon p-0 m-0 align-self-center">
             <img src="../src/images/doctor.png" href="index.html" alt="cartoon display" class="img-fluid p-5">
         </section>
     </article>
-
+</section>
+    <section class="container-fluid doctors">
+        <section class="row justify-content-md-center">
+            <div class="col-md-1"></div>
+            <aside class="col-md-3 speciality text-charcoal">
+                <h4>All</h4>
+                <br />
+                <h4>Haematology</h4>
+                <br />
+                <h4>Psychiatry</h4>
+                <br />
+                <h4>Dermatology</h4>
+                <br />
+                <h4>Physiotherapy</h4> <br />
+                <h4>Neurology</h4> <br />
+                <h4>Orthopaedic</h4> <br />
+                <h4>Gynaecology</h4> <br />
+                <h4>Men's Sexual Health</h4> <br />
+                <h4>Child Health</h4>
+            </aside>
+            <section class="col-md-7">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/ankurnanda.png" alt="dr. Ankur_Nanda">
+                    <div class="card-body p-0 m-0 pt-2">
+                        <h5 class="card-title p-0 m-0 fw-bold">Dr. Ankur Nanda</h5>
+                        <p class="card-text p-0 m-0 m-0">MBBS, MD</p>
+                        <small class="card-text p-0 m-0">(Internal Medicine)</small>
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-1"></div>
+        </section>
+    </section>
     <script src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
