@@ -352,8 +352,10 @@ input[type='date']{
     }
     .card{
         border:none !important;
-        border-radius: none !important;
-
+        border-radius: 0 !important;
+        padding:0 !important;
+        margin:1rem !important;
+        max-width: 13rem !important;
     }
     .card-img-top{
         border:none !important;

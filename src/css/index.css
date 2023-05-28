@@ -71,18 +71,27 @@
           top:100%;
           border-radius:0;
           transition: all 0.8s;
+          animation: zoomtext 0.5s  ease-in-out ;
          opacity: 1;
         }
         .banner1 h2{
           font-size: 100%;
+          opacity: 1;
+          transition: all 0.5s;
+      
         }
         .banner1 h4{
           font-size: 60%;
+          opacity: 1;
+          transition: all 0.5s;
         }
         .banner1 img{
           object-fit: cover;
         }
-        .speciality section{
+        .speciality{
+          margin-top:-5rem !important;
+        }
+        .speciality section{  
           height:30rem;
           max-height:40rem;
           min-height:20rem;
@@ -103,7 +112,7 @@
           bottom: 4px; 
           width: 100%;
           height: 2px;
-      
+
           background-color: #000; 
           transform: scaleX(0); 
           transform-origin: left center;
@@ -194,17 +203,19 @@
             height:max-content;
           }
           .Doctors_brief .card{
-            transition: transform 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
           }
           .Doctors_brief img{
             overflow: hidden;
             transition: transform 0.3s ease;
           }
-          .Doctors_brief .card:hover{
+          .Doctors_brief .card:hover img{
             transform: scale(1.1);
             cursor: pointer;
-
           }
+        
           .articles{
             font-size: 8rem;
           }
@@ -215,32 +226,46 @@
           .articles aside{
             font-size:30% ;
             letter-spacing: -2px;
+            transition: all 0.5s;
           }
           .articles main{
             font-size:15% ;
             line-height: 1.5rem;
           }
           .article{
+            color:var(--charcoal);
             cursor: pointer;
           }
           .article img{
             width: 5%;
             height: auto;
             object-fit: contain;
-            transition: all 0.5s;
+            transition: all 0.4s;
           }
-          .article :hover img{
+          .article :hover aside{
+            padding-left: 4rem;
+            transform: scale(1.2);
+          }
+          .article .articleimg{
+            width:6rem;
+            transition: all 0.5s;
+            transform: scale(0);
+          }
+          .article :hover .articleimg{
+            transform: scale(1.2);
+          }
+          .article :hover .arrow{
             transform: rotate(45deg);
           }
           .fade-line1 {
-            width: 100%; /* Adjust the width as desired */
-            height: 2px; /* Adjust the height as desired */
-            background: linear-gradient(to right, transparent, black); /* Adjust the gradient colors as desired */
+            width: 100%; 
+            height: 2px;
+            background: linear-gradient(to right, transparent, black);
           }
           .fade-line2 {
-            width: 100%; /* Adjust the width as desired */
-            height: 2px; /* Adjust the height as desired */
-            background: linear-gradient(to left, transparent, black); /* Adjust the gradient colors as desired */
+            width: 100%;
+            height: 2px; 
+            background: linear-gradient(to left, transparent, black); 
           }
           @keyframes changingtext1Anim {
             0%{
@@ -312,3 +337,13 @@
             }
           }
 
+          @keyframes zoomtext {
+            from{
+              opacity: 0.5;
+             
+            }
+            to{
+              opacity: 1;
+              
+            }
+          }
