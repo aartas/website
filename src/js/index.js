@@ -1,5 +1,5 @@
 var navbar = document.getElementById("navbar");
-
+var myDiv = $('.banner1');
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
     const currentScrollPos = window.pageYOffset;
@@ -50,3 +50,16 @@ window.addEventListener('load', function () {
 //     expandDiv.css('background-color', '#000')
 
 // });
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 100) {
+        myDiv.addClass('scrolled');
+    }
+    if (window.pageYOffset < 100) {
+        myDiv.removeClass('scrolled');
+    }
+    if (window.pageYOffset > 150) {
+        myDiv.css('top', '50%')
+            ('.scrolled').css('height', '100vh')
+    }
+});
