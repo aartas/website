@@ -1,5 +1,8 @@
+
+
+
 var navbar = document.getElementById("navbar");
-var myDiv = $('.banner1');
+// var myDiv = $('.banner1');
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
     const currentScrollPos = window.pageYOffset;
@@ -18,48 +21,41 @@ window.addEventListener('load', function () {
     document.getElementById('content').style.paddingRight = window.innerWidth - document.documentElement.clientWidth + 'px';
 
 })
-// window.addEventListener('scroll', AnimateDiv)
-// function AnimateDiv() {
-//     var pageHeight = window.innerHeight
-//     var Scroll = window.pageYOffset
-//     var resultHeight = pageHeight + Scroll
-//     console.log(pageHeight, Scroll)
-//     if(resultHeight >pageHeight){
-//         $('.banner1').css("height", (resultHeight, window.pageYOffset)+``)
-//         $('.banner1').css("width", (resultHeight, window.pageYOffset))
-//         $('.banner1').css("left", ((pageHeight - Scroll)))
-//         $('.banner1').css("top", (pageHeight - Scroll))
-//         $('.banner1').css('background-color','#000')
-//     }
 
-
-// }
-
-// var expandDiv = document.querySelector('.banner1');
-// var initialHeight = 0; 
-// var scrollRange = 500; 
-// var maxExpand = 150; 
-// var initialWidth = 0;
 // window.addEventListener('scroll', function () {
-//     var scrollPosition = window.scrollY;
-//     var expandAmount = Math.min(scrollPosition / scrollRange * maxExpand, maxExpand);
-//     var newHeight = initialHeight + expandAmount;
-//     var newWidth = initialWidth + expandAmount;
-//     expandDiv.style.height = newHeight + 'rem';
-//     expandDiv.style.width = newWidth + 'rem';
-//     expandDiv.css('background-color', '#000')
-
+//     if (window.pageYOffset > 100) {
+//         myDiv.addClass('scrolled');
+//     }
+//     if (window.pageYOffset < 100) {
+//         myDiv.removeClass('scrolled');
+//     }
+//     if (window.pageYOffset > 150) {
+//         myDiv.css('top', '50%')
+//         ('.scrolled').css('height', '100vh')
+//     }
 // });
+// window.pageYOffset/2
+
+
+
+window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset)
+    if (window.pageYOffset < 50 || window.pageYOffset == 0) {
+        $('.banner1').css('height', `0px`)
+        $('.banner1').css('width', `0px`)
+    } else {
+        $('.banner1').css('height', `${window.pageYOffset + 800}px`)
+        $('.banner1').css('width', `${window.pageYOffset + 800}px`)
+        $('.cartoon').css('width', `${window.pageYOffset - 800}px`)
+    }
+
+});
 
 window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 100) {
-        myDiv.addClass('scrolled');
-    }
-    if (window.pageYOffset < 100) {
-        myDiv.removeClass('scrolled');
-    }
-    if (window.pageYOffset > 150) {
-        myDiv.css('top', '50%')
-            ('.scrolled').css('height', '100vh')
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // User has scrolled to the end of the page
+        // Perform actions or trigger events here
+        console.log('end')
     }
 });
+//   background-color:#fff;

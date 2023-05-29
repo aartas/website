@@ -350,21 +350,21 @@ input[type='date']{
         border:1px solid;
         border-color:  var(--charcoal) !important;
     }
-    .card{
+    .cards{
         border:none !important;
         border-radius: 0 !important;
         padding:0 !important;
-        margin:1rem !important;
-        max-width: 13rem !important;
+        margin:4%;
+        margin-top:5% 
     }
     .card-img-top{
-        border:none !important;
+      border:none !important;
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
+      width:100% !important;
+      height:100% !important;
     }
     .card img{
-        max-width :20rem;
-        min-width: 2.5rem;
         width:clamp(8rem, 10vw,18rem) !important
 
     }
