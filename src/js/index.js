@@ -40,13 +40,14 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', () => {
     console.log(window.pageYOffset)
+    $('.cartoon').css('width', `0px`)
     if (window.pageYOffset < 50 || window.pageYOffset == 0) {
         $('.banner1').css('height', `0px`)
         $('.banner1').css('width', `0px`)
     } else {
         $('.banner1').css('height', `${window.pageYOffset + 800}px`)
         $('.banner1').css('width', `${window.pageYOffset + 800}px`)
-        $('.cartoon').css('width', `${window.pageYOffset - 800}px`)
+        $('.cartoon').css('width', `${window.pageYOffset - 1200}px`)
     }
 
 });
