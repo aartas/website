@@ -32,7 +32,7 @@ font-size: 10rem;
     position: relative;
     height:60vh;
     overflow: hidden;
-    transition: all 3s;
+    transition: all 1s;
 }
 .slide1 h1{
     position: absolute;
@@ -42,23 +42,38 @@ font-size: 10rem;
     height:0;
     background-image: url('../images/waitingroom.png');
     max-height: 100vh;
-    transition: all 3s;
+    transition: all 1s;
     overflow: hidden;
 }
 .main-slide .slide2 {
     position: relative;
     height:60vh;
     overflow: hidden;
-    transition: all 3s;
+    transition: all 1s;
 }
 .backdrop{
     position: relative;
-    top:0;
-    left:0;
-    right:0;
     width:100vh;
     height:100vh;
-    background-color: #00000000;
+    background-color: #0000;
+}
+.backdrop h2{
+    position: absolute;
+    top:50vh;
+    left:20vh;
+    font-size:4rem;
+    font-weight: 600;
+    color:#fff;
+    letter-spacing: -0.2.5rem;
+}
+.backdrop h3{
+    position: absolute;
+    top:58vh;
+    left:20vh;
+    font-size:4rem;
+    font-weight: 600;
+    color:#fff;
+    letter-spacing: -0.2.5rem;
 }
 .slide2 h1{
     position: absolute;
