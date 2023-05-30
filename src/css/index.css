@@ -3,13 +3,14 @@ html{
   font-family: 'Urbanist' !important;
 }
 body{
-    font-family: 'Urbanist' !important;
+font-family: 'Urbanist' !important;
 /* overflow: hidden; */
 margin: 0;
 padding: 0;
 }
 .section1{
     height:1000vh;
+    min-height:100vh;
     position: relative;
 }
 .main-slide{
@@ -26,13 +27,12 @@ font-size: 10rem;
     font-size: 120%;
     font-weight: 700;
     letter-spacing: -0.5rem;
-
 }
 .main-slide .slide1 {
     position: relative;
     height:60vh;
     overflow: hidden;
-    transition: all 6s;
+    transition: all 3s;
 }
 .slide1 h1{
     position: absolute;
@@ -42,14 +42,14 @@ font-size: 10rem;
     height:0;
     background-image: url('../images/waitingroom.png');
     max-height: 100vh;
-    transition: all 6s;
+    transition: all 3s;
     overflow: hidden;
 }
 .main-slide .slide2 {
     position: relative;
     height:60vh;
     overflow: hidden;
-    transition: all 6s;
+    transition: all 3s;
 }
 .backdrop{
     position: relative;
