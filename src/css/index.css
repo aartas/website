@@ -9,7 +9,7 @@ margin: 0;
 padding: 0;
 }
 .section1{
-    height:1000vh;
+    height:2000vh;
     min-height:100vh;
     position: relative;
 }
@@ -41,6 +41,51 @@ font-size: 10rem;
 .divider{
     height:0;
     background-image: url('../images/waitingroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    transition: all 1s;
+    overflow: hidden;
+}
+.divider2{
+    height:0;
+    background-image: url('../images/vitalsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    transition: all 1s;
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.divider3{
+    height:0;
+    background-image: url('../images/doctorsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    max-height: 100vh;
+    transition: all 1s;
+    overflow: hidden;
+}
+.divider4{
+    height:0;
+    background-image: url('../images/townhall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
     max-height: 100vh;
     transition: all 1s;
     overflow: hidden;
@@ -59,7 +104,7 @@ font-size: 10rem;
 }
 .backdrop h2{
     position: absolute;
-    top:50vh;
+    top:45vh;
     left:20vh;
     font-size:4rem;
     font-weight: 600;
@@ -68,7 +113,7 @@ font-size: 10rem;
 }
 .backdrop h3{
     position: absolute;
-    top:58vh;
+    top:53vh;
     left:20vh;
     font-size:4rem;
     font-weight: 600;
