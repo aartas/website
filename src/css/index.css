@@ -8,7 +8,7 @@ font-family: 'Urbanist' !important;
 margin: 0;
 padding: 0;
 }
-.section1{
+/* .section1{
     height:2000vh;
     min-height:100vh;
     position: relative;
@@ -132,4 +132,80 @@ font-size: 10rem;
     height: 1px;
     width:100%;
     background-color: #000;
+} */
+.slides{
+    font-size: 6rem;
+    color:var(--pearl);
+}
+.slide1{
+    padding-left:20vh;
+    padding-top:40vh;
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+    background-image: url('../images/waitingroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:100vh;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+.slide2{
+    padding-left:20vh;
+    padding-top:40vh;
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+    background-image: url('../images/vitalsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow: hidden;
+    height:100vh;
+    background-color: violet;
+}
+.slide3{
+    padding-left:20vh;
+    padding-top:40vh;
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+    background-image: url('../images/doctorsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow: hidden;
+    height:100vh;
+    background-color: brown;
+}
+.slide4{
+    padding-left:20vh;
+    padding-top:40vh;
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+    background-image: url('../images/townhall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height:100vh;
+    background-color: orange;
+}
+
+@media (max-width:1200px) {
+    
 }
