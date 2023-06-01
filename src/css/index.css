@@ -8,158 +8,112 @@ font-family: 'Urbanist' !important;
 margin: 0;
 padding: 0;
 }
-/* .section1{
-    height:2000vh;
-    min-height:100vh;
-    position: relative;
-}
-.main-slide{
-background-color: #fff;
-color:#000;
-position: fixed;
-top:0;
-left:0;
-right: 0;
-max-height: 100vh;
-font-size: 10rem;
-}
-.main-slide h1{
-    font-size: 120%;
-    font-weight: 700;
-    letter-spacing: -0.5rem;
-}
-.main-slide .slide1 {
-    position: relative;
-    height:60vh;
-    overflow: hidden;
-    transition: all 1s;
-}
-.slide1 h1{
-    position: absolute;
-    bottom:-13.40vh;
-}
-.divider{
-    height:0;
-    background-image: url('../images/waitingroom.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 100vh;
-    transition: all 1s;
-    overflow: hidden;
-}
-.divider2{
-    height:0;
-    background-image: url('../images/vitalsroom.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 100vh;
-    transition: all 1s;
-    overflow: hidden;
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-}
-.divider3{
-    height:0;
-    background-image: url('../images/doctorsroom.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    max-height: 100vh;
-    transition: all 1s;
-    overflow: hidden;
-}
-.divider4{
-    height:0;
-    background-image: url('../images/townhall.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    max-height: 100vh;
-    transition: all 1s;
-    overflow: hidden;
-}
-.main-slide .slide2 {
-    position: relative;
-    height:60vh;
-    overflow: hidden;
-    transition: all 1s;
-}
-.backdrop{
-    position: relative;
-    width:100vh;
-    height:100vh;
-    background-color: #0000;
-}
-.backdrop h2{
-    position: absolute;
-    top:45vh;
-    left:20vh;
-    font-size:4rem;
-    font-weight: 600;
-    color:#fff;
-    letter-spacing: -0.2.5rem;
-}
-.backdrop h3{
-    position: absolute;
-    top:53vh;
-    left:20vh;
-    font-size:4rem;
-    font-weight: 600;
-    color:#fff;
-    letter-spacing: -0.2.5rem;
-}
-.slide2 h1{
-    position: absolute;
-    top:-18vh;
-}
-.hr{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    height: 1px;
-    width:100%;
-    background-color: #000;
-} */
+
 .slides{
+    position: relative;
     font-size: 6rem;
     color:var(--pearl);
 }
-.slide1{
-    padding-left:20vh;
-    padding-top:40vh;
-    font-size: 120%;
+
+.subslide1{
+    font-size: 150%;
+    background-color:yellow;
+    height:100vh;
+    position:fixed;
+    top:0vh;
+    left:0;
+    right:0;
+}
+.subslide1 section{
+    position: relative;
+    height:100%;
+    width:100%;
+}
+.subslide1 h1{
+    color:black;
+    font-size: 180%;
+    position:absolute;
+    bottom:-15vh;
+    left:0;
+    right:0;
+    padding:0;
+    margin:0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    font-weight: 700;
+}
+.subslide2{
+    font-size: 150%;
+    background-color:yellowgreen;
+    height:50vh;
+    position:absolute;
+    top:50vh;
+    left:0;
+    right:0;
+}
+.subslide2 section{
+    position: relative;
+    overflow: hidden;
+    height:100%;
+    width:100%;
+}
+.subslide2 h1{
+    color:black;
+    font-size: 180%;
+    position:absolute;
+    top:-17vh;
+    left:0;
+    right:0;
+    padding:0;
+    margin:0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.slide1 {
+    
+    position: relative;
+    top: 50vh;
+    left: 50%;
     font-weight: 700;
     letter-spacing: -0.5rem;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    /* overflow: hidden; */
     background-image: url('../images/waitingroom.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    height:100vh;
-    overflow: hidden;
-    background-color: aquamarine;
-}
+    width:100%;
+    height:10px;
+    opacity: 1;
+  }
+  .slide1::before{
+    content: 'AartasSpace';
+    color: black;
+    font-size: 10rem;
+    position: absolute;
+    top: -1vh; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
+  }
+  .slide1::after{
+    content: 'AartasCare';
+    color: black;
+    position: absolute;
+    bottom: -9vh; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
 .slide2{
     padding-left:20vh;
-    padding-top:40vh;
-    font-size: 120%;
+    padding-top:35vh;
     font-weight: 700;
+    font-size: 120%;
     letter-spacing: -0.5rem;
     background-image: url('../images/vitalsroom.png');
     background-position: center;
@@ -169,13 +123,16 @@ font-size: 10rem;
     top:0;
     left:0;
     right:0;
+    width:100%;
     overflow: hidden;
     height:100vh;
     background-color: violet;
+    opacity: 0,
+
 }
 .slide3{
     padding-left:20vh;
-    padding-top:40vh;
+    padding-top:35vh;
     font-size: 120%;
     font-weight: 700;
     letter-spacing: -0.5rem;
@@ -190,10 +147,12 @@ font-size: 10rem;
     overflow: hidden;
     height:100vh;
     background-color: brown;
+
 }
+
 .slide4{
     padding-left:20vh;
-    padding-top:40vh;
+    padding-top:35vh;
     font-size: 120%;
     font-weight: 700;
     letter-spacing: -0.5rem;
@@ -201,11 +160,35 @@ font-size: 10rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
     overflow: hidden;
     height:100vh;
     background-color: orange;
+
 }
 
-@media (max-width:1200px) {
-    
+
+
+
+
+@media (max-width:1440px) {
+    .subslide1 h1{
+        font-size: 140%;
+        bottom:-9vh;
+    }
+    .subslide2 h1{
+        font-size: 140%;
+        top:-12vh;
+    }  
+}
+@media (min-width:2000px) {
+    .subslide1 h1{
+        bottom:-12vh;
+    }
+    .subslide2 h1{
+        top:-15vh;
+    }
 }
