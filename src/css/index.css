@@ -33,22 +33,24 @@ padding: 0;
     opacity: 0.5;
   }
   .slide1::before{
-    content: 'Aartas Space';
+    content: 'AartasSpace';
     color: black;
-    font-size: 10rem;
+    font-size: 20rem;
     position: absolute;
-    top: 0;
+    top: 0vh;
     left: 50%;
+    opacity: 1;
     transform: translate(-50%, -50%); 
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   }
   .slide1::after{
-    content: 'Aartas Space';
-    font-size: 10rem;
+    content: 'AartasSpace';
+    font-size: 20rem;
     color: black;
     position: absolute;
-    bottom: -12.26vh;
+    bottom: -24.5vh;
     left: 50%;
+    opacity: 1;
     transform: translateX(-50%);
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); 
   }
@@ -88,7 +90,6 @@ padding: 0;
     right:0;
     overflow: hidden;
     height:100vh;
-
 }
 
 .slide4{

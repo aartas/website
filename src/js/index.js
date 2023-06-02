@@ -52,11 +52,3 @@ window.addEventListener('scroll', () => {
 
 });
 
-window.addEventListener('scroll', function () {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // User has scrolled to the end of the page
-        // Perform actions or trigger events here
-        console.log('end')
-    }
-});
-//   background-color:#fff;

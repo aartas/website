@@ -18,7 +18,8 @@ tl.fromTo(".slide1", {
 }).from('.slide2', { yPercent: 150 })
   .from('.slide3', { yPercent: 150 })
   .from('.slide4', { yPercent: 150 })
-  .from('.slide5', { yPercent: 150})
+  .from('.slide5', { yPercent: 100})
+  .from('.slide5',{overflow:'scroll'})
 
 ScrollTrigger.create({
   animation: tl,
