@@ -8,27 +8,29 @@ gsap.defaults({
 const tl = gsap.timeline();
 tl.fromTo(".slide1", {
   height: 0,
-  fontSize: 50
+  opacity: 0.8
 }, {
   height: "100vh",
   paddingLeft: '20vh',
   paddingTop: '35vh',
-  duration: 1,
-  fontSize: 120
+  duration: 0.5,
+  opacity: 1
 }).from('.slide2', { yPercent: 150 })
   .from('.slide3', { yPercent: 150 })
-  .from('.slide4', { yPercent: 150 });
+  .from('.slide4', { yPercent: 150 })
+  .from('.slide5', { yPercent: 150})
 
 ScrollTrigger.create({
   animation: tl,
   markers: true,
   trigger: '.slides',
-  start: '00% 0%',
-  end: '+=30000rem',
+  start: 'top top',
+  end: "+=2600%",
   scrub: 1,
   pin: true,
   pinSpacing: false,
-  anticipatePin: 1
+  anticipatePin: 1,
+
 })
 
 
