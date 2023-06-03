@@ -13,29 +13,51 @@ tl.fromTo(".slide1", {
   height: "100vh",
   paddingLeft: '20vh',
   paddingTop: '35vh',
-  duration: 0.5,
   opacity: 1
 }).from('.slide2', { yPercent: 150 })
   .from('.slide3', { yPercent: 150 })
   .from('.slide4', { yPercent: 150 })
-  .from('.slide5', { yPercent: 100})
-  .from('.slide5',{overflow:'scroll'})
+
 
 ScrollTrigger.create({
   animation: tl,
   markers: true,
   trigger: '.slides',
   start: 'top top',
-  end: "+=2600%",
-  scrub: 1,
-  pin: true,
+  end: "100vh",
+  scrub: 2,
+  pin: '.slides',
   pinSpacing: false,
   anticipatePin: 1,
 
 })
+gsap.to('.scroller',{
+  xPercent:-60,
+  duration:12,
+  scrollTrigger:{
+    markers:true,
+    start:'top top',
+    end:'+=2000vh',
+    pin:true,
+    scrub:1,
+    trigger:'.specialities',
+    toggleActions:'play restart reverse none'
+  }
+})
 
-
-
+gsap.to('.scroll-thumb',{
+  y:'85vh',
+  duration:12,
+  scrollTrigger:{
+    markers:true,
+    start:'top top',
+    end:'+=2000vh',
+    pin:true,
+    scrub:1,
+    trigger:'.scroller',
+    toggleActions:'play restart reverse none'
+  }
+})
 
 
 
