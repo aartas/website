@@ -33,7 +33,7 @@ p{
     font-weight: 600 ;
     color:black ;
 }
-.slides{
+/* .slides{
     position: relative;
     color:var(--pearl);
     background-color: white;
@@ -44,12 +44,11 @@ p{
   
 }
 .slide1 {
-    position: absolute;
-    /* top:0;
+    top:0;
     left:0;
-    right:0; */
-    top: 50vh;
-    left: 50%;
+    right:0; 
+    margin-top: 50vh;
+    margin-left: 50%;
     transform: translate(-50%, -50%);
     font-size: 120%;
     font-weight: 700;
@@ -65,7 +64,7 @@ p{
   .slide1::before{
     content: 'AartasSpace';
     color: black;
-    font-size: 20rem;
+    font-size: 10rem;
     position: absolute;
     top: 0vh;
     left: 50%;
@@ -75,10 +74,10 @@ p{
   }
   .slide1::after{
     content: 'AartasSpace';
-    font-size: 20rem;
+    font-size: 10rem;
     color: black;
     position: absolute;
-    bottom: -24.5vh;
+    bottom: -15.5vh;
     left: 50%;
     opacity: 1;
     transform: translateX(-50%);
@@ -139,7 +138,7 @@ p{
     overflow: hidden;
     height:100vh;
 
-}
+} */
 .slide5{
     position: relative;
     background-color: white;
@@ -349,14 +348,14 @@ p{
 }
 
 .slot1{
-    padding-top:50vh;
-    height:100vh;
+    padding-top:40vh;
+    height:120vh;
     position:absolute;
     top:0;
     bottom:0;
     left:0;
     right:0;
-    z-index: 2;
+    z-index: 1;
     width:100%;
     overflow-y: auto;
 
@@ -365,10 +364,12 @@ p{
 margin-left: 60%;
 }
 .about .card{
-height:50vh;
+height:60vh;
 max-width:18rem;
 }
-
+.about .aboutpara{
+    height:60vh;
+}
 .specialities{
 
     font-size: 10rem;
@@ -378,21 +379,21 @@ max-width:18rem;
 }
 
 .specialities .types{
-    max-width:20vh;
-    width:20vh;
-    background-color: black;
+    width:25vh;
+    background-color: var(--seashell);
     margin-left:5vh;
     margin-right:5vh;
-    height:30vh;
-    max-height: 30vh;
+    height:60vh;
 }
 .scroller {
-    transform: translateX(30%);
+    transform: translateX(60%);
     width:100%;
     height: 100vh;
 }
 .specialities h4{
-    position: relative;
+    position: absolute;
+    top:40vh;
+    left:40vh;
     font-size: 80%;
     font-weight: 700;
     letter-spacing: -0.4rem;
@@ -400,18 +401,154 @@ max-width:18rem;
 } 
 .specialities .scroll-line{
     position: absolute;
-    left:1.8%;
+    left:1%;
     margin-top:5vh;
     height:90vh;
     width:2px;
-    background-color: black;
+    background-color: var(--charcoal);
     margin-left: 5vh;
+    z-index: 10;
 }
 .specialities .scroll-thumb{
-    height:5vh;
+    height:10vh;
     width:10px;
-    left:-5.5%;
+    left:-0.5vh !important;
     background-color: black;
     position: absolute;
     transform: translateY(0);
+    z-index: 10;
+}
+.slide0a{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width:100%;
+    height:50vh; 
+}
+.slides{
+    overflow: hidden;
+    height:100vh;
+}
+.slide0b{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width:100%;
+    height:50vh; 
+}
+.slide1{
+    background-image: url('../images/waitingroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:0vh;
+    overflow: hidden;
+}
+.slide2{
+    background-image: url('../images/vitalsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.slide3{
+    background-image: url('../images/doctorsroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.slide4{
+    background-image: url('../images/townhall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.aartasapp {
+font-size: 10rem;
+height:100vh;
+width:100%;
+}
+.aartasapp h1{
+    font-weight: 700;
+    letter-spacing: -0.5rem ;
+    font-size: 120% ;
+    line-height: 10rem;
+    padding-left:5%;
+    font-size: 120%;
+
+    margin-bottom:5vh;
+}
+.aartasapp h3{
+    font-weight: 700;
+    letter-spacing: -0.3rem ;
+    font-size: 55% ;
+    line-height: 6rem;
+    padding-left:5%;
+}
+.aartasapp h6{
+    font-weight: 700;
+    font-size: 20%;
+    letter-spacing: normal;
+}
+.aartasapp #appheadline1{
+    opacity:1
+}
+.aartasapp #appheadline2 {
+    position:absolute;
+    top:0;
+    opacity:0;
+}
+.aartasapp #appheadline3 {
+    position:absolute;
+    top:0;
+    opacity:0;
+}
+.aartasapp #appheadline4 {
+    position:absolute;
+    top:0;
+    opacity:0;
+}
+.aartasapp .phone{
+    background-image: url('../images/iphone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:50vh;
+    height:70vh;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+#appfeature1 img{
+    object-fit: contain;
+    max-width: fit-content;
+}
+.aartasapp #appfeature1{
+    margin-right:10vh;
+    height:50vh;
+    width:20vh;
+    background-color: #f2f2f2;
+    z-index: -1;
+}
+.aartasapp #appfeature2{
+    margin-right:10vh;
+    height:50vh;
+    width:20vh;
+    background-color: #f2f2f2;
+    z-index: -1;
+
+}.aartasapp #appfeature3{
+    height:50vh;
+    width:20vh;
+    z-index: -1;
+    background-color: #f2f2f2;
+
 }
