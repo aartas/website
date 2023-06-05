@@ -48,8 +48,22 @@
 //   duration: 1
 // })
 
+
+gsap.to('.card0', {
+  height:0,
+  duration: 10,
+  scrollTrigger: {
+    pin: '.aboutinfo',
+    trigger: '.aboutinfo',
+    start: 'top top',
+    end: '+=1000vh bottom',
+    scrub: 4
+  }
+})
+
+
 gsap.to('.scroller', {
-  xPercent: -100,
+  xPercent: -110,
   width: '100%',
   height: '100vh',
   duration: 12,
@@ -75,57 +89,132 @@ gsap.to('.scroll-thumb', {
   }
 })
 
-const t2 = gsap.timeline()
-t2.to('#appfeature1', {
-  xPercent: -140,
-  duration: 5,
-  height: '60vh',
-  width: '28vh',
-  delay: 1,
-}).to('#appheadline1', {
+gsap.to('#appheadline1', {
   opacity: 0,
-}).to('#appheadline2', {
-  duration: 10,
-  opacity: 1,
-  duration: 2,
-}).to('#appfeature2', {
-  xPercent: -278,
-  duration: 10,
-  height: '60vh',
-  width: '28vh',
-}).to('#appheadline2', {
-  opacity: 0
-}).to('#appheadline3', {
-  opacity: 1,
-  duration: 2
-}).to('#appfeature3', {
-  xPercent: -350,
   duration: 1,
-  height: '50vh',
-  width: '20vh',
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
+})
+gsap.to('#appfeature1', {
+  x: '-40vh',
+  width: '28vh',
+  height: '60vh',
   duration: 10,
-}).to('#appheadline3', {
-  opacity: 0,
-}).to('#appheadline4', {
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 2,
+  }
+})
+gsap.to('#appheadline2', {
   opacity: 1,
-  duration: 2,
-}).to('#appfeature3', {
-  xPercent: -450,
-  height: '61vh',
-  width: '29vh',
-  duration: 5,
+  duration: 1,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
 })
+
+gsap.to('#appfeature2', {
+  x: '-77vh',
+  width: '28vh',
+  height: '60vh',
+  duration: 10,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 2,
+  }
+})
+
+gsap.to('#appheadline2', {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
+})
+gsap.to('#appheadline3', {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
+})
+
+
+gsap.to('#appfeature3', {
+  x: '-115vh',
+  width: '28vh',
+  height: '60vh',
+  duration: 10,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 2,
+  }
+})
+gsap.to('#appheadline3', {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
+})
+gsap.to('#appheadline4', {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    start: 'top,top',
+    end: '+=100vh',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+  }
+})
+
+
+const animation1 = gsap.timeline();
+animation1.from('.element1', { opacity: 0, y: -50, duration: 1 });
+
+
+const animation2 = gsap.timeline();
+animation2.from('.element2', { opacity: 0, x: 50, duration: 1 });
+
+
+const masterTimeline = gsap.timeline();
+
+
+
 ScrollTrigger.create({
-  animation: t2,
-  start: '-100vh top',
-  markers: true,
-  end: '+=12000vh',
-  pin: '.aartasapp',
-  pinSpacing: false,
-  scrub: 1,
-  trigger: '.phone',
-  toggleActions: 'play none none none'
-
-})
-
-
+  trigger: '.trigger-element',
+  start: 'top center',
+  end: 'bottom center',
+  animation: masterTimeline, 
+});
