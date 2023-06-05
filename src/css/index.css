@@ -414,11 +414,7 @@ max-width:18rem;
     width:100%;
     height:50vh; 
 } */
-.slides{
-    position: relative;
-    overflow: hidden;
-    height:100vh;
-}
+
 .slides{
     position: relative;
     color:var(--pearl);
@@ -427,35 +423,27 @@ max-width:18rem;
     height:100vh;
     font-weight: 700;
     font-size: 15rem;
-
 }
-/* .slide0b{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    width:100%;
-    height:50vh; 
-} */
 .slide1{
     background-image: url('../images/waitingroom.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    top:50vh;
+    position: relative;
+    margin-top:50vh;
     width:100%;
     height:0vh;
+    font-size: 30%;
     opacity:1;
 
 }
 .slide1::before{
     content: 'AartasSpace';
     color: black;
-
     position: absolute;
     top: 0vh;
     left: 50%;
-    font-size: 100%;
+    font-size: 300%;
     opacity: 1;
     transform: translate(-50%, -50%); 
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
@@ -464,34 +452,23 @@ max-width:18rem;
     content: 'AartasSpace';
     color: black;
     position: absolute;
-    bottom: -24vh;
+    bottom: -22vh;
     left: 50%;
     opacity: 1;
-    font-size: 100%;
+    font-size: 300%;
     transform: translateX(-50%);
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); 
   }
-  /* .slide1::after{
-    content: '';
-    font-size: 10rem;
-    color: black;
-    position: absolute;
-    top: 50vh;
-    left: 0%;
-    opacity: 1;
-    background-image: url(../images/Aartas\ Space2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 5;
-    transform: translateX(-50%,-50%);
-  } */
+
 .slide2{
     background-image: url('../images/vitalsroom.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:0vh;
+    height: 100vh;
+    font-size: 30%;
+    transform:translateY(50%)
 }
 .slide3{
     background-image: url('../images/doctorsroom.png');
@@ -499,7 +476,9 @@ max-width:18rem;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:0vh;
+    height: 100vh;
+    font-size: 30%;
+    transform:translateY(50%);
 }
 .slide4{
     background-image: url('../images/townhall.png');
@@ -507,7 +486,9 @@ max-width:18rem;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:0vh;
+    height: 100vh;
+    font-size: 30%;
+    transform:translateY(50%);
 }
 .aartasapp {
 position: relative;

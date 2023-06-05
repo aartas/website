@@ -93,7 +93,7 @@ gsap.to('#appheadline1', {
   opacity: 0,
   duration: 1,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=100vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -106,7 +106,7 @@ gsap.to('#appfeature1', {
   height: '60vh',
   duration: 10,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=100vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -131,7 +131,7 @@ gsap.to('#appfeature2', {
   height: '60vh',
   duration: 10,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=100vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -143,7 +143,7 @@ gsap.to('#appheadline2', {
   opacity: 0,
   duration: 1,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=100vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -154,7 +154,7 @@ gsap.to('#appheadline3', {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=100vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -169,7 +169,7 @@ gsap.to('#appfeature3', {
   height: '60vh',
   duration: 10,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -180,7 +180,7 @@ gsap.to('#appheadline3', {
   opacity: 0,
   duration: 1,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -191,7 +191,7 @@ gsap.to('#appheadline4', {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
-    start: 'top,top',
+    start: 'top top',
     end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -199,41 +199,67 @@ gsap.to('#appheadline4', {
   }
 })
 
-
-
-
-
-const animation3 = gsap.timeline();
-animation3.to('.slide1', {
-  height: '100vh',
-  bottom: 0,
+// scrollTrigger: {
+//   pin: true,
+//   trigger: '.slides',
+//   markers: true,
+//   pinSpacing:false,
+//   start: 'top top',
+//   end: '+=1000vh bottom',
+//   scrub: 1
+// }
+const tl = gsap.timeline()
+tl.to('.slide1', {
   opacity: 1,
-  duration: 15,
+  duration: 2,
+  height: '100vh',
+  marginTop: 0,
+  paddingLeft: '25vh',
+  paddingTop: '20vh',
+
 })
-  .to('.slide2', {
-    bottom: 0,
-    position: 'absolute',
-    height: '100vh',
-    duration: 15
-  }).to('.slide3', {
-    position: 'absolute',
-    bottom: 0,
-    height: '100vh',
-    duration: 15
-  }).to('.slide4', {
-    position: 'absolute',
-    bottom: 0,
-    height: '100vh',
-    duration: 15
-  })
+tl.to('.slide2', {
+  opacity: 1,
+  duration: 2,
+  yPercent: -150,
+  height: '100vh',
+  marginTop: 0,
+  paddingLeft: '25vh',
+  paddingTop: '20vh',
+  fontSize: '60%',
+  index: 2,
+})
+
+tl.to('.slide3', {
+  opacity: 1,
+  duration: 2,
+  yPercent: -250,
+  height: '100vh',
+  marginTop: 0,
+  paddingLeft: '25vh',
+  paddingTop: '20vh',
+  fontSize: '60%',
+  index: 3,
+})
+tl.to('.slide4', {
+  opacity: 1,
+  duration: 2,
+  yPercent: -350,
+  height: '100vh',
+  marginTop: 0,
+  paddingLeft: '25vh',
+  paddingTop: '20vh',
+  fontSize: '60%',
+  index: 4,
+})
 
 ScrollTrigger.create({
-  animation: animation3,
-  trigger: '.slides',
+  animation: tl,
+  pin: true,
+  pinSpacing:false,
   start: 'top top',
-  end: '+=1200vh',
-  markers: true,
-  pin: '.slides',
-  scrub: 1
-});
-
+  end: '+=2000vh',
+  trigger: '.slides',
+  scrub: 2,
+  markers: true
+})
