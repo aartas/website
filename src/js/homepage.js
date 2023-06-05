@@ -50,7 +50,7 @@
 
 
 gsap.to('.card0', {
-  height:0,
+  height: 0,
   duration: 10,
   scrollTrigger: {
     pin: '.aboutinfo',
@@ -170,7 +170,7 @@ gsap.to('#appfeature3', {
   duration: 10,
   scrollTrigger: {
     start: 'top,top',
-    end: '+=100vh',
+    end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
     scrub: 2,
@@ -181,7 +181,7 @@ gsap.to('#appheadline3', {
   duration: 1,
   scrollTrigger: {
     start: 'top,top',
-    end: '+=100vh',
+    end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
     scrub: 1,
@@ -192,7 +192,7 @@ gsap.to('#appheadline4', {
   duration: 1,
   scrollTrigger: {
     start: 'top,top',
-    end: '+=100vh',
+    end: '+=200vh',
     pin: '.aartasapp',
     trigger: '.aartasapp',
     scrub: 1,
@@ -200,21 +200,40 @@ gsap.to('#appheadline4', {
 })
 
 
-const animation1 = gsap.timeline();
-animation1.from('.element1', { opacity: 0, y: -50, duration: 1 });
 
 
-const animation2 = gsap.timeline();
-animation2.from('.element2', { opacity: 0, x: 50, duration: 1 });
 
-
-const masterTimeline = gsap.timeline();
-
-
+const animation3 = gsap.timeline();
+animation3.to('.slide1', {
+  height: '100vh',
+  bottom: 0,
+  opacity: 1,
+  duration: 15,
+})
+  .to('.slide2', {
+    bottom: 0,
+    position: 'absolute',
+    height: '100vh',
+    duration: 15
+  }).to('.slide3', {
+    position: 'absolute',
+    bottom: 0,
+    height: '100vh',
+    duration: 15
+  }).to('.slide4', {
+    position: 'absolute',
+    bottom: 0,
+    height: '100vh',
+    duration: 15
+  })
 
 ScrollTrigger.create({
-  trigger: '.trigger-element',
-  start: 'top center',
-  end: 'bottom center',
-  animation: masterTimeline, 
+  animation: animation3,
+  trigger: '.slides',
+  start: 'top top',
+  end: '+=1200vh',
+  markers: true,
+  pin: '.slides',
+  scrub: 1
 });
+
