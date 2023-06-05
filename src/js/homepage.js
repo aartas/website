@@ -199,67 +199,67 @@ gsap.to('#appheadline4', {
   }
 })
 
-// scrollTrigger: {
-//   pin: true,
-//   trigger: '.slides',
-//   markers: true,
-//   pinSpacing:false,
-//   start: 'top top',
-//   end: '+=1000vh bottom',
-//   scrub: 1
-// }
-const tl = gsap.timeline()
-tl.to('.slide1', {
+  // scrollTrigger: {
+  //   pin: true,
+  //   trigger: '.slides',
+  //   markers: true,
+  //   pinSpacing:false,
+  //   start: 'top top',
+  //   end: '+=1000vh bottom',
+  //   scrub: 1
+  // }
+ const tl = gsap.timeline()
+  tl.to('.slide1', {
   opacity: 1,
   duration: 2,
   height: '100vh',
   marginTop: 0,
   paddingLeft: '25vh',
   paddingTop: '20vh',
+  fontSize:'60%',
 
 })
-tl.to('.slide2', {
+tl.to('.slide2',{
   opacity: 1,
   duration: 2,
-  yPercent: -150,
+  yPercent:-150,
   height: '100vh',
   marginTop: 0,
   paddingLeft: '25vh',
   paddingTop: '20vh',
-  fontSize: '60%',
-  index: 2,
+  fontSize:'60%',
+  index:2,
 })
 
-tl.to('.slide3', {
+tl.to('.slide3',{
   opacity: 1,
   duration: 2,
-  yPercent: -250,
+  yPercent:-250,
   height: '100vh',
   marginTop: 0,
   paddingLeft: '25vh',
   paddingTop: '20vh',
-  fontSize: '60%',
-  index: 3,
+  fontSize:'60%',
+  index:3,
 })
-tl.to('.slide4', {
+tl.to('.slide4',{
   opacity: 1,
   duration: 2,
-  yPercent: -350,
+  yPercent:-350,
   height: '100vh',
   marginTop: 0,
   paddingLeft: '25vh',
-  paddingTop: '20vh',
-  fontSize: '60%',
-  index: 4,
+  paddingTop: '20vh', 
+  fontSize:'60%',
+  index:4,
 })
 
 ScrollTrigger.create({
-  animation: tl,
-  pin: true,
+  animation:tl,
+  pin:'.slides',
+  start:'top top',
+  end:'+=1000vh bottom',
   pinSpacing:false,
-  start: 'top top',
-  end: '+=2000vh',
-  trigger: '.slides',
-  scrub: 2,
-  markers: true
+  trigger:'.slides',
+  scrub:2
 })
