@@ -16,30 +16,26 @@ window.onscroll = function () {
     prevScrollPos = currentScrollPos;
 };
 
-window.addEventListener('load', function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('content').style.paddingRight = window.innerWidth - document.documentElement.clientWidth + 'px';
+// window.addEventListener('load', function () {
+//     document.body.style.overflow = 'auto';
+//     document.getElementById('content').style.paddingRight = window.innerWidth - document.documentElement.clientWidth + 'px';
 
-})
+// })
 
-// window.addEventListener('scroll', function () {
-//     if (window.pageYOffset > 100) {
-//         myDiv.addClass('scrolled');
-//     }
-//     if (window.pageYOffset < 100) {
-//         myDiv.removeClass('scrolled');
-//     }
-//     if (window.pageYOffset > 150) {
-//         myDiv.css('top', '50%')
-//         ('.scrolled').css('height', '100vh')
-//     }
-// });
-// window.pageYOffset/2
+window.addEventListener("scroll", function () {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scrolled)
+    if (scrolled > 0) {
+        $('nav').addClass('scrolled');
+        $('nav').removeClass('.dark')
+    } else {
+        $('nav').removeClass('scrolled');
+    }
+});
 
 
 
 window.addEventListener('scroll', () => {
-    console.log(window.pageYOffset)
     $('.cartoon').css('width', `0px`)
     if (window.pageYOffset < 50 || window.pageYOffset == 0) {
         $('.banner1').css('height', `0px`)

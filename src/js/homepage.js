@@ -3,14 +3,14 @@
 
 gsap.registerPlugin(ScrollTrigger)
 //hero section animation
- gsap.to('.open1',{
-  height:0,
-  duration:2
- })
- gsap.to('.open2',{
-  height:0,
-  duration:2
- })
+gsap.to('.open1', {
+  height: 0,
+  duration: 2
+})
+gsap.to('.open2', {
+  height: 0,
+  duration: 2
+})
 // about animation
 gsap.to('.card0', {
   height: 0,
@@ -114,7 +114,7 @@ app.to('#appfeature3', {
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
-  end: '+=2000vh',
+  end: '+=3000vh',
   pin: '.aartasapp',
   trigger: '.aartasapp',
   scrub: 1,
@@ -154,8 +154,7 @@ ScrollTrigger.create({
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
-  end: "+=4000vh bottom",
-
+  end: "+=5000vh bottom",
   scrub: 2,
 })
 
@@ -164,7 +163,7 @@ ScrollTrigger.create({
 
   trigger: '.slide0',
   start: 'top top',
-  end: "+=4000vh bottom",
+  end: "+=5000vh +=1500vh",
   scrub: 2,
   pin: '.slide0',
   pinSpacing: false
@@ -177,7 +176,7 @@ gsap.to('.footeranimation', {
   duration: 1,
   scrollTrigger: {
     start: 'top top',
-    end: 'top top',
+    end: '+=100vh bottom  ',
     trigger: 'footer',
     pin: 'footer',
     toggleActions: 'play restart none none'

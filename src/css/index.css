@@ -35,9 +35,9 @@ p{
     color:black ;
 }
 .herosection{
-    height:100vh;
+    height:auto;
     min-height:100vh;
-    background-color: aqua;
+    width:100%;
     display: grid;
     place-items: center;
     font-size: 10rem;
@@ -45,7 +45,7 @@ p{
 .herosection h1{
     font-size: 120%;
     font-weight: 700;
-    letter-spacing: -0.8rem ;
+    letter-spacing: -0.5rem ;
     line-height: 12rem;
     color:var(--pearl);
 }
@@ -56,19 +56,14 @@ p{
     letter-spacing: -0.1rem ;
     color:var(--pearl);
 }
-.brand video{
-    z-index:-1;
-    height:100vh;
-    width:100vh;
-}
+
 .brand{
     position: absolute;
-    top:0;
+    top:0vh;
     left:0;
     right:0;
-    height:110vh;
+    height:100vh;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.486);
 }
 .open1{
     position: absolute;
@@ -84,7 +79,7 @@ p{
     bottom:0;
     left:0;
     right:0;
-    height:40vh;
+    height:50vh;
     background-color: white;
     z-index:10;
 }
@@ -294,7 +289,7 @@ min-height:100vh;
     font-weight: 700;
     letter-spacing: -0.5rem;
     transform: scale(1);
-    overflow: hidden;
+    overflow-y: hidden;
     transition: all 0.5s;
     background-image: url('../images/townhall1.png');
     background-position: center;
@@ -302,8 +297,12 @@ min-height:100vh;
     background-size: cover;
     width:100%;
     height:90vh;
-    margin-top:40%;
-    margin-bottom:5%;
+    max-height:90vh;
+    transform: scale(1);
+}
+.media-content .townhall1:hover{
+    overflow: hidden;
+    transform:scale(1.1)
 }
 .media-content .waiting{
     display: flex;
@@ -321,9 +320,11 @@ min-height:100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    margin-top:5%;
     height:80vh;
-    margin-bottom:5%;
+
+}
+.media-content .waiting:hover{
+    transform: scale(1.1);
 }
 .waiting h4{
     padding-left:0;
@@ -344,9 +345,10 @@ min-height:100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    margin-top:10%;
-    margin-bottom:5%;
     height:70vh;
+}
+.media-content .alldoctors:hover{
+    transform: scale(1.1);
 }
 .media-content .townhall2{
     display: flex;
@@ -365,9 +367,13 @@ min-height:100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    margin-top:5%;
-    margin-bottom:10vh;
     height:80vh;
+}
+.media-content .townhall2:hover{
+    transform: scale(1.1);
+}
+.news1,.news2{
+    overflow: hidden;
 }
 .about{
     width:100%;
@@ -554,4 +560,9 @@ width:100%;
     z-index: -1;
     background-color: #f2f2f2;
 
+}
+@media (max-width:810) {
+    .brand {
+        background-color: #f2f2f2;
+    }
 }

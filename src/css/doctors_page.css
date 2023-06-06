@@ -4,20 +4,27 @@
           font-family: 'Urbanist' !important;
         }
         body{
-            font-family: 'Urbanist' !important;
-      /* overflow: hidden; */
-      margin: 0;
-      padding: 0;
+          font-family: 'Urbanist' !important;
+          margin: 0;
+          padding: 0;
         }
+     
         nav {
-            position: fixed;
+            position: fixed !important;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: var(--seashell);
-            color: #fff;
             transition: top 0.3s;
             z-index: 22 !important;
+        }
+        .dark{
+          font-size: 1.2rem !important;
+          font-weight: 700;
+          color:var(--pearl) !important ;
+        }
+        nav.scrolled {
+          background-color: #f2f2f2;
+          color:var(--charcoal)
         }
         .animated-title {
           /* font-size: 10rem; */
@@ -275,7 +282,7 @@
             background: linear-gradient(to left, transparent, black); 
           }
           footer{
-            height:clamp(100vh,20vh,150vh);
+            height:clamp(100vh,80vh,150vh);
             width: 100%;
             background-color:#000;
             display: flex;
