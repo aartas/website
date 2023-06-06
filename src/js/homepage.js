@@ -168,15 +168,17 @@ ScrollTrigger.create({
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
+  end: "+=3000vh bottom",
   markers: true,
-  scrub: 1,
+  scrub: 2,
 })
+
 ScrollTrigger.create({
   animation: tl,
   markers: true,
   trigger: '.slide0',
   start: 'top top',
-  end: "+=2000vh bottom",
+  end: "+=3000vh bottom",
   scrub: 2,
   pin: '.slide0',
   pinSpacing: false
