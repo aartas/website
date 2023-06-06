@@ -43,11 +43,11 @@ p{
     font-size: 8rem;
   
 }
+.slide0{
+    height:50vh;
+    width:100%;
+}
 .slide1 {
-    top:0;
-    left:0;
-    right:0; 
-    margin-top: 50vh;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     font-size: 120%;

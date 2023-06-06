@@ -131,12 +131,18 @@ gsap.to('#appheadline4', {
 
 
 const tl = gsap.timeline();
+// t1.to('.slide0', {
+//   height: '1vh',
+//   duration: 2,
+//   delay: 3
+// })
 tl.to(".slide1", {
   height: "100vh",
   paddingLeft: '20vh',
   paddingTop: '25vh',
   opacity: 1,
-  delay: 3
+  duration: 5
+
 })
 tl.to('.slide2', {
   yPercent: -200,
@@ -157,15 +163,22 @@ tl.to('.slide4', {
   duration: 5
 })
 
+ScrollTrigger.create({
+  animaton: tl,
+  trigger: '.slides',
+  start: 'top top',
+  pin: '.slides',
+  markers: true,
+  scrub: 1,
+})
+ScrollTrigger.create({
+  animation: tl,
+  markers: true,
+  trigger: '.slide0',
+  start: 'top top',
+  end: "+=2000vh bottom",
+  scrub: 2,
+  pin: '.slide0',
+  pinSpacing: false
 
-// ScrollTrigger.create({
-//   animation: tl,
-//   markers: true,
-//   trigger: '.slides',
-//   start: 'top top',
-//   end: "+=2000vh bottom",
-//   scrub: 2,
-//   pin: true,
-//   pinSpacing: false
-
-// })
+})
