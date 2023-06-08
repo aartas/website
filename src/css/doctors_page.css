@@ -39,7 +39,6 @@
           font-size: clamp(5rem, 12vw, 20rem);
           z-index: 5;
         }
-  
         .content {
           font-family: 'Urbanist' !important;
           letter-spacing: 0;
@@ -47,64 +46,63 @@
           line-height: 3rem;
           height:100vh;
           width:100%;
+          scale: 1;
+          overflow: hidden;
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          z-index: -1;
         }
         .content h1{
           letter-spacing: -0.8rem;
         }
+        .heading_animation{
+          height:100%;
+          width:100%;
+          z-index: 12;
+        }
         .banner1{
-          height:0;
-          width:0;
-          position: absolute;
-          top:50%;
-          left:50%;
-          right:50%;
-          background-color: #000;
+          width:100%;
+          /* background-color: transparent; */
           color: var(--pearl);
-          border-radius: 80%;
-          margin-left:0 !important;
-          margin-right:0 !important;
-          transform: translate(-50%, -50%);
+          /* border-radius: 80%; */
           z-index: 10;
           text-overflow: wrap;
           font-size: 4rem;
+          opacity:1;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           transition: all 0.8s;
+          z-index: 14;
+        }
+        .support{
+          height:0vh;
+          width:100%;
+          background-color: aquamarine;
+        }
+        .animation_background{
+          display: grid;
+          place-items: center;
+          width:100%;
+          height:100vh;
+          background-color: #000;
+          border-radius: 0;
+          scale:1;
           z-index: 12;
         }
-        .banner1 section{
-          max-width:100vh;
-          max-height:200vh;
-        }
-        /* .scrolled{
-          width:100%;
-          height:200vh;
-          left:50%;
-          right:50%;
-          position:absolute;
-          border-radius:0%;
-          transition: all 0.8s;
-          animation: zoomtext 0.5s  ease-in-out ;
-         opacity: 1;
-         z-index: 20;
-        } */
-        
+
         .banner1 h2{
           font-size: 100%;
           transition: all 0.5s;
-      
         }
         .banner1 h4{
           font-size: 60%;
           transition: all 0.5s;
         }
-        .banner .cartoon{
-          max-width: 5rem;
-        }
         .banner1 img{
           object-fit: cover;
-
         }
         .speciality{
           margin-top:-5rem !important;
@@ -160,8 +158,7 @@
           margin-right: clamp(1rem, 15vw, 1rem);
         }
         .doctors{
-          z-index: 2;
-          margin-top:500vh;
+          height:100vh;
           background-color: #fff;
         }
 
@@ -291,6 +288,7 @@
           }
           footer{
             /* height:clamp(100vh,80vh,150vh); */
+            height:100vh;
             width: 100%;
             background-color:#000;
             display: flex;
@@ -327,7 +325,7 @@
           }
           .footeranimation{
             height:100vh;
-            transform: translateY(100%);
+            opacity:0;
         }
        
           @keyframes changingtext1Anim {
