@@ -7,6 +7,9 @@
           font-family: 'Urbanist' !important;
           margin: 0;
           padding: 0;
+          height:100%;
+          width:100%;
+          min-width:100%;
         }
      
         nav {
@@ -15,16 +18,21 @@
             left: 0;
             width: 100%;
             transition: top 0.3s;
+            font-size: 1.2rem !important;
+            font-weight: 600;
             z-index: 22 !important;
         }
-        .dark{
-          font-size: 1.2rem !important;
-          font-weight: 700;
-          color:var(--pearl) !important ;
+        .navbar-brand img{
+          width:8rem;
+          height:auto;
         }
-        nav.scrolled {
-          background-color: #f2f2f2;
-          color:var(--charcoal)
+        .links{
+          text-decoration: none;
+          color:var(--pearl);
+          background-color: transparent;
+        }
+        .logo_dark{
+          display: none;
         }
         .animated-title {
           /* font-size: 10rem; */
@@ -282,7 +290,7 @@
             background: linear-gradient(to left, transparent, black); 
           }
           footer{
-            height:clamp(100vh,80vh,150vh);
+            /* height:clamp(100vh,80vh,150vh); */
             width: 100%;
             background-color:#000;
             display: flex;
@@ -290,6 +298,8 @@
             justify-content: center;
             align-items: center;
             min-height:110vh;
+            padding: 20px;
+            width: 100%;
           }
        
           footer .footer-heading{

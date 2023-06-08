@@ -26,10 +26,15 @@ window.addEventListener("scroll", function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrolled)
     if (scrolled > 0) {
-        $('nav').addClass('scrolled');
-        $('nav').removeClass('.dark')
+        $('.links').css('color', '#000')
+        $('nav').css('background-color', '#f2f2f2')
+        $('.logo_dark').css('display', 'block')
+        $('.logo_white').css('display', 'none')
     } else {
-        $('nav').removeClass('scrolled');
+        $('.links').css('color', '#fff')
+        $('nav').css('background-color', 'transparent')
+        $('.logo_dark').css('display', 'none')
+        $('.logo_white').css('display', 'block')
     }
 });
 

@@ -57,67 +57,57 @@ gsap.to('.scroll-thumb', {
 const app = gsap.timeline()
 
 app.to('#appfeature1', {
-  x: '-20vh',
-  width: '28vh',
-  height: '60vh',
-  marginRight: 0,
-  duration: 10,
-})
-app.to('#appheadline2', {
-  zIndex: 2,
-  duration: 5,
-
-})
-app.to('#appfeature1', {
-  x: '-40vh',
-  width: '28vh',
-  height: '60vh',
-  marginRight: 0,
-  duration: 10,
-})
-app.to('#appfeature2', {
   x: '-47vh',
   width: '28vh',
   height: '60vh',
   marginRight: 0,
-  duration: 10,
+  duration: 1,
+  delay:1
+})
+app.to('#appheadline2', {
+  zIndex: 2,
+  duration: 1,
+
 })
 
-app.to('#appheadline3', {
-  zIndex: 4,
-  duration: 5,
-})
+// app.to('#appfeature2', {
+//   x: '-47vh',
+//   width: '28vh',
+//   height: '60vh',
+//   marginRight: 0,
+//   duration: 2,
+// })
+
+
 app.to('#appfeature2', {
-  x: '-67vh',
+  x: '-75vh',
   width: '28vh',
   height: '60vh',
   marginRight: 0,
-  duration: 10,
+  duration: 1,
 })
+app.to('#appheadline3', {
+  zIndex: 4,
+  duration: 1,
+})
+
 app.to('#appfeature3', {
-  x: '-76vh',
+  x: '-104vh',
   width: '28vh',
   height: '60vh',
-  duration: 10,
+  duration: 1,
 })
 app.to('#appheadline4', {
   zIndex: 6,
-  duration: 0,
+  duration: 1,
 })
-app.to('#appfeature3', {
-  x: '-96vh',
-  width: '28vh',
-  height: '60vh',
-  duration: 10,
-})
-
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
-  end: '+=3000vh',
+  end: 'bottom bottom',
   pin: '.aartasapp',
   trigger: '.aartasapp',
-  scrub: 1,
+  toggleActions: 'restart restart none none'
 })
 
 const tl = gsap.timeline();
@@ -182,4 +172,13 @@ gsap.to('.footeranimation', {
     toggleActions: 'play restart none none'
   }
 
+})
+
+gsap.to('.slide0', {
+  height: 0,
+  duration: 0.1,
+  scrollTrigger: {
+    start: 'top top',
+    trigger: '.media'
+  }
 })
