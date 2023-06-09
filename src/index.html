@@ -27,27 +27,17 @@
                 <img class="img-fluid logo_dark" src="../src/images/logo.png" href="index.html" alt="aartas.com">
                 <img class="img-fluid logo_white" src="../src/images/logo_white.png" href="index.html" alt="aartas.com">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                    <a class=" mx-md-2 mx-1 links" aria-current="page" href="#">About Us</a>
-                    <a class=" mx-md-2 mx-1 links" href="#">Specialities</a>
-                    <a class=" mx-md-2 mx-1 links" href="#">Aartas App</a>
-                    <a class=" mx-md-2 mx-1 links" href="#">Aartas Space</a>
-                    <a class=" mx-md-2 mx-1 links" href="#">News</a>
-                </div>
+            <div class="row ">
+                <a class=" col-auto mx-md-2 mx-1 links" aria-current="page" href="#">About Us</a>
+                <a class=" col-auto mx-md-2 mx-1 links" href="#">Specialities</a>
+                <a class=" col-auto mx-md-2 mx-1 links" href="#">Aartas App</a>
+                <a class=" col-auto mx-md-2 mx-1 links" href="#">Aartas Space</a>
+                <a class=" col-auto mx-md-2 mx-1 links" href="#">News</a>
             </div>
         </div>
     </nav>
-    <section class="herosection align-items-center overflow-hidden">
+    <section class="herosection">
         <div class="open1"></div>
-        <video autoplay muted loop>
-            <source src="../src/videos/sample.mp4" />
-        </video>
-
         <section class="brand">
             <div class="hero">
                 <div class="lines">
@@ -58,6 +48,9 @@
             </div>
 
         </section>
+        <video class="video" autoplay muted loop>
+            <source src="../src/videos/sample.mp4" />
+        </video>
         <div class="open2"></div>
     </section>
     <section class="container-fluid about px-lg-5 position-relative">
@@ -95,8 +88,36 @@
         </div>
 
     </section>
+    <section class="container-fluid about_mobile">
+        <div class="col-12 aboutinfo ">
+            <h1 class=" bg-white">What is<br class="p-0 m-0" />Aartas</h1>
+            <div class="">
+                <h4 class="pt-4">A short subtitle</h4>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <div class="aboutpara ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto possimus
+                        cupiditate nesciunt pariatur? Voluptatibus expedita autem minima ratione sequi voluptate culpa
+                        ipsam cum earum qui, porro, libero repudiandae voluptates! Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Veritatis architecto possimus cupiditate nesciunt pariatur?
+                        Voluptatibus expedita autem minima ratione sequi voluptate culpa ipsam cum earum qui, porro,
+                        libero repudiandae voluptates!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 aboutslots my-1">
+            <div class="card shortcard rounded-4 bg-primary border-0"> </div>
+            <div class="card card1 rounded-4 bg-black"> </div>
+            <div class="card card2 rounded-4 bg-black"> </div>
+        </div>
+        <div class="col-12 aboutslots">
+            <div class="card card3 bg-black rounded-4"> </div>
+            <div class="card card4 bg-black rounded-4"> </div>
+            <div class="card longcard bg-primary rounded-4"> </div>
+        </div>
 
-    <section class="container-fluid bg-white specialities p-0 m-0">
+
+    </section>
+    <!-- <section class="container-fluid bg-white specialities p-0 m-0">
         <div class="scroll-line rounded-3 p-0 m-0">
             <div class="scroll-thumb rounded-4"></div>
         </div>
@@ -224,8 +245,8 @@
                 <h1 class="footer-heading" style="margin-top: 10%;">We bring you</h1>
                 <h1 class="footer-heading">Closer to Care </h1>
             </section>
-            <!-- <button class="button shadow-none border border-white text-white button-book-Appointment rounded-2 ">Book
-            Appointment!</button> -->
+            <button class="button shadow-none border border-white text-white button-book-Appointment rounded-2 ">Book
+                Appointment!</button>
             <section class="row justify-content-center ">
                 <a class="col-auto links text-decoration-none">Home</a>
                 <a class="col-auto links text-decoration-none">About Us</a>
@@ -262,7 +283,7 @@
                 Care Pvt Ltd. All rights
                 reserved</p>
         </main>
-    </footer>
+    </footer> -->
     <script defer src="./js/homepage.js"></script>
     <script defer src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
