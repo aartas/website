@@ -12,17 +12,31 @@ gsap.to('.open2', {
   duration: 2
 })
 // about animation
+
 gsap.to('.card0', {
   height: 0,
   duration: 5,
   scrollTrigger: {
-    pin: '.aboutinfo',
-    trigger: '.aboutinfo',
+    pin: '.about',
+    trigger: '.about',
     start: 'top top',
     end: '+=1000vh bottom',
-    scrub: true
+
+    scrub: 2
   }
 })
+gsap.to('.card5', {
+  height: '30vh',
+  duration: 5,
+  scrollTrigger: {
+    pin: '.about',
+    trigger: '.about',
+    start: 'top top',
+    end: '+=1000vh bottom',
+    scrub: 3
+  }
+})
+
 
 // specialities animation
 gsap.to('.scroller', {
@@ -62,7 +76,7 @@ if (window.innerWidth <= 1440) {
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
-    delay: 1
+    delay: 0.2
   })
   app.to('#appheadline2', {
     zIndex: 2,
@@ -98,7 +112,7 @@ if (window.innerWidth <= 1440) {
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
-    delay: 0.5
+    delay: 0.2
   })
   app.to('#appheadline2', {
     zIndex: 2,
@@ -133,9 +147,10 @@ if (window.innerWidth <= 1440) {
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
-  end: 'bottom bottom',
+  end: '+=2500vh bottom',
   pin: '.aartasapp',
   trigger: '.aartasapp',
+  scrub: 2,
   toggleActions: 'restart restart reverse reverse'
 })
 //aartas app animation end
@@ -182,7 +197,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: tl,
-
   trigger: '.slide0',
   start: 'top top',
   end: "+=5000vh +=1500vh",
@@ -195,10 +209,9 @@ ScrollTrigger.create({
 
 
 //footer animation start
-
 gsap.to('.footeranimation', {
   opacity: 2,
-  duration: 1,
+  duration: 3,
   scrollTrigger: {
     start: 'top top',
     end: 'bottom bottom  ',

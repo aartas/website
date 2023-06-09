@@ -39,6 +39,14 @@
           font-size: clamp(5rem, 12vw, 20rem);
           z-index: 5;
         }
+        .anim{
+          height:100vh;
+          width:100%;
+          position: fixed;
+          top:0;
+          left:0;
+          right:0;
+        }
         .content {
           font-family: 'Urbanist' !important;
           letter-spacing: 0;
@@ -46,21 +54,25 @@
           line-height: 3rem;
           height:100vh;
           width:100%;
-          scale: 1;
+          scale: 0.5;
           overflow: hidden;
-          position: absolute;
-          top:0;
-          left:0;
-          right:0;
-          z-index: -1;
         }
         .content h1{
           letter-spacing: -0.8rem;
         }
         .heading_animation{
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
           height:100%;
           width:100%;
           z-index: 12;
+        }
+        .support{
+          height: 0;;
+          width:100%;
+          background-color: aqua;
         }
         .banner1{
           width:100%;
@@ -71,26 +83,26 @@
           text-overflow: wrap;
           font-size: 4rem;
           opacity:1;
+          height:100%;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           transition: all 0.8s;
-          z-index: 14;
+          z-index: 24;
+
         }
-        .support{
-          height:0vh;
-          width:100%;
-          background-color: aquamarine;
-        }
+   
         .animation_background{
+
           display: grid;
           place-items: center;
           width:100%;
-          height:100vh;
+          min-height:100vh;
           background-color: #000;
           border-radius: 0;
           scale:1;
           z-index: 12;
+          margin-top: 0;
         }
 
         .banner1 h2{
@@ -158,7 +170,9 @@
           margin-right: clamp(1rem, 15vw, 1rem);
         }
         .doctors{
+          min-height: 100vh;
           height:100vh;
+          width:100%;
           background-color: #fff;
         }
 

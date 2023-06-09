@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="p-0 m-0">
         <nav id="navbar" class=" pt-2 bg-white">
             <div class="row justify-content-lg-between p-0 m-0">
                 <div class="col-auto logo">
@@ -35,9 +35,22 @@
                 the Aartas Healthcare App</p>
         </nav>
     </header>
+    <section class="content d-flex align-items-center">
+        <h1 class="animated-title mx-auto fw-semibold position-relative text-center">Leading
+            Doctors<br /> <span class="of">of</span>
+            <span id="hidder1" class=" position-absolute">hidder</span>
+            <span id="changingtext1" class="text-burntumber position-absolute">Delhi</span>
+            <span id="changingtext2" class="text-burntumber position-absolute">Gurugram</span>
+            <span id="changingtext3" class="text-burntumber position-absolute">Mumbai</span>
+            <span id="changingtext4" class="text-burntumber position-absolute">Aartas</span>
+            <span id="hidder2" class=" position-absolute">hidder</span>
+        </h1>
+    </section>
+    <div class="anim"></div>
     <section class='heading_animation'>
-        <section class="support"></section>
+        <!-- <div class="support"></div> -->
         <section class="animation_background">
+
             <article class="row banner1 justify-content-center align-items-center">
                 <section class="col-5 justify-content-end p-0 m-0 ms-5 ps-5 align-self-center">
                     <h2 class="main-text fw-bold mb-4 "> Headline about how Drs<br /> of all specialities are<br />
@@ -57,17 +70,7 @@
     </section>
 
 
-        <section class="content d-flex align-items-center">
-            <h1 class="animated-title mx-auto fw-semibold position-relative text-center">Leading
-                Doctors<br /> <span class="of">of</span>
-                <span id="hidder1" class=" position-absolute">hidder</span>
-                <span id="changingtext1" class="text-burntumber position-absolute">Delhi</span>
-                <span id="changingtext2" class="text-burntumber position-absolute">Gurugram</span>
-                <span id="changingtext3" class="text-burntumber position-absolute">Mumbai</span>
-                <span id="changingtext4" class="text-burntumber position-absolute">Aartas</span>
-                <span id="hidder2" class=" position-absolute">hidder</span>
-            </h1>
-        </section>
+
 
     <section class="container-fluid doctors">
         <section class="row justify-content-md-center">
@@ -339,6 +342,8 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </body>
 
 </html>

@@ -49,7 +49,31 @@ input[type='date']{
       ::-webkit-scrollbar-thumb {
         background-color: transparent;
       }
+.scroll {
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: max-content;
+}
 
+.scroll::-webkit-scrollbar {
+    height: 0rem;
+    width: 0rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: var(--charcoal75);
+    border-radius: 65rem;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
     .button, .btn {
         padding: 0.375rem 0.85rem;
         font-size: 0.85rem;
