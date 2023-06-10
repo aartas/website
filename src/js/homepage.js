@@ -33,38 +33,92 @@ gsap.to('.card5', {
     trigger: '.about',
     start: 'top top',
     end: '+=1000vh bottom',
+
+    scrub: 3
+  }
+})
+gsap.to('.shortcard', {
+  width: 0,
+  duration: 5,
+  scrollTrigger: {
+    pin: '.about_mobile',
+    trigger: '.about_mobile',
+    start: 'top top',
+    end: '+=1000vh bottom',
+    pinSpacing: false,
+    scrub: 2
+  }
+})
+gsap.to('.longcard', {
+  width: 0,
+  duration: 5,
+  scrollTrigger: {
+    pin: '.about_mobile',
+    trigger: '.about_mobile',
+    start: 'top top',
+    end: '+=1000vh bottom',
+    pinSpacing: false,
     scrub: 3
   }
 })
 
-
 // specialities animation
-gsap.to('.scroller', {
-  xPercent: -110,
-  width: '100%',
-  height: '100vh',
-  duration: 12,
-  scrollTrigger: {
-    start: 'top top',
-    end: '+=2500vh bottom',
-    pin: true,
-    scrub: 1,
-    trigger: '.specialities',
-    toggleActions: 'play none none none'
-  }
-})
+if (window.innerWidth <= 992) {
+  gsap.to('.scroller', {
+    xPercent: -300,
+    width: '100%',
+    height: '100vh',
+    duration: 12,
+    scrollTrigger: {
+      start: 'top top',
+      end: '+=8000vh bottom',
+      pin: true,
+      scrub: 1,
+      trigger: '.specialities',
+      toggleActions: 'play none none none'
+    }
+  })
 
-gsap.to('.scroll-thumb', {
-  y: '80vh',
-  duration: 12,
-  scrollTrigger: {
-    start: 'top top',
-    end: '+=2000vh',
-    scrub: 1,
-    trigger: '.scroller',
-    toggleActions: 'play none none none'
-  }
-})
+  gsap.to('.scroll-thumb', {
+    y: '80vh',
+    duration: 12,
+    scrollTrigger: {
+      start: 'top top',
+      end: '+=8000vh',
+      scrub: 1,
+      trigger: '.scroller',
+      toggleActions: 'play none none none'
+    }
+  })
+} else {
+  gsap.to('.scroller', {
+    xPercent: -110,
+    width: '100%',
+    height: '100vh',
+    duration: 12,
+    scrollTrigger: {
+      start: 'top top',
+      end: '+=2500vh bottom',
+      pin: true,
+      scrub: 1,
+      trigger: '.specialities',
+      toggleActions: 'play none none none'
+    }
+  })
+
+  gsap.to('.scroll-thumb', {
+    y: '80vh',
+    duration: 12,
+    scrollTrigger: {
+      start: 'top top',
+      end: '+=2000vh',
+      scrub: 1,
+      trigger: '.scroller',
+      toggleActions: 'play none none none'
+    }
+  })
+}
+
 
 
 //aartas app animation start
@@ -107,7 +161,7 @@ if (window.innerWidth <= 1440) {
   })
 } else {
   app.to('#appfeature1', {
-    x: '-47vh',
+    x: '-50vh',
     width: '28vh',
     height: '60vh',
     marginRight: 0,
@@ -121,7 +175,7 @@ if (window.innerWidth <= 1440) {
   })
 
   app.to('#appfeature2', {
-    x: '-75vh',
+    x: '-78vh',
     width: '28vh',
     height: '60vh',
     marginRight: 0,
@@ -133,7 +187,7 @@ if (window.innerWidth <= 1440) {
   })
 
   app.to('#appfeature3', {
-    x: '-104vh',
+    x: '-106vh',
     width: '28vh',
     height: '60vh',
     duration: 0.5,
