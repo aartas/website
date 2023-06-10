@@ -229,7 +229,7 @@ if (window.innerWidth <= 992) {
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
-  end: '+=2500vh bottom',
+  end: '+3000vh bottom',
   pin: '.aartasapp',
   trigger: '.aartasapp',
   scrub: 2,
@@ -240,33 +240,63 @@ ScrollTrigger.create({
 
 //-----------------------------aartas space start----------------------------------------------------
 const tl = gsap.timeline();
+if (window.innerWidth <= 992) {
+  tl.to(".slide1", {
+    height: "100vh",
+    paddingLeft: '5vh',
+    paddingTop: '10vh',
+    opacity: 1,
+    duration: 5
 
-tl.to(".slide1", {
-  height: "100vh",
-  paddingLeft: '20vh',
-  paddingTop: '25vh',
-  opacity: 1,
-  duration: 5
+  })
+  tl.to('.slide2', {
+    yPercent: -200,
+    paddingLeft: '5vh',
+    paddingTop: '10vh',
+    duration: 5
+  })
+  tl.to('.slide3', {
+    yPercent: -350,
+    paddingLeft: '5vh',
+    paddingTop: '10vh',
+    duration: 5
+  })
+  tl.to('.slide4', {
+    yPercent: -500,
+    fontSize: '120%',
+    paddingLeft: '5vh',
+    paddingTop: '10vh',
+    duration: 5
+  })
+} else {
+  tl.to(".slide1", {
+    height: "100vh",
+    paddingLeft: '20vh',
+    paddingTop: '25vh',
+    opacity: 1,
+    duration: 5
 
-})
-tl.to('.slide2', {
-  yPercent: -200,
-  paddingLeft: '20vh',
-  paddingTop: '25vh',
-  duration: 5
-})
-tl.to('.slide3', {
-  yPercent: -350,
-  paddingLeft: '20vh',
-  paddingTop: '25vh',
-  duration: 5
-})
-tl.to('.slide4', {
-  yPercent: -500,
-  paddingLeft: '20vh',
-  paddingTop: '25vh',
-  duration: 5
-})
+  })
+  tl.to('.slide2', {
+    yPercent: -200,
+    paddingLeft: '20vh',
+    paddingTop: '25vh',
+    duration: 5
+  })
+  tl.to('.slide3', {
+    yPercent: -350,
+    paddingLeft: '20vh',
+    paddingTop: '25vh',
+    duration: 5
+  })
+  tl.to('.slide4', {
+    yPercent: -500,
+    paddingLeft: '20vh',
+    paddingTop: '25vh',
+    duration: 5
+  })
+}
+
 
 ScrollTrigger.create({
   animaton: tl,
@@ -315,3 +345,20 @@ gsap.to('.slide0', {
   }
 })
 //aartas space corrections animation
+
+const root = document.querySelector(":root");
+function adjustDivPosition() {
+  var windowHeight = window.innerHeight;
+  var divHeight = $('.slide1').height();
+  var bottomValue = (Number(windowHeight) - Number(divHeight)) / 100;
+  bottomValue = `${-(bottomValue + 10)}vh`
+  console.log(bottomValue)
+  root.style.setProperty("--bottom", bottomValue);
+  // document.getElementById('centeredDiv').style.bottom = bottomValue + 'px';
+}
+
+// Call the adjustDivPosition function initially
+adjustDivPosition();
+
+// Call the adjustDivPosition function whenever the window is resized
+window.addEventListener('resize', adjustDivPosition);
