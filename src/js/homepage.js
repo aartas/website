@@ -123,7 +123,35 @@ if (window.innerWidth <= 992) {
 
 //aartas app animation start
 const app = gsap.timeline()
-if (window.innerWidth <= 1440) {
+if (window.innerWidth <= 992) {
+  app.to('#appfeature1_mobile', {
+    zIndex: -1,
+    duration: 0.5,
+  })
+  app.to('#appheadline2', {
+    zIndex: 2,
+    duration: 0.5,
+
+  })
+
+  app.to('#appfeature2_mobile', {
+    zIndex: -1,
+    duration: 0.5,
+  })
+  app.to('#appheadline3', {
+    zIndex: 4,
+    duration: 0.5,
+  })
+
+  app.to('#appfeature3_mobile', {
+    zIndex: -1,
+    duration: 0.5,
+  })
+  app.to('#appheadline4', {
+    zIndex: 6,
+    duration: 0.5,
+  })
+} else if (window.innerWidth <= 1440) {
   app.to('#appfeature1', {
     x: '-35vh',
     width: '28vh',
