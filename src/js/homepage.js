@@ -21,7 +21,6 @@ gsap.to('.card0', {
     trigger: '.about',
     start: 'top top',
     end: '+=1000vh bottom',
-
     scrub: 2
   }
 })
@@ -62,62 +61,81 @@ gsap.to('.longcard', {
   }
 })
 
-// specialities animation
-if (window.innerWidth <= 992) {
-  gsap.to('.scroller', {
-    xPercent: -300,
-    width: '100%',
-    height: '100vh',
-    duration: 12,
-    scrollTrigger: {
-      start: 'top top',
-      end: '+=8000vh bottom',
-      pin: true,
-      scrub: 1,
-      trigger: '.specialities',
-      toggleActions: 'play none none none'
-    }
-  })
-
-  gsap.to('.scroll-thumb', {
-    y: '80vh',
-    duration: 12,
-    scrollTrigger: {
-      start: 'top top',
-      end: '+=8000vh',
-      scrub: 1,
-      trigger: '.scroller',
-      toggleActions: 'play none none none'
-    }
-  })
-} else {
-  gsap.to('.scroller', {
-    xPercent: -110,
-    width: '100%',
-    height: '100vh',
-    duration: 12,
-    scrollTrigger: {
-      start: 'top top',
-      end: '+=2500vh bottom',
-      pin: true,
-      scrub: 1,
-      trigger: '.specialities',
-      toggleActions: 'play none none none'
-    }
-  })
-
-  gsap.to('.scroll-thumb', {
-    y: '80vh',
-    duration: 12,
-    scrollTrigger: {
-      start: 'top top',
-      end: '+=2000vh',
-      scrub: 1,
-      trigger: '.scroller',
-      toggleActions: 'play none none none'
-    }
-  })
+function Scroller() {
+  let specialityWidth = $('.specialities').width()
+  specialityWidth = specialityWidth
+  let scroller = $('.scroller').width()
+  let newWidth = specialityWidth
+  return newWidth
 }
+Scroller()
+
+function Heightthumb() {
+  let specialityHeight = $('.specialities').height()
+  specialityHeight = specialityHeight
+  $('.scroll-line').height(specialityHeight)
+  // console.log(specialityHeight)
+  return specialityHeight
+}
+// Height()
+window.addEventListener('resize', Scroller);
+window.addEventListener('resize', Heightthumb);
+
+// specialities animation
+// if (window.innerWidth <= 992) {
+//   gsap.to('.scroller', {
+//     xPercent: -Scroller()+'vh',
+//     width: '100%',
+//     height: '100vh',
+//     duration: 12,
+//     scrollTrigger: {
+//       start: 'top top',
+//       end: '+=8000vh bottom',
+//       pin: true,
+//       scrub: 1,
+//       trigger: '.specialities',
+//       toggleActions: 'play none none none'
+//     }
+//   })
+
+//   gsap.to('.scroll-thumb', {
+//     y: '80vh',
+//     duration: 12,
+//     scrollTrigger: {
+//       start: 'top top',
+//       end: '+=8000vh',
+//       scrub: 1,
+//       trigger: '.scroller',
+//       toggleActions: 'play none none none'
+//     }
+//   })
+// } else {
+gsap.to('.scroller', {
+  x: `-${Scroller()}px`,
+  width: '100%',
+  height: '100vh',
+  scrollTrigger: {
+    start: 'top top',
+    end: `+=2500vh bottom`,
+    pin: true,
+    scrub: 1,
+    trigger: '.specialities',
+    toggleActions: 'play none none none'
+  }
+})
+
+gsap.to('.scroll-thumb', {
+  y: Heightthumb(),
+  duration: 12,
+  scrollTrigger: {
+    start: 'top top',
+    end: '+=2000vh',
+    scrub: 1,
+    trigger: '.scroller',
+    toggleActions: 'play none none none'
+  }
+})
+// }
 
 
 
@@ -189,8 +207,8 @@ if (window.innerWidth <= 992) {
   })
 } else {
   app.to('#appfeature1', {
-    x: '-50vh',
-    width: '28vh',
+    xPercent: -176,
+    width: '27vh',
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
@@ -203,7 +221,7 @@ if (window.innerWidth <= 992) {
   })
 
   app.to('#appfeature2', {
-    x: '-78vh',
+    x: '-75vh',
     width: '28vh',
     height: '60vh',
     marginRight: 0,
@@ -215,7 +233,7 @@ if (window.innerWidth <= 992) {
   })
 
   app.to('#appfeature3', {
-    x: '-106vh',
+    x: '-104vh',
     width: '28vh',
     height: '60vh',
     duration: 0.5,
@@ -241,7 +259,14 @@ ScrollTrigger.create({
 //-----------------------------aartas space start----------------------------------------------------
 const tl = gsap.timeline();
 if (window.innerWidth <= 992) {
-  tl.to(".slide1", {
+  tl.to('.slide0', {
+    height: 0,
+    duration: 0.1,
+    scrollTrigger: {
+      start: 'top top',
+      trigger: '.media'
+    }
+  }).to(".slide1", {
     height: "100vh",
     paddingLeft: '5vh',
     paddingTop: '10vh',
@@ -336,29 +361,20 @@ gsap.to('.footeranimation', {
 
 
 //aartas space corrections animation
-gsap.to('.slide0', {
-  height: 0,
-  duration: 0.1,
-  scrollTrigger: {
-    start: 'top top',
-    trigger: '.media'
-  }
-})
+// gsap
 //aartas space corrections animation
 
-const root = document.querySelector(":root");
-function adjustDivPosition() {
-  var windowHeight = window.innerHeight;
-  var divHeight = $('.slide1').height();
-  var bottomValue = (Number(windowHeight) - Number(divHeight)) / 100;
-  bottomValue = `${-(bottomValue + 10)}vh`
-  console.log(bottomValue)
-  root.style.setProperty("--bottom", bottomValue);
-  // document.getElementById('centeredDiv').style.bottom = bottomValue + 'px';
-}
+// const root = document.querySelector(":root");
+// function adjustDivPosition() {
+//   var windowHeight = window.innerHeight;
+//   var divHeight = $('.slide0').height();
+//   var bottomValue1 = (Number(windowHeight));
+//   var bottomValue2 = (Number(divHeight));
+//   var bottomValue = (bottomValue2 - bottomValue1)
+//   bottomValue = bottomValue / 20
+//   console.log(bottomValue1, bottomValue2, bottomValue)
+//   root.style.setProperty("--bottom", bottomValue + 'vh');
+// }
+// adjustDivPosition();
 
-// Call the adjustDivPosition function initially
-adjustDivPosition();
-
-// Call the adjustDivPosition function whenever the window is resized
-window.addEventListener('resize', adjustDivPosition);
+// window.addEventListener('resize', adjustDivPosition);

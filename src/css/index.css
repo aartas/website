@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-    --bottom: -15vh;
+    --bottom: 0;
 }
 html{
   font-family: 'Urbanist' !important;
@@ -118,13 +118,24 @@ min-height:100vh;
     overflow: hidden;
 }
 .slide0{
-    height:50vh;
+    height:100vh;
     width:100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+.slide0 h1{
+    position: absolute;
+    bottom:-25%;
+    color: var(--charcoal);
+    font-size: 220%;
+    letter-spacing: -0.5rem;
+    font-weight: 700;
 }
 .slide1 {
     margin-left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0%;
     font-weight: 700;
     letter-spacing: -0.5rem;
     background-image: url('../images/waitingroom.png');
@@ -135,11 +146,12 @@ min-height:100vh;
     font-size: 120%;
     height:0vh;
     scale: 1;
+    overflow: hidden;
   }
-  .slide1::before{
+  /* .slide1::before{
     content: 'AartasSpace';
-    color: black;
-    font-size: 10rem;
+    color: var(--charcoal);
+    font-size: 120%;
     position: absolute;
     top: 0vh;
     left: 50%;
@@ -149,15 +161,16 @@ min-height:100vh;
   }
   .slide1::after{
     content: 'AartasSpace';
-    font-size: 10rem;
-    color: black;
+    font-size: 120%;
+    color: var(--charcoal);
     position: absolute;
     bottom:var(--bottom);
     left: 50%;
     opacity: 1;
     transform: translate(-50%,-50%);
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); 
-}
+} */
+
 .slide2{
     font-weight: 700;
     font-size: 120%;
@@ -404,12 +417,18 @@ min-height:100vh;
     font-size: 120%;
 
 }
+.aboutinfo h1{
+    font-size: clamp(5rem, 20vw,10rem);
+}
 .about h4{
     padding-left:5%;
     font-size: 30%; 
     letter-spacing: -0.1rem ;  
     font-weight: 700;
     line-height: 2.5rem;
+}
+.aboutpara {
+    max-height:40vh;
 }
 .about p{
     padding-left:5%;
@@ -422,9 +441,8 @@ min-height:100vh;
 }
 
 .about .card{
-height:60vh;
-max-width:18rem;
-max-height:50vh;
+height:40vh;
+max-height:40vh;
 }
 .about .card0{
     height:100vh;
@@ -455,7 +473,7 @@ max-height:50vh;
     min-height:30vh;
 }
 .scroller {
-    transform: translateX(60%);
+    transform: translateX(50%);
     width:100%;
     height: 100vh;
     padding-top:5vh;
@@ -602,14 +620,13 @@ background-color: white;
     background-color: #f2f2f2;
     transition: all 0.5s;
     z-index: -1;
-
-}.aartasapp #appfeature3{
+}
+.aartasapp #appfeature3{
     height:50vh;
     width:20vh;
     z-index: -1;
     transition: all 0.5s;
     background-color: #f2f2f2;
-
 }
 @media (max-width:782px) {
     .links{
@@ -618,7 +635,7 @@ background-color: white;
         font-size: 1rem;
     }
 }
-@media (max-width:992px) { 
+@media (max-width:1200px) { 
     .about{
         display: none;
     }   
@@ -664,6 +681,13 @@ background-color: white;
     .about_mobile .row{
         flex-wrap: nowrap !important;
     }
+
+    .scroller {
+        transform: translateX(0%);
+        width:100%;
+        height: 100vh;
+        padding-top:5vh;
+    }
     .specialities h4{
         position: absolute;
         width:100%;
@@ -679,8 +703,8 @@ background-color: white;
         width:15vh;
         min-width:10vh;
         background-color: var(--seashell);
-        margin-left:5vh;
-        margin-right:5vh;
+        margin-left:2.5vh;
+        margin-right:2.5vh;
         max-height:60vh;
         height:50vh;
         min-height:30vh;

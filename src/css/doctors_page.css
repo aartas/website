@@ -301,7 +301,6 @@
             background: linear-gradient(to left, transparent, black); 
           }
           footer{
-            /* height:clamp(100vh,80vh,150vh); */
             height:100vh;
             width: 100%;
             background-color:#000;
@@ -309,7 +308,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height:110vh;
             padding: 20px;
             width: 100%;
           }
@@ -317,11 +315,11 @@
           footer .footer-heading{
             color: #fff;
             width:100%;
-            line-height: 12rem;
+            line-height: 1;
             letter-spacing: -0.5rem;
             font-weight: 700;
             text-align: center;
-            font-size: clamp(10rem,10vw,15rem);
+            font-size: clamp(8rem,10vw,15rem);
           }
           footer .button-book-Appointment{
             margin-top: 4rem !important;
@@ -411,7 +409,6 @@
               bottom:0%;
             }
           }
-
           @keyframes zoomtext {
             from{
               opacity: 0.5;
@@ -422,5 +419,3 @@
               
             }
           }
-
-          
