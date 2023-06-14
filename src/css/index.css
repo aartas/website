@@ -118,24 +118,33 @@ min-height:100vh;
     overflow: hidden;
 }
 .slide0{
-    height:100vh;
+    height:50vh;
     width:100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     position: relative;
+    /* overflow: hidden; */
+    white-space:nowrap;
+    text-align: center;
 }
-.slide0 h1{
+.slide0 .aartas_space{
+    width: 100%;
+    text-align: center;
     position: absolute;
-    bottom:-25%;
+    left:50%;
+    right:0;
+    top:130%;
+    transform: translate(-50%, -130%);
     color: var(--charcoal);
-    font-size: 220%;
+    font-size: clamp(8rem,10vw,18rem);
     letter-spacing: -0.5rem;
     font-weight: 700;
+    word-wrap:unset;
+    /* overflow: hidden; */
 }
 .slide1 {
     margin-left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: 700;
     letter-spacing: -0.5rem;
     background-image: url('../images/waitingroom.png');
@@ -147,6 +156,7 @@ min-height:100vh;
     height:0vh;
     scale: 1;
     overflow: hidden;
+    transform: translate(-50%, -50%);
   }
   /* .slide1::before{
     content: 'AartasSpace';
@@ -635,6 +645,11 @@ background-color: white;
         font-size: 1rem;
     }
 }
+@media (max-width:992px) {
+    .specialities{
+        margin-top: 10vh !important;
+    } 
+}
 @media (max-width:1200px) { 
     .about{
         display: none;
@@ -661,6 +676,7 @@ background-color: white;
     }
     .about_mobile .aboutpara{
         padding-top:2vh;
+       overflow: scroll;
     }
     .about_mobile p{
         font-weight: 600;
@@ -688,6 +704,7 @@ background-color: white;
         height: 100vh;
         padding-top:5vh;
     }
+
     .specialities h4{
         position: absolute;
         width:100%;
@@ -697,6 +714,8 @@ background-color: white;
         font-weight: 700;
         letter-spacing: -0.4rem;
         color: black;
+        font-size: clamp(6rem,10vw,8rem);
+        line-height: 1;
     } 
     .specialities .types{
         max-width:25vh;
