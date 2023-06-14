@@ -1,8 +1,19 @@
+// (A) LOCK SCREEN ORIENTATION
+function lock(orientation) {
+  // (A1) GO INTO FULL SCREEN FIRST
+  let de = document.documentElement;
+  if (de.requestFullscreen) { de.requestFullscreen(); }
+  else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
+  else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
+  else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
 
+  // (A2) THEN LOCK ORIENTATION
+  screen.orientation.lock(orientation);
+}
 
 
 gsap.registerPlugin(ScrollTrigger)
-//hero section animation
+//hero section animation start
 gsap.to('.open1', {
   height: 0,
   duration: 2
@@ -11,7 +22,9 @@ gsap.to('.open2', {
   height: 0,
   duration: 2
 })
-// about animation
+//hero section animation end
+
+// about animation start
 
 gsap.to('.card0', {
   height: 0,
@@ -60,30 +73,22 @@ gsap.to('.longcard', {
     scrub: 3
   }
 })
+// about animation end
 
-// function Scroller() {
-//   let specialityWidth = $('.specialities').width()
-//   specialityWidth = specialityWidth
-//   let scroller = $('.scroller').width()
-//   let newWidth = specialityWidth
-//   return newWidth
-// }
-// Scroller()
 
 function Heightthumb() {
   let specialityHeight = $('.specialities').height()
   specialityHeight = specialityHeight
   $('.scroll-line').height(specialityHeight)
-  // console.log(specialityHeight)
   return specialityHeight
 }
 
 window.addEventListener('resize', Heightthumb);
 
-// specialities animation
+// specialities animation start
 if (window.innerWidth <= 992) {
   gsap.to('.scroller', {
-    xPercent: -150,
+    xPercent: -170,
     width: '100%',
     height: '100vh',
     duration: 12,
@@ -135,12 +140,12 @@ if (window.innerWidth <= 992) {
     }
   })
 }
-
+// specialities animation end
 
 
 //aartas app animation start
 const app = gsap.timeline()
-if (window.innerWidth <= 992) {
+if (window.innerWidth <= 1024) {
   app.to('#appfeature1_mobile', {
     zIndex: -1,
     duration: 0.5,
@@ -150,7 +155,6 @@ if (window.innerWidth <= 992) {
     duration: 0.5,
 
   })
-
   app.to('#appfeature2_mobile', {
     zIndex: -1,
     duration: 0.5,
@@ -168,9 +172,12 @@ if (window.innerWidth <= 992) {
     zIndex: 6,
     duration: 0.5,
   })
-} else if (window.innerWidth <= 1440) {
+}
+if (window.innerWidth > 1024) {
   app.to('#appfeature1', {
-    x: '-35vh',
+    position: 'absolute',
+    left: 0,
+    right: 0,
     width: '28vh',
     height: '60vh',
     marginRight: 0,
@@ -183,7 +190,9 @@ if (window.innerWidth <= 992) {
 
   })
   app.to('#appfeature2', {
-    x: '-63vh',
+    position: 'absolute',
+    left: 0,
+    right: 0,
     width: '28vh',
     height: '60vh',
     marginRight: 0,
@@ -195,44 +204,9 @@ if (window.innerWidth <= 992) {
   })
 
   app.to('#appfeature3', {
-    x: '-91vh',
-    width: '28vh',
-    height: '60vh',
-    duration: 0.5,
-  })
-  app.to('#appheadline4', {
-    zIndex: 6,
-    duration: 0.5,
-  })
-} else {
-  app.to('#appfeature1', {
-    xPercent: -176,
-    width: '27vh',
-    height: '60vh',
-    marginRight: 0,
-    duration: 0.5,
-    delay: 0.2
-  })
-  app.to('#appheadline2', {
-    zIndex: 2,
-    duration: 0.5,
-
-  })
-
-  app.to('#appfeature2', {
-    x: '-75vh',
-    width: '28vh',
-    height: '60vh',
-    marginRight: 0,
-    duration: 0.5,
-  })
-  app.to('#appheadline3', {
-    zIndex: 4,
-    duration: 0.5,
-  })
-
-  app.to('#appfeature3', {
-    x: '-104vh',
+    position: 'absolute',
+    left: 0,
+    right: 0,
     width: '28vh',
     height: '60vh',
     duration: 0.5,
@@ -242,7 +216,6 @@ if (window.innerWidth <= 992) {
     duration: 0.5,
   })
 }
-
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
@@ -296,13 +269,10 @@ if (window.innerWidth <= 992) {
 } else {
   tl.to('.slide0', {
     opacity: 0.5,
-    duration: 5
+    duration: 3
   }).to('.slide0', {
     opacity: 0.2,
-    duration: 5
-  }).to('.slide0', {
-    opacity: 0,
-    duration: 5
+    duration: 3
   }).to(".slide1", {
     height: "100vh",
     paddingLeft: '20vh',
@@ -330,8 +300,6 @@ if (window.innerWidth <= 992) {
     duration: 5
   })
 }
-
-
 ScrollTrigger.create({
   animaton: tl,
   trigger: '.slides',
@@ -340,7 +308,6 @@ ScrollTrigger.create({
   end: "+=5000vh bottom",
   scrub: 2,
 })
-
 ScrollTrigger.create({
   animation: tl,
   trigger: '.slide0',
