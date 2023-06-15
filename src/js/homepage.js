@@ -25,55 +25,47 @@ gsap.to('.open2', {
 //hero section animation end
 
 // about animation start
+if (window.innerWidth > 600) {
 
-gsap.to('.card0', {
-  height: 0,
-  duration: 5,
-  scrollTrigger: {
-    pin: '.about',
-    trigger: '.about',
-    start: 'top top',
-    end: '+=500vh bottom',
-    scrub: 2,
-    pinSpacing: false,
-  }
-})
-// gsap.to('.card5', {
-//   height: '30vh',
-//   duration: 5,
-//   scrollTrigger: {
-//     pin: '.about',
-//     trigger: '.about',
-//     start: 'top top',
-//     end: '+=1000vh bottom',
-//     pinSpacing: false,
-//     scrub: 3
-//   }
-// })
-gsap.to('.shortcard', {
-  width: 0,
-  duration: 5,
-  scrollTrigger: {
-    pin: '.about_mobile',
-    trigger: '.about_mobile',
-    start: 'top top',
-    end: '+=1000vh bottom',
-    pinSpacing: false,
-    scrub: 2
-  }
-})
-gsap.to('.longcard', {
-  width: 0,
-  duration: 5,
-  scrollTrigger: {
-    pin: '.about_mobile',
-    trigger: '.about_mobile',
-    start: 'top top',
-    end: '+=1000vh bottom',
-    pinSpacing: false,
-    scrub: 3
-  }
-})
+
+  gsap.to('.card0', {
+    height: 0,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.about',
+      trigger: '.about',
+      start: 'top top',
+      end: '+=500vh bottom',
+      scrub: 2,
+      pinSpacing: false,
+    }
+  })
+
+  gsap.to('.shortcard', {
+    width: 0,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.about_mobile',
+      trigger: '.about_mobile',
+      start: 'top top',
+      end: '+=1000vh bottom',
+      pinSpacing: false,
+      scrub: 2
+    }
+  })
+  gsap.to('.longcard', {
+    width: 0,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.about_mobile',
+      trigger: '.about_mobile',
+      start: 'top top',
+      end: '+=1000vh bottom',
+      pinSpacing: false,
+      scrub: 3
+    }
+  })
+}
 // about animation end
 
 
@@ -218,7 +210,6 @@ if (window.innerWidth > 1024) {
   })
 
 }
-
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
@@ -339,3 +330,12 @@ gsap.to('.footeranimation', {
 //footer animation end
 
 
+function showmenu() {
+  let height = $('.ham-menu').height()
+  if (height == 0) {
+    $('.ham-menu').height('max-content');
+  }
+  if (height != 0) {
+    $('.ham-menu').height('0');
+  }
+}

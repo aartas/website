@@ -27,12 +27,35 @@
                 <img class="img-fluid logo_dark" src="../src/images/logo.png" href="index.html" alt="aartas.com">
                 <img class="img-fluid logo_white" src="../src/images/logo_white.png" href="index.html" alt="aartas.com">
             </a>
-            <div class="row ">
+            <div class="row expanded-nav ">
+
                 <a class=" col-auto mx-md-2 links" aria-current="page" href="#">About Us</a>
                 <a class=" col-auto mx-md-2 links" href="#">Specialities</a>
                 <a class=" col-auto mx-md-2 links" href="#">Aartas App</a>
                 <a class=" col-auto mx-md-2 links" href="#">Aartas Space</a>
                 <a class=" col-auto mx-md-2 links" href="#">News</a>
+            </div>
+            <div class=" button-nav ">
+                <div class="btn text-white p-0 m-0" onclick="showmenu()"><img src="../src/images/hamburger.png"
+                        alt="menu" class="img-fluid">
+                </div>
+                <div class="row position-absolute start-0 mt-5 ps-3 ham-menu">
+                    <div class="col-12">
+                        <a class=" col-auto mx-md-2 links" aria-current="page" href="#">About Us</a>
+                    </div>
+                    <div class="col-12">
+                        <a class=" col-auto mx-md-2 links" href="#">Specialities</a>
+                    </div>
+                    <div class="col-12">
+                        <a class=" col-auto mx-md-2 links" href="#">Aartas App</a>
+                    </div>
+                    <div class="col-12">
+                        <a class=" col-auto mx-md-2 links" href="#">Aartas Space</a>
+                    </div>
+                    <div class="col-12">
+                        <a class=" col-auto mx-md-2 links" href="#">News</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -74,14 +97,14 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
-                <div class="col-12 p-0 m-0 slot1 bg-transparent text-center">
+                <div class="col-12 p-0 m-0 slot1 bg-transparent text-center align-items-center">
                     <div class="card card0 rounded-4 bg-transparent border-0"> </div>
                     <div class="card card1 rounded-4 bg-black my-2"> </div>
                     <div class="card card2 rounded-4 bg-black my-5"> </div>
                 </div>
             </div>
             <div class="col-lg-3 p-0 m-0  col-md-4 ">
-                <div class="col-12 slot2 ">
+                <div class="col-12 slot2 align-items-center ">
                     <div class="card card3 bg-black my-2 rounded-4"> </div>
                     <div class="card card4 bg-black my-5 rounded-4"> </div>
                 </div>
@@ -90,13 +113,12 @@
 
     </section>
     <!------------------------------About Section for Desktop end-------------------------------->
-
     <!------------------------------About Section for tab start-------------------------------->
-    <section class="container-fluid about_mobile">
+    <section class="container-fluid about_tab">
         <div class="col-12 aboutinfo ">
             <h1 class=" bg-white">What is Aartas</h1>
             <div class="">
-                <h4 class="pt-5">A short subtitle</h4>
+                <h4 class="pt-3 pt-md-5">A short subtitle</h4>
                 <h4>Lorem ipsum dolor sit amet</h4>
                 <div class="aboutpara overflow-scroll ">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto possimus
@@ -125,8 +147,37 @@
         </div>
     </section>
     <!------------------------------About Section for tab end-------------------------------->
-
-
+    <!------------------------------About Section for small start-------------------------------->
+    <section class="container-fluid about_mobile">
+        <div class="col-12 aboutinfo ">
+            <h1 class=" bg-white">What is Aartas</h1>
+            <div class="">
+                <h4 class="pt-3 pt-md-5">A short subtitle</h4>
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <div class="aboutpara overflow-scroll ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto possimus
+                        cupiditate nesciunt pariatur? Voluptatibus expedita autem minima ratione sequi voluptate culpa
+                        ipsam cum earum qui, porro, libero repudiandae voluptates! Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Veritatis architecto possimus cupiditate nesciunt pariatur?
+                        Voluptatibus expedita autem minima ratione sequi voluptate culpa ipsam cum earum qui, porro,
+                        libero repudiandae voluptates!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 aboutslots mt-1 ">
+            <div class="row justify-content-around p-0 m-0">
+                <div class="cards p-0 m-0 col-12 mx-2 border border-1 rounded-4 bg-black"> </div>
+                <div class="cards p-0 m-0 col-12 mx-2 border border-1 rounded-4 bg-black"> </div>
+            </div>
+        </div>
+        <div class="col-12 aboutslots mt-1 ">
+            <div class="row justify-content-around p-0 m-0">
+                <div class="cards col-12 border border-1 mx-2 bg-black rounded-4"> </div>
+                <div class="cards col-12 border border-1 mx-2 bg-black rounded-4"> </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------About Section for small end-------------------------------->
     <section class="container-fluid bg-white specialities ">
         <div class="scroll-line rounded-3 p-0 m-0">
             <div class="scroll-thumb rounded-4"></div>
@@ -171,12 +222,12 @@
             <!---------------------------------------aartas app phone animation tab start-------------------------------------------->
             <div class=" col-6 appfeatures_mobile p-0 m-0 justify-content-center">
                 <div class="col-lg-12 col-md-12 col-xl-12 col-12 p-0 m-0 phone_mobile">
-                    <div id="appfeature1_mobile"
-                        class="col-3 rounded-5 bg-seashell align-self-center text-center ">a</div>
-                    <div id="appfeature2_mobile"
-                        class="col-3 rounded-5 bg-seashell align-self-center text-center ">b</div>
-                    <div id="appfeature3_mobile"
-                        class="col-3 rounded-5 bg-seashell align-self-center text-center">c</div>
+                    <div id="appfeature1_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center ">a
+                    </div>
+                    <div id="appfeature2_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center ">b
+                    </div>
+                    <div id="appfeature3_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center">c
+                    </div>
                 </div>
 
             </div>
@@ -267,7 +318,7 @@
         </section>
     </section>
 
-    <footer class=" mt-5 text-center ">
+    <footer class=" mt-5 text-center bg-black ">
         <main class="footeranimation text-center ">
             <section class="">
                 <h1 class="footer-heading" style="margin-top: 10%;">We bring you</h1>
@@ -306,10 +357,11 @@
                         </div>
                     </div>
                 </div>
+                <p class="text-white text-center pt-5">&copy; 2023 Aartas
+                    Care Pvt Ltd. All rights
+                    reserved</p>
             </section>
-            <p class="text-white text-center mt-5">&copy; 2023 Aartas
-                Care Pvt Ltd. All rights
-                reserved</p>
+
         </main>
     </footer>
     <script defer src="./js/homepage.js"></script>
