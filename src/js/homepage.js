@@ -175,6 +175,11 @@ if (window.innerWidth <= 1024) {
   })
 }
 if (window.innerWidth > 1024) {
+  app.to('#appheadline2', {
+    zIndex: 2,
+    duration: 0.5,
+
+  })
   app.to('#appfeature1', {
     position: 'absolute',
     left: '1%',
@@ -185,10 +190,9 @@ if (window.innerWidth > 1024) {
     duration: 0.5,
     delay: 0.2
   })
-  app.to('#appheadline2', {
-    zIndex: 2,
+  app.to('#appheadline3', {
+    zIndex: 4,
     duration: 0.5,
-
   })
   app.to('#appfeature2', {
     position: 'absolute',
@@ -199,8 +203,8 @@ if (window.innerWidth > 1024) {
     marginRight: 0,
     duration: 0.5,
   })
-  app.to('#appheadline3', {
-    zIndex: 4,
+  app.to('#appheadline4', {
+    zIndex: 6,
     duration: 0.5,
   })
 
@@ -212,10 +216,7 @@ if (window.innerWidth > 1024) {
     height: '60vh',
     duration: 0.5,
   })
-  app.to('#appheadline4', {
-    zIndex: 6,
-    duration: 0.5,
-  })
+
 }
 ScrollTrigger.create({
   animation: app,

@@ -437,9 +437,7 @@ min-height:100vh;
     font-weight: 700;
     line-height: 2.5rem;
 }
-.aboutpara {
-    max-height:40vh;
-}
+
 .about p{
     padding-left:5%;
     font-size: 20% !important;
@@ -459,9 +457,7 @@ max-height:40vh;
     max-width:18rem;
 }
 
-.about .aboutpara{
-    height:60vh;
-}
+
 .specialities{
     font-size: 10rem;
     height: 100vh;
@@ -599,7 +595,7 @@ background-color: white;
 }
 .appfeatures{
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
 
 }
 .appfeatures .row{
@@ -721,7 +717,7 @@ background-color: white;
     }
     .about_mobile .aboutpara{
         padding-top:2vh;
-       overflow: scroll;
+
     }
     .about_mobile p{
         font-weight: 600;
