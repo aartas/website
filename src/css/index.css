@@ -629,6 +629,8 @@ background-color: white;
     /* margin-right:10vh; */
     /* height:50vh;
     width:20vh; */
+    position: relative;
+    left:auto;
     height:50vh;
     background-image: url('../images/feature.png');
     background-repeat: no-repeat;

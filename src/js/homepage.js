@@ -33,22 +33,23 @@ gsap.to('.card0', {
     pin: '.about',
     trigger: '.about',
     start: 'top top',
-    end: '+=1000vh bottom',
-    scrub: 2
+    end: '+=500vh bottom',
+    scrub: 2,
+    pinSpacing: false,
   }
 })
-gsap.to('.card5', {
-  height: '30vh',
-  duration: 5,
-  scrollTrigger: {
-    pin: '.about',
-    trigger: '.about',
-    start: 'top top',
-    end: '+=1000vh bottom',
-
-    scrub: 3
-  }
-})
+// gsap.to('.card5', {
+//   height: '30vh',
+//   duration: 5,
+//   scrollTrigger: {
+//     pin: '.about',
+//     trigger: '.about',
+//     start: 'top top',
+//     end: '+=1000vh bottom',
+//     pinSpacing: false,
+//     scrub: 3
+//   }
+// })
 gsap.to('.shortcard', {
   width: 0,
   duration: 5,
@@ -176,9 +177,9 @@ if (window.innerWidth <= 1024) {
 if (window.innerWidth > 1024) {
   app.to('#appfeature1', {
     position: 'absolute',
-    left: 0,
+    left: '1%',
     right: 0,
-    width: '28vh',
+    // width: '28vh',
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
@@ -191,9 +192,9 @@ if (window.innerWidth > 1024) {
   })
   app.to('#appfeature2', {
     position: 'absolute',
-    left: 0,
+    left: '1%',
     right: 0,
-    width: '28vh',
+    // width: '28vh',
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
@@ -205,9 +206,9 @@ if (window.innerWidth > 1024) {
 
   app.to('#appfeature3', {
     position: 'absolute',
-    left: 0,
+    left: '1%',
     right: 0,
-    width: '28vh',
+    // width: '28vh',
     height: '60vh',
     duration: 0.5,
   })
@@ -330,7 +331,7 @@ gsap.to('.footeranimation', {
     end: 'bottom bottom  ',
     trigger: 'footer',
     pin: 'footer',
-    toggleActions: 'play restart none none'
+    toggleActions: 'play none none none',
   }
 })
 //footer animation end
