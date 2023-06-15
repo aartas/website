@@ -413,23 +413,27 @@ min-height:100vh;
 .about{
     width:100%;
     margin-top:10vh;
+
     background-color: white;
-    font-size: 10rem;
+    font-size: 8rem;
     position: relative;
     transition: all 0.5s;
+}
+.about .aboutpara{
+  height:60vh;
 }
 .about h1{
     font-weight: 700;
     letter-spacing: -0.5rem ;
-    font-size: clamp(5rem,40vw,10rem) ;
-    line-height: 10rem;
+    font-size: clamp(5rem,5vw,8rem) ;
+    line-height: 0.8;
     padding-left:5%;
     font-size: 120%;
 
 }
-.aboutinfo h1{
+/* .aboutinfo h1{
     font-size: clamp(5rem, 20vw,10rem);
-}
+} */
 .about h4{
     padding-left:5%;
     font-size: 30%; 
@@ -717,7 +721,7 @@ background-color: white;
     }
     .about_mobile .aboutpara{
         padding-top:2vh;
-
+      
     }
     .about_mobile p{
         font-weight: 600;
@@ -745,7 +749,9 @@ background-color: white;
         height: 100vh;
         padding-top:5vh;
     }
-
+    .specialities{
+        margin-top: 30vh;
+    }
     .specialities h4{
         position: absolute;
         width:100%;

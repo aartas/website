@@ -218,6 +218,7 @@ if (window.innerWidth > 1024) {
   })
 
 }
+
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
