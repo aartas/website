@@ -25,9 +25,7 @@ gsap.to('.open2', {
 //hero section animation end
 
 // about animation start
-if (window.innerWidth > 600) {
-
-
+if (window.innerWidth >= 600) {
   gsap.to('.card0', {
     height: 0,
     duration: 5,
@@ -63,6 +61,32 @@ if (window.innerWidth > 600) {
       end: '+=1000vh bottom',
       pinSpacing: false,
       scrub: 3
+    }
+  })
+}
+if (window.innerWidth < 600) {
+  gsap.from('.aboutslot1', {
+    xPercent: 100,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.cardtrigger',
+      trigger: '.cardtrigger',
+      start: '-100vh top',
+      end: 'bottom bottom',
+      pinSpacing: false,
+      scrub: 2
+    }
+  })
+  gsap.to('.aboutslot2', {
+    xPercent: 100,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.cardtrigger',
+      trigger: '.cardtrigger',
+      start: '-100vh top',
+      end: 'bottom bottom',
+      pinSpacing: false,
+      scrub: 2
     }
   })
 }
@@ -138,8 +162,51 @@ if (window.innerWidth <= 992) {
 
 //aartas app animation start
 const app = gsap.timeline()
+if (window.innerWidth > 300 && window.innerWidth < 578) {
+  app.to('#appheadline2', {
+    zIndex: 2,
+    duration: 0.5,
+
+  })
+  app.to('#appfeature1', {
+    position: 'absolute',
+    left: '1%',
+    right: 0,
+    // width: '28vh',
+    height: '60vh',
+    marginRight: 0,
+    duration: 0.5,
+  })
+
+  app.to('#appheadline3', {
+    zIndex: 4,
+    duration: 0.5,
+  })
+  app.to('#appfeature2', {
+    position: 'absolute',
+    left: '1%',
+    right: 0,
+    // width: '28vh',
+    height: '60vh',
+    marginRight: 0,
+    duration: 0.5,
+  })
+  app.to('#appheadline4', {
+    zIndex: 6,
+    duration: 0.5,
+  })
+
+  app.to('#appfeature3', {
+    position: 'absolute',
+    left: '1%',
+    right: 0,
+    // width: '28vh',
+    height: '60vh',
+    duration: 0.5,
+  })
+}
 if (window.innerWidth <= 1024) {
-  app.to('#appfeature1_mobile', {
+  app.to('#appfeature1_tab', {
     zIndex: -1,
     duration: 0.5,
   })
@@ -148,7 +215,7 @@ if (window.innerWidth <= 1024) {
     duration: 0.5,
 
   })
-  app.to('#appfeature2_mobile', {
+  app.to('#appfeature2_tab', {
     zIndex: -1,
     duration: 0.5,
   })
@@ -157,7 +224,7 @@ if (window.innerWidth <= 1024) {
     duration: 0.5,
   })
 
-  app.to('#appfeature3_mobile', {
+  app.to('#appfeature3_tab', {
     zIndex: -1,
     duration: 0.5,
   })
@@ -210,6 +277,7 @@ if (window.innerWidth > 1024) {
   })
 
 }
+
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
@@ -339,3 +407,17 @@ function showmenu() {
     $('.ham-menu').height('0');
   }
 }
+// if (window.innerWidth > 300 && window.innerWidth < 992) {
+//   gsap.to('.card1', {
+//     scrollTrigger: {
+//       trigger: '.about_mobile',
+//       start: 'top',
+//       end: 'top',
+//       // markers: true,
+//       toggleActions: 'play restart reverse none',
+//     },
+//     xPercent: -100,
+//     opacity: 1,
+//     duration: 0.4,
+//   })
+// }

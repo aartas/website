@@ -39,8 +39,8 @@
                 <div class="btn text-white p-0 m-0" onclick="showmenu()"><img src="../src/images/hamburger.png"
                         alt="menu" class="img-fluid">
                 </div>
-                <div class="row position-absolute start-0 mt-5 ps-3 ham-menu">
-                    <div class="col-12">
+                <div class="row position-absolute top-0 end-0 ham-menu">
+                    <div class="col-12 mt-5 pt-2 ps-3">
                         <a class=" col-auto mx-md-2 links" aria-current="page" href="#">About Us</a>
                     </div>
                     <div class="col-12">
@@ -114,13 +114,13 @@
     </section>
     <!------------------------------About Section for Desktop end-------------------------------->
     <!------------------------------About Section for tab start-------------------------------->
-    <section class="container-fluid about_tab">
+    <section class="container-fluid px-0 about_mobile overflow-hidden">
         <div class="col-12 aboutinfo ">
             <h1 class=" bg-white">What is Aartas</h1>
             <div class="">
                 <h4 class="pt-3 pt-md-5">A short subtitle</h4>
                 <h4>Lorem ipsum dolor sit amet</h4>
-                <div class="aboutpara overflow-scroll ">
+                <div class="aboutpara ">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto possimus
                         cupiditate nesciunt pariatur? Voluptatibus expedita autem minima ratione sequi voluptate culpa
                         ipsam cum earum qui, porro, libero repudiandae voluptates! Lorem ipsum dolor sit amet,
@@ -130,54 +130,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 aboutslots mt-1 ">
-            <div class="row justify-content-around p-0 m-0">
-                <div class="cards shortcard p-0 m-0 col-8 mx-2 border border-1 rounded-4 border-0"> </div>
-                <div class="cards p-0 m-0 col-6 mx-2 border border-1 rounded-4 bg-black"> </div>
-                <div class="cards p-0 m-0 col-6 mx-2 border border-1 rounded-4 bg-black"> </div>
+        <div class="cardtrigger py-2"></div>
+        <div class="col-12">
+            <div class="row aboutslot1 justify-content-around p-0 m-0 align-items-center">
+                <div class="cards shortcard p-0 m-0 mx-2 border border-1 rounded-4 border-0"> </div>
+                <div class="cards card1 p-0 m-0 col-md-6 col-12 mx-2 border border-1 rounded-4"> </div>
+                <div class="cards card2 p-0 m-0 col-md-6 col-12 mx-2 border border-1 rounded-4"> </div>
             </div>
 
         </div>
-        <div class="col-12 aboutslots mt-1 ">
-            <div class="row justify-content-around p-0 m-0">
-                <div class="cards col-6 border border-1 mx-2 bg-black rounded-4"> </div>
-                <div class="cards col-6 border border-1 mx-2 bg-black rounded-4"> </div>
+        <div class="col-12 mt-2">
+            <div class="row aboutslot2 justify-content-around p-0 m-0">
+                <div class="cards card3 col-md-6 col-12 border border-1 mx-2 rounded-4"> </div>
+                <div class="cards card4 col-md-6 col-12 border border-1 mx-2 rounded-4"> </div>
                 <div class="cards longcard col-8 border border-1 mx-2 rounded-4"> </div>
             </div>
         </div>
     </section>
     <!------------------------------About Section for tab end-------------------------------->
-    <!------------------------------About Section for small start-------------------------------->
-    <section class="container-fluid about_mobile">
-        <div class="col-12 aboutinfo ">
-            <h1 class=" bg-white">What is Aartas</h1>
-            <div class="">
-                <h4 class="pt-3 pt-md-5">A short subtitle</h4>
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <div class="aboutpara overflow-scroll ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto possimus
-                        cupiditate nesciunt pariatur? Voluptatibus expedita autem minima ratione sequi voluptate culpa
-                        ipsam cum earum qui, porro, libero repudiandae voluptates! Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Veritatis architecto possimus cupiditate nesciunt pariatur?
-                        Voluptatibus expedita autem minima ratione sequi voluptate culpa ipsam cum earum qui, porro,
-                        libero repudiandae voluptates!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 aboutslots mt-1 ">
-            <div class="row justify-content-around p-0 m-0">
-                <div class="cards p-0 m-0 col-12 mx-2 border border-1 rounded-4 bg-black"> </div>
-                <div class="cards p-0 m-0 col-12 mx-2 border border-1 rounded-4 bg-black"> </div>
-            </div>
-        </div>
-        <div class="col-12 aboutslots mt-1 ">
-            <div class="row justify-content-around p-0 m-0">
-                <div class="cards col-12 border border-1 mx-2 bg-black rounded-4"> </div>
-                <div class="cards col-12 border border-1 mx-2 bg-black rounded-4"> </div>
-            </div>
-        </div>
-    </section>
-    <!------------------------------About Section for small end-------------------------------->
+
     <section class="container-fluid bg-white specialities ">
         <div class="scroll-line rounded-3 p-0 m-0">
             <div class="scroll-thumb rounded-4"></div>
@@ -198,35 +169,38 @@
 
     <section class="aartasapp align-items-center ">
         <h1 class="text-center">Aartas App</h1>
-        <h6 class="text-center">One for All</h6>
-        <h6 class="text-center">Meeting leading doctors made simple & easy</h6>
-        <div class="row p-0 m-0 text-center appanimation">
-            <div class="col-lg-5 col-xl-5 col-6 position-relative p-0 m-0 text-start">
-                <h3 class="bg-white text-start" id="appheadline1">Check Availability<br class="p-0 m-0" /> Book your
-                    appointment </h3>
-                <h3 class="bg-white text-start" id="appheadline2">Explore Multiple<br class="p-0 m-0" /> Speciality</h3>
-                <h3 class="bg-white text-start" id="appheadline3">Meet Leading<br class="p-0 m-0" /> Healthcare Experts
-                </h3>
-                <h3 class="bg-white text-start" id="appheadline4">Track your<br class="p-0 m-0" /> Health Progress</h3>
+        <h6 class="text-center p-0 m-0">One for All</h6>
+        <h6 class="text-center p-0 m-0">Meeting leading doctors made simple & easy</h6>
+        <div class="row p-0 m-0 text-center appanimation ">
+            <div
+                class="col-lg-5 col-xl-5 col-md-6 col-sm-6 col-12 position-relative p-0 m-sm-0 mt-2 text-sm-start text-center">
+                <h3 class="bg-white text-sm-start text-center" id="appheadline1">Check Availability Book your
+                    appointment</h3>
+                <h3 class="bg-white text-sm-start text-center" id="appheadline2">Explore Multiple Speciality</h3>
+                <h3 class="bg-white text-sm-start text-center" id="appheadline3">Meet Leading Healthcare Experts </h3>
+                <h3 class="bg-white text-sm-start text-center" id="appheadline4">Track your Health Progress</h3>
             </div>
             <!---------------------------------------aartas app phone animation start-------------------------------------------->
-            <div class="col-lg-7 col-xl-7 col-6 p-0 m-0 appfeatures p-0 m-0">
+            <div class="col-lg-7 col-xl-7 col-sm-6 col-12 p-0 m-0 appfeatures ">
                 <div class="row p-0 m-0 justify-content-start ">
                     <div class=" col-6 p-0 m-0 phone"> </div>
-                    <div id="appfeature1" class="col-4 col-lg-6 rounded-5 align-self-center text-center "></div>
-                    <div id="appfeature2" class="col-4 col-lg-6 rounded-5 align-self-center text-center "></div>
-                    <div id="appfeature3" class="col-4 col-lg-6 rounded-5 align-self-center text-center"></div>
+                    <div id="appfeature1" class="col-sm-4 col-lg-6 col-12 rounded-5 align-self-center text-center ">
+                    </div>
+                    <div id="appfeature2" class="col-sm-4 col-lg-6 col-12 rounded-5 align-self-center text-center ">
+                    </div>
+                    <div id="appfeature3" class="col-sm-4 col-lg-6 col-12 rounded-5 align-self-center text-center">
+                    </div>
                 </div>
             </div>
             <!---------------------------------------aartas app phone animation end-------------------------------------------->
             <!---------------------------------------aartas app phone animation tab start-------------------------------------------->
-            <div class=" col-6 appfeatures_mobile p-0 m-0 justify-content-center">
-                <div class="col-lg-12 col-md-12 col-xl-12 col-12 p-0 m-0 phone_mobile">
-                    <div id="appfeature1_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center ">a
+            <div class=" col-md-6 col-sm-6 col-12 appfeatures_tab p-0 m-0 justify-content-center ">
+                <div class="col-lg-12 col-md-12 col-xl-12 col-12 p-0 m-0 phone_tab">
+                    <div id="appfeature1_tab" class="col-3 rounded-5 bg-seashell align-self-center text-center ">a
                     </div>
-                    <div id="appfeature2_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center ">b
+                    <div id="appfeature2_tab" class="col-3 rounded-5 bg-seashell align-self-center text-center ">b
                     </div>
-                    <div id="appfeature3_mobile" class="col-3 rounded-5 bg-seashell align-self-center text-center">c
+                    <div id="appfeature3_tab" class="col-3 rounded-5 bg-seashell align-self-center text-center">c
                     </div>
                 </div>
 
@@ -318,7 +292,7 @@
         </section>
     </section>
 
-    <footer class=" mt-5 text-center bg-black ">
+    <!-- <footer class=" mt-5 text-center bg-black ">
         <main class="footeranimation text-center ">
             <section class="">
                 <h1 class="footer-heading" style="margin-top: 10%;">We bring you</h1>
@@ -363,7 +337,7 @@
             </section>
 
         </main>
-    </footer>
+    </footer> -->
     <script defer src="./js/homepage.js"></script>
     <script defer src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
