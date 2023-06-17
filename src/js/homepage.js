@@ -163,45 +163,47 @@ if (window.innerWidth <= 992) {
 //aartas app animation start
 const app = gsap.timeline()
 if (window.innerWidth > 300 && window.innerWidth < 578) {
+
+  app.to('#appfeature1_mobile', {
+    xPercent: -105,
+    duration: 0.5,
+  })
+
   app.to('#appheadline2', {
     zIndex: 2,
     duration: 0.5,
 
   })
-  app.to('#appfeature1', {
-    position: 'absolute',
-    left: '1%',
-    right: 0,
-    // width: '28vh',
-    height: '60vh',
-    marginRight: 0,
+  app.to('#appfeature1_mobile', {
+    xPercent: -150,
+    delay: 1,
     duration: 0.5,
   })
-
+  app.to('#appfeature2_mobile', {
+    xPercent: -185,
+    duration: 0.5,
+  })
+  app.to('#appfeature1_mobile', {
+    xPercent: -200,
+    duration: 0.5,
+  })
   app.to('#appheadline3', {
     zIndex: 4,
     duration: 0.5,
   })
-  app.to('#appfeature2', {
-    position: 'absolute',
-    left: '1%',
-    right: 0,
-    // width: '28vh',
-    height: '60vh',
-    marginRight: 0,
+  app.to('#appfeature2_mobile', {
+    xPercent: -250,
+    delay: 1,
+    duration: 0.5,
+  })
+
+
+  app.to('#appfeature3_mobile', {
+    xPercent: -305,
     duration: 0.5,
   })
   app.to('#appheadline4', {
     zIndex: 6,
-    duration: 0.5,
-  })
-
-  app.to('#appfeature3', {
-    position: 'absolute',
-    left: '1%',
-    right: 0,
-    // width: '28vh',
-    height: '60vh',
     duration: 0.5,
   })
 }
