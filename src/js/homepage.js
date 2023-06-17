@@ -175,24 +175,28 @@ if (window.innerWidth > 300 && window.innerWidth < 578) {
 
   })
   app.to('#appfeature1_mobile', {
-    xPercent: -150,
+    xPercent: -120,
     delay: 1,
     duration: 0.5,
   })
   app.to('#appfeature2_mobile', {
-    xPercent: -185,
+    xPercent: -177,
     duration: 0.5,
   })
   app.to('#appfeature1_mobile', {
-    xPercent: -200,
+    xPercent: -180,
     duration: 0.5,
   })
   app.to('#appheadline3', {
     zIndex: 4,
     duration: 0.5,
   })
+  app.to('#appfeature1_mobile', {
+    xPercent: -200,
+    duration: 0.5,
+  })
   app.to('#appfeature2_mobile', {
-    xPercent: -250,
+    xPercent: -245,
     delay: 1,
     duration: 0.5,
   })
@@ -382,7 +386,7 @@ ScrollTrigger.create({
   pinSpacing: false
 
 })
-//aartas space end
+//------------------------------------aartas space end------------------------------------------------
 
 
 //footer animation start
