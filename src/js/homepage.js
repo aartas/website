@@ -39,28 +39,28 @@ if (window.innerWidth >= 600) {
     }
   })
 
-  gsap.to('.shortcard', {
-    width: 0,
+  gsap.to('.aboutslot1', {
+    xPercent: 50,
     duration: 5,
     scrollTrigger: {
-      pin: '.about_mobile',
-      trigger: '.about_mobile',
-      start: 'top top',
-      end: '+=1000vh bottom',
-      pinSpacing: false,
+      pin: '.cardtrigger',
+      trigger: '.cardtrigger',
+      start: '-100vh top',
+      end: 'bottom bottom',
+      // pinSpacing: false,
       scrub: 2
     }
   })
-  gsap.to('.longcard', {
-    width: 0,
+  gsap.to('.aboutslot2', {
+    xPercent: -100,
     duration: 5,
     scrollTrigger: {
-      pin: '.about_mobile',
-      trigger: '.about_mobile',
-      start: 'top top',
-      end: '+=1000vh bottom',
-      pinSpacing: false,
-      scrub: 3
+      pin: '.cardtrigger',
+      trigger: '.cardtrigger',
+      start: '-100vh top',
+      end: 'bottom bottom',
+      // pinSpacing: false,
+      scrub: 2
     }
   })
 }
@@ -162,10 +162,10 @@ if (window.innerWidth <= 992) {
 
 //aartas app animation start
 const app = gsap.timeline()
-if (window.innerWidth > 300 && window.innerWidth < 578) {
+if (window.innerWidth > 300 && window.innerWidth < 576) {
 
   app.to('#appfeature1_mobile', {
-    xPercent: -105,
+    // xPercent: -105,
     duration: 0.5,
   })
 
@@ -175,16 +175,16 @@ if (window.innerWidth > 300 && window.innerWidth < 578) {
 
   })
   app.to('#appfeature1_mobile', {
-    xPercent: -120,
+    // xPercent: -120,
     delay: 1,
     duration: 0.5,
   })
   app.to('#appfeature2_mobile', {
-    xPercent: -177,
+    // xPercent: -177,
     duration: 0.5,
   })
   app.to('#appfeature1_mobile', {
-    xPercent: -180,
+    // xPercent: -180,
     duration: 0.5,
   })
   app.to('#appheadline3', {
@@ -192,18 +192,18 @@ if (window.innerWidth > 300 && window.innerWidth < 578) {
     duration: 0.5,
   })
   app.to('#appfeature1_mobile', {
-    xPercent: -200,
+    // xPercent: -200,
     duration: 0.5,
   })
   app.to('#appfeature2_mobile', {
-    xPercent: -245,
+    // xPercent: -245,
     delay: 1,
     duration: 0.5,
   })
 
 
   app.to('#appfeature3_mobile', {
-    xPercent: -305,
+    // xPercent: -305,
     duration: 0.5,
   })
   app.to('#appheadline4', {
@@ -211,73 +211,150 @@ if (window.innerWidth > 300 && window.innerWidth < 578) {
     duration: 0.5,
   })
 }
-if (window.innerWidth <= 1024) {
+if (window.innerWidth > 576 && window.innerWidth <= 1024) {
+  app.to('#appfeature4_tab', {
+    opacity: 1,
+    duration: 0.3,
+  })
+  app.to('#appheadline1', {
+    opacity: 0,
+    duration: 0.1,
+  })
+  app.to('#appfeature4_tab', {
+    opacity: 0,
+    duration: 0.3,
+  })
   app.to('#appfeature1_tab', {
-    zIndex: -1,
+    opacity: 0.5,
+    duration: 0.3,
+  })
+  app.to('#appheadline2', {
+    opacity: 1,
+    duration: 0.1,
+  })
+  app.to('#appfeature1_tab', {
+    opacity: 1,
+    duration: 0.3,
+  })
+  app.to('#appfeature1_tab', {
+    opacity: 1,
     duration: 0.5,
   })
   app.to('#appheadline2', {
-    zIndex: 2,
-    duration: 0.5,
-
+    opacity: 0.5,
+    duration: 0.1,
+  })
+  app.to('#appfeature1_tab', {
+    opacity: 0,
+    duration: 0.3,
   })
   app.to('#appfeature2_tab', {
-    zIndex: -1,
-    duration: 0.5,
+    opacity: 0.5,
+    duration: 0.3,
+  })
+  app.to('#appheadline2', {
+    opacity: 0,
+    duration: 0.1,
+  })
+  app.to('#appfeature2_tab', {
+    opacity: 1,
+    duration: 0.3,
+  })
+  app.to('#appfeature2_tab', {
+    opacity: 1,
+    duration: 0.3,
   })
   app.to('#appheadline3', {
-    zIndex: 4,
-    duration: 0.5,
+    opacity: 1,
+    duration: 0.1,
   })
-
+  app.to('#appfeature2_tab', {
+    opacity: 0.5,
+    duration: 0.3,
+  })
   app.to('#appfeature3_tab', {
-    zIndex: -1,
-    duration: 0.5,
+    opacity: 0.5,
+    duration: 0.3,
+  })
+  app.to('#appfeature2_tab', {
+    opacity: 0,
+    duration: 0.3,
+  })
+  app.to('#appheadline3', {
+    opacity: 0,
+    duration: 0.1,
+  })
+  app.to('#appfeature3_tab', {
+    opacity: 1,
+    duration: 0.3,
   })
   app.to('#appheadline4', {
-    zIndex: 6,
-    duration: 0.5,
+    opacity: 0.5,
+    duration: 0.1,
+  })
+  app.to('#appfeature3_tab', {
+    opacity: 1,
+    duration: 0.3,
+  })
+  app.to('#appheadline4', {
+    opacity: 1,
+    duration: 0.1,
+  })
+  app.to('#appheadline4', {
+    opacity: 1,
+    duration: 0.1,
+  })
+  app.to('#appheadline4', {
+    opacity: 1,
+    duration: 0.1,
   })
 }
 if (window.innerWidth > 1024) {
-  app.to('#appheadline2', {
-    zIndex: 2,
-    duration: 0.5,
-
+  app.to('#appheadline1', {
+    opacity: 0,
+    duration: 0.1,
   })
   app.to('#appfeature1', {
-    position: 'absolute',
     left: '1%',
     right: 0,
-    // width: '28vh',
+    scale: 1,
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
     delay: 0.2
   })
-  app.to('#appheadline3', {
-    zIndex: 4,
+  app.to('#appheadline2', {
+    opacity: 1,
     duration: 0.5,
+
   })
   app.to('#appfeature2', {
-    position: 'absolute',
     left: '1%',
     right: 0,
-    // width: '28vh',
+    scale: 1,
     height: '60vh',
     marginRight: 0,
     duration: 0.5,
   })
+  app.to('#appheadline3', {
+    opacity: 1,
+    duration: 0.5,
+  })
+  app.to('#appfeature3', {
+    left: '1%',
+    scale: 1,
+    right: 0,
+    height: '60vh',
+    duration: 0.5,
+  })
   app.to('#appheadline4', {
-    zIndex: 6,
+    opacity: 1,
     duration: 0.5,
   })
 
   app.to('#appfeature3', {
-    position: 'absolute',
     left: '1%',
     right: 0,
-    // width: '28vh',
     height: '60vh',
     duration: 0.5,
   })
@@ -287,10 +364,10 @@ if (window.innerWidth > 1024) {
 ScrollTrigger.create({
   animation: app,
   start: 'top top',
-  end: '+3000vh bottom',
+  end: '+5000vh top',
   pin: '.aartasapp',
   trigger: '.aartasapp',
-  scrub: 2,
+  scrub: 1,
   toggleActions: 'restart restart reverse reverse'
 })
 //aartas app animation end
@@ -357,6 +434,12 @@ if (window.innerWidth <= 992) {
   })
   tl.to('.slide3', {
     yPercent: -350,
+    paddingLeft: '20vh',
+    paddingTop: '25vh',
+    duration: 5
+  })
+  tl.to('.slide4', {
+    yPercent: -500,
     paddingLeft: '20vh',
     paddingTop: '25vh',
     duration: 5

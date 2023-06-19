@@ -623,32 +623,32 @@ p {
     line-height: 1;
     transition: all 0.5s;
     /* padding-bottom:3vh; */
-    z-index: 1
+    z-index: 1;
+    opacity: 1;
 }
 
 .aartasapp #appheadline2 {
     position: absolute;
     top: 0;
     height: clamp(50vh, 20vw, 70vh);
-    z-index: -3;
     display: grid;
     width: 100%;
     line-height: 1;
     place-items: center;
     transition: all 0.5s;
-    /* opacity:0; */
+    opacity: 0;
 }
 
 .aartasapp #appheadline3 {
     position: absolute;
     top: 0;
-    z-index: -2;
     height: clamp(50vh, 20vw, 70vh);
     width: 100%;
     display: grid;
     place-items: center;
     line-height: 1;
     transition: all 0.5s;
+    opacity: 0;
 }
 
 .aartasapp #appheadline4 {
@@ -656,11 +656,11 @@ p {
     top: 0;
     height: clamp(50vh, 20vw, 70vh);
     width: 100%;
-    z-index: -1;
     line-height: 1;
     display: grid;
     place-items: center;
     transition: all 0.5s;
+    opacity: 0;
 }
 
 .appfeatures_tab {
@@ -686,10 +686,18 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     height: 70vh;
-    z-index: 10;
+    z-index: 1;
     transition: all 0.5s;
     background-position: start;
     background-color: transparent;
+
+}
+
+.phone img {
+    height: 50vh;
+    width: 59vh;
+    object-fit: contain;
+    max-width: fit-content;
 }
 
 #appfeature1 img {
@@ -698,34 +706,43 @@ p {
 }
 
 .aartasapp #appfeature1 {
-    position: relative;
-    left: auto;
-    height: 50vh;
-    background-image: url('../images/feature.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: all 0.5s;
+    position: absolute;
+    left: 50%;
+    height: 60vh;
+    width: 28vh;
+    transform: scale(0.8);
+    transition: all 0.1s;
     z-index: -1;
 }
 
 .aartasapp #appfeature2 {
-    height: 50vh;
-    background-image: url('../images/feature.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: all 0.5s;
+    position: absolute;
+    left: 75%;
+    height: 60vh;
+    width: 28vh;
+    transform: scale(0.8);
+    transition: all 0.1s;
     z-index: -1;
 
 }
 
 .aartasapp #appfeature3 {
+    position: absolute;
+    left: 100%;
+    width: 28vh;
     z-index: -1;
-    transition: all 0.5s;
-    height: 50vh;
-    background-image: url('../images/feature.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: all 0.5s;
+    height: 60vh;
+    transform: scale(0.8);
+    transition: all 0.1s;
+}
+
+.aartasapp #appfeature4 {
+    position: absolute;
+    left: 1%;
+    width: 28vh;
+    z-index: -1;
+    height: 60vh;
+    transition: all 0.1s;
 }
 
 @media (max-width:782px) {
@@ -1095,14 +1112,17 @@ p {
         text-align: center;
     }
 
+
     .about_mobile .cards {
-        height: clamp(6rem, 70vw, 12rem);
+        height: clamp(15rem, 70vw, 20rem);
     }
 
-    .about_mobile .aboutslots {
-        min-width: 100%;
-        width: 100%;
-        overflow: scroll;
+    .about_mobile .aboutslot1 {
+        transform: translateX(-50%);
+    }
+
+    .about_mobile .aboutslot2 {
+        transform: translateX(50%);
     }
 
     .about_mobile .row {
@@ -1183,6 +1203,7 @@ p {
         padding-left: 5%;
     }
 
+
     .aartasapp #appfeature1_tab {
         position: absolute;
         top: 8%;
@@ -1190,7 +1211,6 @@ p {
         right: 0;
         height: 50vh;
         width: 25vh;
-        background-color: #f2f2f2;
         transition: all 0.5s ease;
         z-index: -1;
     }
@@ -1202,7 +1222,6 @@ p {
         right: 0;
         height: 50vh;
         width: 25vh;
-        background-color: #f2f2f2;
         transition: left 0.5s ease;
         z-index: -2;
 
@@ -1217,7 +1236,19 @@ p {
         width: 25vh;
         z-index: -3;
         transition: left 0.5s ease;
-        background-color: #f2f2f2;
+
+    }
+
+    .aartasapp #appfeature4_tab {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        right: 0;
+        height: 50vh;
+        width: 25vh;
+        z-index: -3;
+        transition: left 0.5s ease;
+
     }
 
     .aartasapp .appfeatures {
@@ -1307,7 +1338,305 @@ p {
     }
 }
 
-@media (min-width:300px) and (max-width:600px) {
+@media (min-width:577px) and (max-width:990px) {
+    .about {
+        display: none;
+    }
+
+    .about_mobile {
+        display: block;
+        padding-top: 5vh;
+        min-height: 100vh;
+        height: 100vh;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .about_mobile h1 {
+        font-weight: 700;
+        font-size: clamp(5rem, 90vw, 10rem);
+        line-height: 0.8;
+        text-align: center;
+    }
+
+    .about_mobile .aboutslot2 {
+        z-index: 1;
+    }
+
+    .about_mobile .card1 {
+        background-image: url('../images/doctorsroom.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about_mobile .card2 {
+        background-image: url('../images/townhall.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about_mobile .card3 {
+        background-image: url('../images/doctorsroom.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about_mobile .card4 {
+        background-image: url('../images/townhall.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about_mobile h4 {
+        font-weight: 700;
+        font-size: clamp(2rem, 80vw, 3rem);
+        line-height: 0.8;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .about_mobile .aboutpara {
+        padding-top: 2vh;
+    }
+
+    .about_mobile p {
+        font-weight: 600;
+        font-size: clamp(1rem, 80vw, 2rem);
+        letter-spacing: -0.1;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* .about_mobile .cards {
+        height: clamp(6rem, 70vw, 12rem);
+    } */
+
+
+    .about_mobile .cards {
+        height: clamp(12rem, 80vh, 16rem);
+    }
+
+    .about_mobile .aboutslot1 {
+        transform: translateX(-60%);
+    }
+
+    .about_mobile .aboutslot2 {
+        transform: translateX(-60%);
+    }
+
+    .about_mobile .row {
+        flex-wrap: nowrap !important;
+    }
+
+    .scroller {
+        transform: translateX(0%);
+        width: 100%;
+        height: 100vh;
+        padding-top: 5vh;
+    }
+
+    .specialities {
+        margin-top: 30vh;
+    }
+
+    .specialities h4 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        font-weight: 700;
+        letter-spacing: -0.4rem;
+        color: black;
+        font-size: clamp(6rem, 10vw, 8rem);
+        line-height: 1;
+    }
+
+    .specialities .types {
+        max-width: 25vh;
+        width: 15vh;
+        min-width: 10vh;
+        background-color: var(--seashell);
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+        max-height: 60vh;
+        height: 50vh;
+        min-height: 30vh;
+    }
+
+    .specialities .scroll-line {
+        position: absolute;
+        left: 1%;
+        margin-top: 5vh;
+        height: 100vh;
+        width: 2px;
+        background-color: var(--charcoal);
+        margin-left: 1vh !important;
+        z-index: 10;
+    }
+
+    .specialities .scroll-thumb {
+        height: 10vh;
+        width: 10px;
+        left: -0.2vh !important;
+        background-color: black;
+        position: absolute;
+        transform: translateY(0);
+        z-index: 10;
+    }
+
+    .appfeatures_mobile {
+        display: none;
+    }
+
+    .appfeatures_tab {
+        display: block;
+        position: relative;
+    }
+
+    .aartasapp h3 {
+        font-weight: 700;
+        letter-spacing: -0.3rem;
+        font-size: clamp(4rem, 5vw, 10rem);
+        line-height: 1;
+        padding-left: 5%;
+    }
+
+    .aartasapp #appfeature1_tab {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        right: 0;
+        height: 50vh;
+        width: 25vh;
+        background-color: #f2f2f2;
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+
+    .aartasapp #appfeature2_tab {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        right: 0;
+        height: 50vh;
+        width: 25vh;
+        background-color: #f2f2f2;
+        transition: left 0.5s ease;
+        opacity: 0;
+    }
+
+    .aartasapp #appfeature3_tab {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        right: 0;
+        height: 50vh;
+        width: 25vh;
+        transition: left 0.5s ease;
+        opacity: 0;
+    }
+
+    .aartasapp #appfeature4_tab {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        right: 0;
+        height: 50vh;
+        width: 25vh;
+        z-index: -3;
+        transition: left 0.5s ease;
+
+    }
+
+    .aartasapp .appfeatures {
+        display: none;
+    }
+
+    .aartasapp .phone_tab {
+        background-image: url('../images/iphone.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60vh;
+        z-index: 10;
+        transition: all 0.5s;
+        background-position: start;
+        background-color: transparent;
+    }
+
+    .slides {
+        color: var(--pearl);
+        background-color: white;
+        letter-spacing: -0.3;
+        height: 100vh;
+        font-size: clamp(5rem, 10vw, 8rem);
+        line-height: 1.5;
+    }
+
+    .media-content h1 {
+        line-height: 0.8;
+    }
+
+    .media-content h1 {
+        font-weight: 700 !important;
+        letter-spacing: -0.5rem !important;
+        font-size: clamp(2rem, 20vw, 10rem) !important;
+        margin-top: 20vh;
+    }
+
+    .media-content h4 {
+        font-weight: 700;
+        letter-spacing: -0.12rem;
+        font-size: clamp(4rem, 1vw, 10rem);
+        color: white;
+        transition: all 0.3s;
+
+    }
+
+    .media-content h4 {
+        font-size: clamp(1rem, 10vw, 3rem);
+    }
+
+    .media-content h5 {
+        text-align: center;
+        font-size: clamp(0.75rem, 10vw, 2rem);
+    }
+
+    .media-content .image2:hover h4 {
+        font-size: 20%;
+    }
+
+    .media-content .townhall1 {
+        width: 100%;
+        height: 50vh;
+        max-height: 50vh;
+        ;
+    }
+
+    .media-content .waiting {
+        font-size: 120%;
+        width: 100%;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .media-content .alldoctors {
+        font-size: 120%;
+        width: 100%;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .media-content .townhall2 {
+        font-size: 120%;
+        font-weight: 700;
+        width: 100%;
+        height: 50vh;
+        max-height: 50vh;
+    }
+}
+
+@media (min-width:300px) and (max-width:576px) {
     #navbar .expanded-nav {
         display: none;
     }
@@ -1531,65 +1860,91 @@ p {
         justify-content: center;
     }
 
-    .aartasapp #appfeature1_mobile {
-        height: 40vh;
-        width: 40vh;
-        background-image: url('../images/feature.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
-        transition: all 0.5s;
-        z-index: -1;
-
-    }
-
-    .aartasapp #appfeature2_mobile {
-        display: flex;
-        justify-content: center;
-        height: 40vh;
-        width: 40vh;
-        background-image: url('../images/feature.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        transition: all 0.5s;
-        z-index: -1;
-
-    }
-
-    .appfeatures_mobile .row {
-        flex-wrap: nowrap;
-    }
-
-    .aartasapp #appfeature3_mobile {
-        z-index: -1;
-        transition: all 0.5s;
-        height: 40vh;
-        width: 40vh;
-        background-image: url('../images/feature.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
-        transition: all 0.5s;
-    }
-
-    .appfeatures_mobile {
-        position: relative;
-        display: grid;
-        place-items: center;
-    }
-
     .aartasapp .phone_mobile {
         background-image: url('../images/iphone.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 50vh;
+        width: 20vh;
         z-index: 10;
         transition: all 0.5s;
         background-position: right;
         background-color: transparent;
         justify-content: center;
     }
+
+
+    .aartasapp .appfeatures_mobile {
+        position: relative;
+        display: grid;
+        place-items: center;
+        z-index: -5;
+    }
+
+    .aartasapp #appfeature1_mobile {
+        top: 12%;
+        left: 80%;
+        height: 38vh;
+        width: 18vh;
+        background-image: url('../images/multiplespecialities.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        transition: all 0.5s;
+        z-index: -5;
+
+    }
+
+    .aartasapp #appfeature2_mobile {
+        top: 12%;
+        left: -25%;
+        height: 38vh;
+        width: 18vh;
+        background-image: url('../images/healthexperts.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition: all 0.5s;
+        z-index: -5;
+
+    }
+
+    .appfeatures_mobile .row {
+        max-width: 100%;
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .aartasapp #appfeature3_mobile {
+        top: 12%;
+        left: 100%;
+        z-index: -5;
+        transition: all 0.5s;
+        height: 38vh;
+        width: 18vh;
+        background-image: url('../images/healthprogress.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        transition: all 0.5s;
+    }
+
+    .aartasapp #appfeature4_mobile {
+        top: 12%;
+        left: 27%;
+        right: 0;
+        z-index: -5;
+        transition: all 0.5s;
+        height: 38vh;
+        width: 18vh;
+        background-image: url('../images/healthprogress.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        transition: all 0.5s;
+    }
+
+
 
     .slide0 .aartas_space {
         width: 100%;
