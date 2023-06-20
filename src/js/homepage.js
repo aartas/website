@@ -25,46 +25,7 @@ gsap.to('.open2', {
 //hero section animation end
 
 // about animation start
-if (window.innerWidth >= 600) {
-  gsap.to('.card0', {
-    height: 0,
-    duration: 5,
-    scrollTrigger: {
-      pin: '.about',
-      trigger: '.about',
-      start: 'top top',
-      end: '+=500vh bottom',
-      scrub: 2,
-      pinSpacing: false,
-    }
-  })
-
-  gsap.to('.aboutslot1', {
-    xPercent: 50,
-    duration: 5,
-    scrollTrigger: {
-      pin: '.cardtrigger',
-      trigger: '.cardtrigger',
-      start: '-100vh top',
-      end: 'bottom bottom',
-      // pinSpacing: false,
-      scrub: 2
-    }
-  })
-  gsap.to('.aboutslot2', {
-    xPercent: -100,
-    duration: 5,
-    scrollTrigger: {
-      pin: '.cardtrigger',
-      trigger: '.cardtrigger',
-      start: '-100vh top',
-      end: 'bottom bottom',
-      // pinSpacing: false,
-      scrub: 2
-    }
-  })
-}
-if (window.innerWidth < 600) {
+if (window.innerWidth < 1024) {
   gsap.from('.aboutslot1', {
     xPercent: 100,
     duration: 5,
@@ -90,6 +51,22 @@ if (window.innerWidth < 600) {
     }
   })
 }
+if (window.innerWidth >= 1024) {
+  gsap.to('.card0', {
+    height: 0,
+    duration: 5,
+    scrollTrigger: {
+      pin: '.about',
+      trigger: '.about',
+      start: 'top top',
+      end: '+=500vh bottom',
+      scrub: 2,
+      pinSpacing: false,
+    }
+  })
+
+}
+
 // about animation end
 
 
@@ -115,12 +92,12 @@ if (window.innerWidth <= 992) {
       pin: true,
       scrub: 1,
       trigger: '.specialities',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
     }
   })
 
   gsap.to('.scroll-thumb', {
-    y: '80vh',
+    y: Heightthumb(),
     duration: 12,
     scrollTrigger: {
       start: 'top top',
@@ -162,52 +139,53 @@ if (window.innerWidth <= 992) {
 
 //aartas app animation start
 const app = gsap.timeline()
-if (window.innerWidth > 300 && window.innerWidth < 576) {
 
-  app.to('#appfeature1_mobile', {
-    // xPercent: -105,
-    duration: 0.5,
+if (window.innerWidth > 300 && window.innerWidth <= 576) {
+  app.to('#appheadline1', {
+    opacity: 0,
+    duration: 0.1,
   })
-
+  app.to('#appfeature1', {
+    left: '1%',
+    right: 0,
+    scale: 1,
+    height: '60vh',
+    marginRight: 0,
+    duration: 0.5,
+    delay: 0.2
+  })
   app.to('#appheadline2', {
-    zIndex: 2,
-    duration: 0.5,
-
-  })
-  app.to('#appfeature1_mobile', {
-    // xPercent: -120,
-    delay: 1,
+    opacity: 1,
     duration: 0.5,
   })
-  app.to('#appfeature2_mobile', {
-    // xPercent: -177,
-    duration: 0.5,
-  })
-  app.to('#appfeature1_mobile', {
-    // xPercent: -180,
+  app.to('#appfeature2', {
+    left: '1%',
+    right: 0,
+    scale: 1,
+    height: '60vh',
+    marginRight: 0,
     duration: 0.5,
   })
   app.to('#appheadline3', {
-    zIndex: 4,
+    opacity: 1,
     duration: 0.5,
   })
-  app.to('#appfeature1_mobile', {
-    // xPercent: -200,
-    duration: 0.5,
-  })
-  app.to('#appfeature2_mobile', {
-    // xPercent: -245,
-    delay: 1,
-    duration: 0.5,
-  })
-
-
-  app.to('#appfeature3_mobile', {
-    // xPercent: -305,
+  app.to('#appfeature3', {
+    left: '1%',
+    scale: 1,
+    right: 0,
+    height: '60vh',
     duration: 0.5,
   })
   app.to('#appheadline4', {
-    zIndex: 6,
+    opacity: 1,
+    duration: 0.5,
+  })
+
+  app.to('#appfeature3', {
+    left: '1%',
+    right: 0,
+    height: '60vh',
     duration: 0.5,
   })
 }
