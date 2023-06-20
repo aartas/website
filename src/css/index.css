@@ -1636,7 +1636,7 @@ p {
     }
 }
 
-@media (min-width:300px) and (max-width:576px) {
+@media (min-width:280px) and (max-width:576px) {
     #navbar .expanded-nav {
         display: none;
     }
@@ -2005,6 +2005,10 @@ p {
         padding: 20px;
         padding-bottom: 10rem;
         width: 100%;
+    }
+
+    footer .heading {
+        margin-top: 18vh;
     }
 
     footer .footer-heading {
