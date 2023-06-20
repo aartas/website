@@ -56,22 +56,33 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const headline = gsap.timeline()
-
-headline.from('.support', {
-    height: '50vh',
-    width: '100%',
-    duration: 1
-}).from('.animation_background', {
-    scale: 0,
-    height: '30vh',
-    borderRadius: '90%',
-    duration: 3
-}).from('.banner1', {
-    width: '100%',
+headline.to('.animation_background', {
+    scale: 1,
+    duration: 2,
+}).to('.animated-title', {
+    scale: 0.5,
+    duration: 0
+}).to('.banner', {
     opacity: 1,
-    duration: 3
+    duration: 0
+}).to('.animation_background', {
+    scale: 1.5,
+    duration: 2,
+}).to('.animation_background', {
+    scale: 2,
+    duration: 2,
+}).to('.animation_background', {
+    scale: 3,
+    duration: 2,
 })
-
+ScrollTrigger.create({
+    animation: headline,
+    pin: '.content',
+    start: '50vh top',
+    end: '+=2000vh bottom',
+    trigger: '.heading_animation',
+    scrub: 1
+})
 // ScrollTrigger.create({
 //     animation: headline,
 //     markers: true,
@@ -84,21 +95,21 @@ headline.from('.support', {
 //     duration: 1,
 // })
 
-ScrollTrigger.create({
-    animation: headline,
-    trigger: '.anim',
-    start: 'top top',
-    end: '+=2000vh bottom',
-    scrub: 2,
-    pin: '.content',
+// ScrollTrigger.create({
+//     animation: headline,
+//     trigger: '.anim',
+//     start: 'top top',
+//     end: '+=2000vh bottom',
+//     scrub: 2,
+//     pin: '.content',
 
-})
-ScrollTrigger.create({
-    animation: headline,
-    trigger: '.anim',
-    start: 'top top',
-    end: '+=2000vh bottom',
-    scrub: 2,
-    pin: '.heading_animation',
+// })
+// ScrollTrigger.create({
+//     animation: headline,
+//     trigger: '.anim',
+//     start: 'top top',
+//     end: '+=2000vh bottom',
+//     scrub: 2,
+//     pin: '.heading_animation',
 
-})
+// })
