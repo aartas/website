@@ -119,6 +119,10 @@
         }
 
         .speciality section {
+          padding-left: clamp(2rem, 10vh, 5rem);
+        }
+
+        .speciality section {
           height: 35rem;
           max-height: 40rem;
           min-height: 20rem;
@@ -468,3 +472,82 @@
 
           }
         }
+
+        @media (min-width:991px) and (max-width:1024px) {}
+
+        @media (min-width:577px) and (max-width:990px) {
+          .content {
+            font-size: clamp(2rem, 10vw, 4rem);
+
+          }
+
+          .content h1 {
+            letter-spacing: clamp(-0.2rem, 1vh, -0.3rem);
+          }
+
+          .heading_animation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 40%;
+            width: 60%;
+            z-index: 12;
+          }
+
+          .animation_background {
+            width: 100%;
+            max-height: 50vh;
+            background-color: #000;
+            scale: 0;
+            border: 1px solid black !important;
+            border-radius: 50% !important;
+          }
+
+          .banner {
+            height: 100vh;
+          }
+
+          .banner h2 {
+            font-size: 50%;
+            color: #fff;
+            transition: all 0.5s;
+          }
+
+          .banner h4 {
+            font-size: 30%;
+            color: #fff;
+            transition: all 0.5s;
+          }
+
+          .doctors {
+            margin-top: 2rem !important;
+          }
+
+          .speciality {
+            margin-top: 1rem !important;
+          }
+
+          .speciality section {
+            padding-left: 0;
+            height: 35rem;
+            height: 10vh;
+            max-height: 70vh;
+            min-height: 50vh;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+          }
+
+          .speciality h4 {
+            font-size: clamp(1rem, 5vw, 1.8rem);
+            letter-spacing: -1.5px;
+            line-height: 2.2rem;
+          }
+
+          .Doctors_brief h5 {
+            font-size: clamp(0.8rem 1.25vh, 1rem);
+          }
+
+        }
+
+        @media (min-width:280px) and (max-width:576px) {}

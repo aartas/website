@@ -58,6 +58,9 @@ headline.to('.animation_background', {
 }).to('.animation_background', {
     scale: 2,
     duration: 2,
+}).to('.heading_animation', {
+    width: '100%',
+    duration: 2,
 }).to('.animation_background', {
     scale: 3,
     duration: 2,
@@ -70,33 +73,3 @@ ScrollTrigger.create({
     trigger: '.heading_animation',
     scrub: 1
 })
-// ScrollTrigger.create({
-//     animation: headline,
-//     markers: true,
-//     pin: '.content',
-//     trigger: '.content',
-//     start: 'top top',
-//     end: '+=2000vh',
-//     scrub: 1,
-//     pinSpacing: false,
-//     duration: 1,
-// })
-
-// ScrollTrigger.create({
-//     animation: headline,
-//     trigger: '.anim',
-//     start: 'top top',
-//     end: '+=2000vh bottom',
-//     scrub: 2,
-//     pin: '.content',
-
-// })
-// ScrollTrigger.create({
-//     animation: headline,
-//     trigger: '.anim',
-//     start: 'top top',
-//     end: '+=2000vh bottom',
-//     scrub: 2,
-//     pin: '.heading_animation',
-
-// })
