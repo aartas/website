@@ -1,3 +1,6 @@
+
+
+
 // (A) LOCK SCREEN ORIENTATION
 function lock(orientation) {
   // (A1) GO INTO FULL SCREEN FIRST
@@ -10,6 +13,7 @@ function lock(orientation) {
   // (A2) THEN LOCK ORIENTATION
   screen.orientation.lock(orientation);
 }
+
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -143,7 +147,7 @@ const app = gsap.timeline()
 if (window.innerWidth > 300 && window.innerWidth <= 576) {
   app.to('#appheadline1', {
     opacity: 0,
-    duration: 0.1,  
+    duration: 0.1,
   })
   app.to('#appfeature1', {
     left: '1%',
@@ -466,6 +470,7 @@ gsap.to('.footeranimation', {
 
 
 function showmenu() {
+
   let height = $('.ham-menu').height()
   if (height == 0) {
     $('.ham-menu').height('max-content');
@@ -473,18 +478,11 @@ function showmenu() {
   if (height != 0) {
     $('.ham-menu').height('0');
   }
+  window.onscroll = function () {
+    let prevScrollPos = window.pageYOffset;
+    if (prevScrollPos > 10) {
+      console.log('offset');
+      $('.ham-menu').height('0');
+    }
+  }
 }
-// if (window.innerWidth > 300 && window.innerWidth < 992) {
-//   gsap.to('.card1', {
-//     scrollTrigger: {
-//       trigger: '.about_mobile',
-//       start: 'top',
-//       end: 'top',
-//       // markers: true,
-//       toggleActions: 'play restart reverse none',
-//     },
-//     xPercent: -100,
-//     opacity: 1,
-//     duration: 0.4,
-//   })
-// }

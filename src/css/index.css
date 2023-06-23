@@ -745,6 +745,21 @@ p {
     transition: all 0.1s;
 }
 
+.allnews {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.allnews a {
+    font-size: clamp(1.25rem, 10vh, 3rem) !important;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+
+}
+
 @media (max-width:782px) {
     .links {
         margin-left: 0.1%;
@@ -1645,6 +1660,10 @@ p {
         display: block;
     }
 
+    .ham-menu {
+        box-sizing: content-box;
+    }
+
     .about {
         display: none;
     }
@@ -2048,5 +2067,13 @@ p {
 
     .copyright {
         font-size: 60%;
+    }
+
+    .media .spacer {
+        height: 2rem !important;
+    }
+
+    .media-content {
+        font-size: 8rem;
     }
 }
