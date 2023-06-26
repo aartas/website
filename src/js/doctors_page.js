@@ -49,27 +49,27 @@ headline.to('.animation_background', {
 }).to('.animated-title', {
     scale: 0.5,
     duration: 0
+}).to('.animation_background', {
+    scale: 1.5,
+    duration: 2,
 }).to('.banner', {
     opacity: 1,
     duration: 0
 }).to('.animation_background', {
-    scale: 1.5,
-    duration: 2,
-}).to('.animation_background', {
-    scale: 2,
+    scale: 3,
     duration: 2,
 }).to('.heading_animation', {
     width: '100%',
     duration: 2,
 }).to('.animation_background', {
-    scale: 3,
+    scale: 5,
     duration: 2,
 })
 ScrollTrigger.create({
     animation: headline,
     pin: '.content',
-    start: '50vh top',
+    start: 'top top',
     end: '+=2000vh bottom',
-    trigger: '.heading_animation',
+    trigger: '.content',
     scrub: 1
 })
