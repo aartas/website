@@ -108,9 +108,10 @@
 .anim-border::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 0%;
     width: 90%;
+    transform: translate(-50%,0%);
     padding-top: 0;
     height: 3px;
     background-color: #000;
@@ -129,12 +130,16 @@
 @media (min-width:991px) and (max-width:1024px) {}
 
 @media (min-width:577px) and (max-width:990px) {
+    .doctorphoto {
+        position: relative;
+    }
+
     .image-container {
         height: 100%;
         width: 100%;
         margin-top: 2vh;
         background-color: transparent;
-        margin-bottom:0;
+        margin-bottom: 0;
         position: relative;
         display: grid;
         place-items: center;
@@ -143,33 +148,96 @@
     .image-container img {
         position: inherit;
         top: 0;
-        width:clamp(5rem,50vh,40rem);
+        width: clamp(5rem, 50vh, 40rem);
     }
+
     .doctorname {
-        font-size: clamp(8rem, 5vw, 12rem);
+        font-size: clamp(2rem, 10vh, 3rem);
+        line-height: 0.5;
         font-weight: 600;
         letter-spacing: -0.5rem;
-        line-height: 7rem;
-    
     }
-    .doctorname{
-        font-size: clamp(4rem,20vh,6rem);
-        line-height: 0.5;
-    }
+
     .doctorprofession {
-        font-size: clamp(2rem,10vh,3rem);
+        font-size: clamp(2rem, 10vh, 3rem);
         line-height: 2;
     }
-    
-    .doctorintro .para{
-        margin-top:0;
+
+    .doctorintro .para {
+        margin-top: 0;
     }
+
     .doctorphoto {
         position: inherit;
     }
-    .sub-article{
-        width:100%
+
+    .sub-article {
+        width: 100%;
     }
 }
 
-@media (min-width:280px) and (max-width:576px) {}
+@media (min-width:280px) and (max-width:576px) {
+    header img {
+        width: clamp(5rem, 25vw, 10rem)
+    }
+
+    header p {
+        font-size: clamp(0.75rem, 5vh, 1rem);
+    }
+
+    .links a {
+        font-size: clamp(0.75rem, 5vh, 1rem);
+    }
+
+    .doctorphoto {
+        position: relative;
+    }
+
+    .image-container {
+        height: 50%;
+        width: 100%;
+        margin-top: 10vh;
+        background-color: transparent;
+        margin-bottom: 0;
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+
+    .image-container img {
+        position: inherit;
+        top: 0;
+        width: clamp(5rem, 40vh, 40rem);
+    }
+
+    .doctorname {
+        font-size: clamp(2rem, 10vh, 3rem);
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: -0.2rem;
+    }
+
+    .doctorprofession {
+        padding-top: 2vh;
+        line-height: 1;
+        letter-spacing: -0.1rem;
+        font-size: clamp(1.5rem, 6vh, 1.8rem);
+        margin-bottom: 5vh;
+    }
+
+    .doctorintro .para {
+        margin-top: 0;
+    }
+    .sub-article{
+        width: 100%;
+        font-size: 30%;
+    }
+    .sub-article img{
+        width:clamp(2rem,5vw,2.5rem)
+    }
+    .sub-article2 {
+        font-size: 30%;
+    }
+    
+    
+}
