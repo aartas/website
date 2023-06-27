@@ -245,6 +245,10 @@
           cursor: pointer;
         }
 
+        .articles_mobile {
+          display: none;
+        }
+
         .articles {
           font-size: 8rem;
           width: 100%;
@@ -283,13 +287,13 @@
           font-size: 40%;
         }
 
-        .article .articleimg {
+        .articles .articleimg {
           width: 9rem;
           transition: all 0.5s;
           transform: scale(0);
         }
 
-        .article :hover .articleimg {
+        .articles :hover .articleimg {
           transform: scale(1.2);
         }
 
@@ -572,7 +576,27 @@
           }
         }
 
-        @media (min-width:350px) and (max-width:576px) {
+        @media (min-width:280px) and (max-width:576px) {
+          .articles {
+            display: none;
+          }
+
+          .articles_mobile {
+            display: block;
+          }
+
+          header img {
+            width: clamp(5rem, 25vw, 10rem)
+          }
+
+          header p {
+            font-size: clamp(0.75rem, 5vh, 1rem);
+          }
+
+          .links a {
+            font-size: clamp(0.75rem, 5vh, 1rem);
+          }
+
           .of {
             width: 100%;
             margin-left: clamp(-15rem, 15vw, -35rem);
@@ -587,6 +611,46 @@
 
           .content h1 {
             letter-spacing: clamp(-0.2rem, 6vh, -0.4rem);
+          }
+
+          .speciality section {
+            display: flex;
+            justify-content: space-between;
+            max-height: fit-content;
+            min-height: fit-content;
+            align-items: center;
+            padding-left: 0px;
+          }
+
+          .speciality h4 {
+            line-height: 1;
+            margin: 0px 1rem;
+            font-size: clamp(0.75rem, 10vw, 1.5rem);
+            height: fit-content;
+          }
+
+          .Doctors_brief .col-6 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+
+          .articles_mobile h2 {
+            font-size: clamp(1rem, 10vw, 2rem);
+            padding-left: 4vh;
+            letter-spacing: -0.1rem;
+          }
+
+          .articles_mobile .article {
+            margin: 2.5vh 0;
+          }
+
+          .articles_mobile .article h3 {
+            letter-spacing: -0.1rem;
+            font-size: clamp(0.75rem, 8vw, 1.6rem);
+          }
+
+          .articles_mobile .articleimg {
+            width: clamp(8rem, 10vh, 12rem)
           }
 
           .banner {
