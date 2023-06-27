@@ -287,13 +287,13 @@
           font-size: 40%;
         }
 
-        .articles .articleimg {
+        .article .articleimg {
           width: 9rem;
           transition: all 0.5s;
           transform: scale(0);
         }
 
-        .articles :hover .articleimg {
+        .article :hover .articleimg {
           transform: scale(1.2);
         }
 
@@ -354,7 +354,7 @@
 
         .footeranimation {
           height: 100vh;
-          opacity: 0;
+          opacity: 1;
         }
 
         @keyframes changingtext1Anim {
@@ -640,6 +640,10 @@
             letter-spacing: -0.1rem;
           }
 
+          .article .articleimg {
+            transform: scale(1);
+          }
+
           .articles_mobile .article {
             margin: 2.5vh 0;
           }
@@ -718,7 +722,7 @@
 
           .footeranimation {
             height: 100vh;
-            opacity: 0;
+            opacity: 1;
           }
 
           .copyright {

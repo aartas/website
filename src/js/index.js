@@ -455,17 +455,17 @@ ScrollTrigger.create({
 
 
 //footer animation start
-gsap.to('.footeranimation', {
-  opacity: 2,
-  duration: 3,
-  scrollTrigger: {
-    start: 'top top',
-    end: 'bottom bottom  ',
-    trigger: 'footer',
-    pin: 'footer',
-    toggleActions: 'play none none none',
-  }
-})
+// gsap.to('.footeranimation', {
+//   opacity: 2,
+//   duration: 3,
+//   scrollTrigger: {
+//     start: 'top top',
+//     end: 'bottom bottom  ',
+//     trigger: 'footer',
+//     pin: 'footer',
+//     toggleActions: 'play none none none',
+//   }
+// })
 //footer animation end
 
 

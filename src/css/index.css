@@ -2093,7 +2093,7 @@ p {
 
     .footeranimation {
         height: 100vh;
-        opacity: 0;
+        opacity: 1;
     }
 
     .copyright {
