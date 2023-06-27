@@ -86,7 +86,7 @@ window.addEventListener('resize', Heightthumb);
 // specialities animation start
 if (window.innerWidth <= 992) {
   gsap.to('.scroller', {
-    xPercent: -170,
+    xPercent: -200,
     width: '100%',
     height: '100vh',
     duration: 12,
@@ -370,27 +370,27 @@ if (window.innerWidth <= 992) {
   }).to(".slide1", {
     height: "100vh",
     paddingLeft: '5vh',
-    paddingTop: '10vh',
+    paddingTop: '40vh',
     opacity: 1,
     duration: 5
   })
   tl.to('.slide2', {
     yPercent: -200,
     paddingLeft: '5vh',
-    paddingTop: '10vh',
+    paddingTop: '40vh',
     duration: 5
   })
   tl.to('.slide3', {
     yPercent: -350,
     paddingLeft: '5vh',
-    paddingTop: '10vh',
+    paddingTop: '40vh',
     duration: 5
   })
   tl.to('.slide4', {
     yPercent: -500,
     fontSize: '120%',
     paddingLeft: '5vh',
-    paddingTop: '10vh',
+    paddingTop: '40vh',
     duration: 5
   })
 } else {
