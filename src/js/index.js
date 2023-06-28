@@ -148,6 +148,7 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
   app.to('#appheadline1', {
     opacity: 0,
     duration: 0.1,
+    delay: 0.5
   })
   app.to('#appfeature1', {
     left: '1%',
@@ -160,8 +161,23 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
   })
   app.to('#appheadline2', {
     opacity: 1,
+    duration: 0.1,
+  })
+  app.to('#appfeature2', {
+    left: '40%',
+    right: 0,
+    scale: 0.8,
+    marginRight: 0,
     duration: 0.5,
   })
+  app.to('#appfeature3', {
+    left: '70%',
+    right: 0,
+    scale: 0.8,
+    marginRight: 0,
+    duration: 0.5,
+  })
+  
   app.to('#appfeature2', {
     left: '1%',
     right: 0,
@@ -172,7 +188,7 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
   })
   app.to('#appheadline3', {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.1,
   })
   app.to('#appfeature3', {
     left: '1%',
@@ -183,7 +199,7 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
   })
   app.to('#appheadline4', {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.1,
   })
 
   app.to('#appfeature3', {
@@ -295,6 +311,7 @@ if (window.innerWidth > 1024) {
   app.to('#appheadline1', {
     opacity: 0,
     duration: 0.1,
+    delay: 0.5
   })
   app.to('#appfeature1', {
     left: '1%',
@@ -307,9 +324,24 @@ if (window.innerWidth > 1024) {
   })
   app.to('#appheadline2', {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.1,
 
   })
+  app.to('#appfeature2', {
+    left: '40%',
+    right: 0,
+    scale: 0.8,
+    marginRight: 0,
+    duration: 0.5,
+  })
+  app.to('#appfeature3', {
+    left: '70%',
+    right: 0,
+    scale: 0.8,
+    marginRight: 0,
+    duration: 0.5,
+  })
+  
   app.to('#appfeature2', {
     left: '1%',
     right: 0,
@@ -320,7 +352,7 @@ if (window.innerWidth > 1024) {
   })
   app.to('#appheadline3', {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.1,
   })
   app.to('#appfeature3', {
     left: '1%',
@@ -331,7 +363,7 @@ if (window.innerWidth > 1024) {
   })
   app.to('#appheadline4', {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.1,
   })
 
   app.to('#appfeature3', {

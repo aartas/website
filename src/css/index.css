@@ -16,27 +16,6 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-weight: 700;
-    letter-spacing: -0.5rem;
-    font-size: 120%;
-    color: black;
-}
-
-h2 {
-    font-weight: 700;
-    letter-spacing: -0.4rem;
-    font-size: 100%;
-    color: black;
-}
-
-h4 {
-    font-weight: 600;
-    letter-spacing: -0.3rem;
-    font-size: 60%;
-    color: black;
-}
-
 p {
     font-weight: 600;
     letter-spacing: normal;
@@ -75,18 +54,10 @@ p {
 }
 
 .herosection h1 {
-    font-size: 120%;
-    font-weight: 700;
-    letter-spacing: -0.5rem;
-    line-height: 12rem;
     color: var(--pearl);
 }
 
 .herosection h6 {
-    font-size: 20%;
-    line-height: 0;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
     color: var(--pearl);
 }
 
@@ -123,6 +94,7 @@ p {
     height: 100vh;
     min-height: 100vh;
 }
+
 
 .about_mobile {
     display: none;
@@ -233,12 +205,12 @@ p {
     width: 100%;
 }
 
-.media-content h1 {
+/* .media-content h1 {
     font-weight: 700 !important;
     letter-spacing: -0.5rem !important;
     font-size: clamp(2rem, 20vw, 10rem) !important;
     margin-top: 20vh;
-}
+} */
 
 .media-content h4 {
     font-weight: 700;
@@ -257,12 +229,12 @@ p {
     transition: all 0.67s;
 }
 
-.media-content h6 {
+/* .media-content h6 {
     font-weight: 700;
     letter-spacing: -0.12rem;
     font-size: 25%;
     color: black;
-}
+} */
 
 .image2 {
     overflow: hidden;
@@ -292,7 +264,7 @@ p {
     border-bottom: 1px solid white;
 }
 
-.image2 h6 {
+/* .image2 h6 {
     opacity: 0;
     font-weight: 600;
     font-size: 10%;
@@ -302,7 +274,7 @@ p {
     transform: translateY(0%);
     transition: all 0.6s;
     width: 60%;
-}
+} */
 
 .media-content .image2:hover h4 {
     font-size: 25%;
@@ -313,10 +285,10 @@ p {
     opacity: 0;
 }
 
-.media-content .image2:hover h6 {
+/* .media-content .image2:hover h6 {
     transform: translateY(-50%);
     opacity: 1;
-}
+} */
 
 .media-content .image2:hover a {
     opacity: 1;
@@ -440,11 +412,15 @@ p {
 .about {
     width: 100%;
     margin-top: 10vh;
-
     background-color: white;
     font-size: 8rem;
     position: relative;
     transition: all 0.5s;
+    overflow: hidden;
+}
+
+.about .row {
+    flex-wrap: nowrap;
 }
 
 .about .card1 {
@@ -479,19 +455,11 @@ p {
     display: none;
 }
 
-.about h1 {
-    font-weight: 700;
-    letter-spacing: -0.5rem;
-    font-size: clamp(5rem, 5vw, 8rem);
-    line-height: 0.8;
-    padding-left: 5%;
-    font-size: 120%;
-
-}
 
 /* .aboutinfo h1{
     font-size: clamp(5rem, 20vw,10rem);
 } */
+
 .about h4 {
     padding-left: 5%;
     font-size: 30%;
@@ -511,8 +479,8 @@ p {
 }
 
 .about .card {
-    height: 40vh;
-    max-height: 40vh;
+    height: 60vh;
+    max-height: 60vh;
 }
 
 .about .card0 {
@@ -592,13 +560,13 @@ p {
     background-color: white;
 }
 
-.aartasapp h1 {
+/* .aartasapp h1 {
     font-weight: 700;
     letter-spacing: -0.5rem;
     line-height: 10rem;
     padding-left: 5%;
     font-size: clamp(4rem, 20vw, 10rem);
-}
+} */
 
 .aartasapp h3 {
     font-weight: 700;
@@ -608,11 +576,6 @@ p {
     padding-left: 5%;
 }
 
-.aartasapp h6 {
-    font-weight: 700;
-    font-size: 20%;
-    letter-spacing: normal;
-}
 
 .aartasapp #appheadline1 {
     height: clamp(50vh, 20vw, 70vh);
@@ -788,21 +751,21 @@ p {
         display: none;
     }
 
-    .herosection h1 {
+    /* .herosection h1 {
         font-size: clamp(1rem, 40vw, 7rem);
         font-weight: 700;
         letter-spacing: -0.3rem;
         line-height: 1;
         color: var(--pearl);
-    }
+    } */
 
-    .herosection h6 {
+    /* .herosection h6 {
         font-size: clamp(1rem, 6vw, 3rem);
         line-height: 1;
         font-weight: 600;
         letter-spacing: 2;
         color: var(--pearl);
-    }
+    } */
 
     .about_mobile {
         display: block;
@@ -813,13 +776,13 @@ p {
         height: 100vh;
     }
 
-    .about_mobile h1 {
+    /* .about_mobile h1 {
         font-weight: 700;
         font-size: clamp(2rem, 30vw, 5rem);
         letter-spacing: -4px;
         line-height: 0.8;
         text-align: center;
-    }
+    } */
 
     .about_mobile h4 {
         font-weight: 700;
@@ -982,16 +945,16 @@ p {
         line-height: 1.5;
     }
 
-    .media-content h1 {
+    /* .media-content h1 {
         line-height: 0.8;
-    }
+    } */
 
-    .media-content h1 {
+    /* .media-content h1 {
         font-weight: 700 !important;
         letter-spacing: -0.5rem !important;
         font-size: clamp(2rem, 20vw, 10rem) !important;
         margin-top: 20vh;
-    }
+    } */
 
     .media-content h4 {
         font-weight: 700;
@@ -1053,10 +1016,10 @@ p {
         opacity: 0;
     }
 
-    .media-content .image2:hover h6 {
+    /* .media-content .image2:hover h6 {
         transform: translateY(-40%);
         opacity: 1;
-    }
+    } */
 
     .media-content .image2:hover a {
         opacity: 1;
@@ -1078,9 +1041,6 @@ p {
     }
 
     .about_mobile h1 {
-        font-weight: 700;
-        font-size: clamp(5rem, 90vw, 10rem);
-        line-height: 0.8;
         text-align: center;
     }
 
@@ -1291,16 +1251,16 @@ p {
         line-height: 1.5;
     }
 
-    .media-content h1 {
+    /* .media-content h1 {
         line-height: 0.8;
-    }
+    } */
 
-    .media-content h1 {
+    /* .media-content h1 {
         font-weight: 700 !important;
         letter-spacing: -0.5rem !important;
         font-size: clamp(2rem, 20vw, 10rem) !important;
         margin-top: 20vh;
-    }
+    } */
 
     .media-content h4 {
         font-weight: 700;
@@ -1369,9 +1329,6 @@ p {
     }
 
     .about_mobile h1 {
-        font-weight: 700;
-        font-size: clamp(5rem, 90vw, 10rem);
-        line-height: 0.8;
         text-align: center;
     }
 
@@ -1589,16 +1546,16 @@ p {
         line-height: 1.5;
     }
 
-    .media-content h1 {
+    /* .media-content h1 {
         line-height: 0.8;
-    }
+    } */
 
-    .media-content h1 {
+    /* .media-content h1 {
         font-weight: 700 !important;
         letter-spacing: -0.5rem !important;
         font-size: clamp(2rem, 20vw, 10rem) !important;
         margin-top: 20vh;
-    }
+    } */
 
     .media-content h4 {
         font-weight: 700;
@@ -1711,10 +1668,6 @@ p {
     }
 
     .about_mobile h1 {
-        font-weight: 700;
-        font-size: clamp(2rem, 30vw, 5rem);
-        letter-spacing: -4px;
-        line-height: 0.8;
         text-align: center;
     }
 
@@ -1807,13 +1760,13 @@ p {
         height: 60vh;
     }
 
-    .aartasapp h1 {
+    /* .aartasapp h1 {
         font-weight: 700;
         letter-spacing: -0.3rem;
         line-height: 1;
         padding-left: 0;
         font-size: clamp(4rem, 20vw, 10rem);
-    }
+    } */
 
     .aartasapp h3 {
         font-weight: 700;
@@ -1825,11 +1778,11 @@ p {
         text-align: center;
     }
 
-    .aartasapp h6 {
+    /* .aartasapp h6 {
         font-weight: 700;
         font-size: 15%;
         letter-spacing: normal;
-    }
+    } */
 
     .aartasapp #appheadline1 {
         height: clamp(50vh, 20vw, 70vh);
@@ -2025,13 +1978,13 @@ p {
         font-size: 6rem;
     }
 
-    .media-content h1 {
+    /* .media-content h1 {
         font-weight: 700 !important;
         letter-spacing: -0.2rem !important;
         font-size: clamp(2rem, 15vw, 10rem) !important;
         margin-top: 20vh;
         margin-bottom: 2vh !important;
-    }
+    } */
 
 
     .allnews a {
