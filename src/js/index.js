@@ -29,7 +29,7 @@ gsap.to('.open2', {
 //hero section animation end
 
 // about animation start
-if (window.innerWidth < 1024) {
+if (window.innerWidth <= 1024) {
   gsap.from('.aboutslot1', {
     xPercent: 100,
     duration: 5,
@@ -55,7 +55,7 @@ if (window.innerWidth < 1024) {
     }
   })
 }
-if (window.innerWidth >= 1024) {
+if (window.innerWidth > 1024) {
   gsap.to('.card0', {
     height: 0,
     duration: 5,
@@ -177,7 +177,7 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
     marginRight: 0,
     duration: 0.5,
   })
-  
+
   app.to('#appfeature2', {
     left: '1%',
     right: 0,
@@ -341,7 +341,7 @@ if (window.innerWidth > 1024) {
     marginRight: 0,
     duration: 0.5,
   })
-  
+
   app.to('#appfeature2', {
     left: '1%',
     right: 0,
@@ -377,7 +377,7 @@ if (window.innerWidth > 1024) {
 
 ScrollTrigger.create({
   animation: app,
-  start: 'top top',
+  start: '100vh top',
   end: '+5000vh top',
   pin: '.aartasapp',
   trigger: '.aartasapp',
@@ -435,7 +435,7 @@ if (window.innerWidth <= 992) {
   }).to(".slide1", {
     height: "100vh",
     paddingLeft: '20vh',
-    paddingTop: '25vh',
+    // paddingTop: '25vh',
     opacity: 1,
     duration: 5
 
@@ -443,25 +443,25 @@ if (window.innerWidth <= 992) {
   tl.to('.slide2', {
     yPercent: -200,
     paddingLeft: '20vh',
-    paddingTop: '25vh',
+    // paddingTop: '25vh',
     duration: 5
   })
   tl.to('.slide3', {
     yPercent: -350,
     paddingLeft: '20vh',
-    paddingTop: '25vh',
+    // paddingTop: '25vh',
     duration: 5
   })
   tl.to('.slide4', {
     yPercent: -500,
     paddingLeft: '20vh',
-    paddingTop: '25vh',
+    // paddingTop: '25vh',
     duration: 5
   })
   tl.to('.slide4', {
     yPercent: -500,
     paddingLeft: '20vh',
-    paddingTop: '25vh',
+    // paddingTop: '25vh',
     duration: 5
   })
 }
