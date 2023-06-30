@@ -138,8 +138,8 @@ body {
     position: absolute;
     left: 50%;
     right: 0;
-    top: 60%;
-    transform: translate(-50%, -60%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: var(--charcoal);
     word-wrap: unset;
 }

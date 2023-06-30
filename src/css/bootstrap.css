@@ -420,7 +420,7 @@ br {
 }
 
 .hs {
-    font-size: clamp(1rem, 18vw, 18rem) !important;
+    font-size: clamp(1rem, 18vw, 15rem) !important;
     letter-spacing: clamp(-0.3, -0.5rem, -0.6rem) !important;
     font-weight: 700 !important;
     line-height: 0.9 !important;
