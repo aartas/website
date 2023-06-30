@@ -421,7 +421,7 @@ br {
 
 .hs {
     font-size: clamp(1rem, 18vw, 15rem) !important;
-    letter-spacing: clamp(-0.3, -0.5rem, -0.6rem) !important;
+    letter-spacing: -0.6rem !important;
     font-weight: 700 !important;
     line-height: 0.9 !important;
 }
@@ -518,6 +518,7 @@ p {
 
 
 @media (min-width:769px) and (max-width:1024px) {
+
     h1 {
         font-size: clamp(5rem, 180px, 10rem) !important;
         letter-spacing: -0.5rem !important;
@@ -561,7 +562,7 @@ p {
     }
 
     a {
-        font-size: clamp(1rem, 20px, 1.25rem) !important;
+        font-size: clamp(0.75rem, 16px, 1rem) !important;
         letter-spacing: -0.05rem !important;
         font-weight: 600 !important;
         line-height: 1 !important;
@@ -652,7 +653,7 @@ p {
     }
 
     a {
-        font-size: clamp(1rem, 20px, 1.25rem) !important;
+        font-size: clamp(0.75rem, 16px, 1.15rem) !important;
         letter-spacing: -0.05rem !important;
         font-weight: 600 !important;
         line-height: 1 !important;
@@ -683,6 +684,7 @@ p {
     p {
         font-weight: 700;
         letter-spacing: normal;
+        line-height: 0.9;
         font-size: clamp(1rem, 20px, 1.25rem) !important;
         font-weight: 600;
         color: black;
@@ -700,6 +702,11 @@ p {
 }
 
 @media (min-width:375px) and (max-width:567px) {
+
+    .hs {
+        letter-spacing: -0.4rem !important;
+    }
+
     h1 {
         font-size: clamp(3rem, 90px, 5.625rem) !important;
         letter-spacing: -0.3rem !important;
@@ -791,6 +798,10 @@ p {
 }
 
 @media (min-width:200px) and (max-width:375px) {
+    .hs {
+        letter-spacing: -0.4rem !important;
+    }
+
     h1 {
         font-size: clamp(3rem, 90px, 5.625rem) !important;
         letter-spacing: -0.3rem !important;
@@ -827,10 +838,10 @@ p {
     }
 
     h6 {
-        font-size: clamp(1rem, 18px, 1.125rem) !important;
+        font-size: clamp(1rem, 20px, 1.25rem) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
-        line-height: 1 !important;
+        line-height: 0.8 !important;
     }
 
     a {
@@ -841,7 +852,7 @@ p {
     }
 
     .s1 {
-        font-size: clamp(1rem, 30px, 1.875rem) !important;
+        font-size: clamp(1rem, 30px, 1.5rem) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 600 !important;
         line-height: 1 !important;
@@ -864,7 +875,7 @@ p {
 
     p {
         font-weight: 700;
-        letter-spacing: normal;
+        letter-spacing: 1;
         font-size: clamp(0.75rem, 18px, 1.125rem) !important;
         font-weight: 600;
         color: black;

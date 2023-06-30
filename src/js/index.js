@@ -14,11 +14,6 @@
 //   screen.orientation.lock(orientation);
 // }
 
-// if ($('#appfeature1').css('left') == '1%') {
-//   $('#appfeature2').css('left', '40%');
-//   $('#appfeature3').css('left', '70%')
-// }
-
 
 gsap.registerPlugin(ScrollTrigger)
 //hero section animation start
@@ -421,15 +416,7 @@ if (window.innerWidth > 1024) {
   })
 }
 
-// ScrollTrigger.create({
-//   animation: app,
-//   start: '100vh top',
-//   end: '+5000vh top',
-//   pin: '.aartasapp',
-//   trigger: '.aartasapp',
-//   scrub: 1,
-//   toggleActions: 'restart restart reverse reverse'
-// })
+
 //aartas app animation end
 
 
@@ -441,9 +428,6 @@ if (window.innerWidth <= 992) {
     duration: 5
   }).to('.slide0', {
     opacity: 0.2,
-    duration: 5
-  }).to('.slide0', {
-    opacity: 0,
     duration: 5
   }).to(".slide1", {
     height: "100vh",
@@ -512,23 +496,25 @@ if (window.innerWidth <= 992) {
   })
 }
 ScrollTrigger.create({
+  animation: tl,
+  trigger: '.slide0',
+  start: 'top top',
+  end: "+=5000vh +=1500vh",
+  scrub: 1,
+  pin: '.slide0',
+  pinSpacing: false
+
+})
+ScrollTrigger.create({
   animaton: tl,
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
   end: "+=5000vh bottom",
-  scrub: 2,
+  scrub: 1,
+  markers: true,
 })
-ScrollTrigger.create({
-  animation: tl,
-  trigger: '.slide0',
-  start: 'top top',
-  end: "+=5000vh +=1500vh",
-  scrub: 2,
-  pin: '.slide0',
-  pinSpacing: false
 
-})
 //------------------------------------aartas space end------------------------------------------------
 
 
@@ -548,7 +534,6 @@ ScrollTrigger.create({
 
 
 function showmenu() {
-
   let height = $('.ham-menu').height()
   if (height == 0) {
     $('.ham-menu').height('max-content');
@@ -559,7 +544,6 @@ function showmenu() {
   window.onscroll = function () {
     let prevScrollPos = window.pageYOffset;
     if (prevScrollPos > 10) {
-      console.log('offset');
       $('.ham-menu').height('0');
     }
   }

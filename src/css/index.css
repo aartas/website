@@ -42,11 +42,11 @@ body {
 }
 
 #navbar .logo_white {
-    width: clamp(10rem, 15vw, 15rem);
+    width: clamp(8rem, 15vw, 15rem);
 }
 
 #navbar .logo_dark {
-    width: clamp(10rem, 15vw, 15rem);
+    width: clamp(8rem, 15vw, 15rem);
 }
 
 #navbar .button-nav {
@@ -132,7 +132,7 @@ body {
     word-wrap: unset;
 }
 
-.slide0 h6 {
+.slide0 .s1 {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -657,13 +657,13 @@ body {
         height: 0;
         overflow: hidden;
         transition: all 0.5s;
-        background-color: rgba(0, 0, 0, 0.155);
+        background-color: white;
         z-index: -1;
 
     }
 
     .button-nav img {
-        width: 10vw
+        width: clamp(2rem, 40%, 6rem);
     }
 
     .about {
@@ -823,7 +823,7 @@ body {
         height: 100vh;
     }
 
-    .slide0 h6 {
+    .slide0 .s1 {
         width: 100%;
         text-align: center;
         position: absolute;
@@ -870,8 +870,8 @@ body {
     .media-content .townhall2 {
         font-weight: 700;
         width: 100%;
-        height: 50vh;
-        max-height: 50vh;
+        height: 70vh;
+        max-height: 70vh;
     }
 
     .specialities {
@@ -889,7 +889,7 @@ body {
     }
 
     .media-content .image2:hover p {
-        transform: translateY(-20%);
+        transform: translateY(-40%);
         opacity: 1;
     }
 
@@ -1141,6 +1141,14 @@ body {
 }
 
 @media (min-width:577px) and (max-width:990px) {
+    #navbar .expanded-nav {
+        display: none;
+    }
+
+    #navbar .button-nav {
+        display: block;
+    }
+
     .about {
         display: none;
     }
@@ -1609,7 +1617,7 @@ body {
         display: grid;
         width: 100%;
         line-height: 1;
-        place-items: start;
+        place-items: center;
         transition: all 0.5s;
         justify-content: center;
         /* opacity:0; */
@@ -1622,7 +1630,7 @@ body {
         height: clamp(50vh, 20vw, 70vh);
         width: 100%;
         display: grid;
-        place-items: start;
+        place-items: center;
         line-height: 1;
         transition: all 0.5s;
         justify-content: center;
@@ -1636,7 +1644,7 @@ body {
         z-index: -1;
         line-height: 1;
         display: grid;
-        place-items: start;
+        place-items: center;
         transition: all 0.5s;
         justify-content: center;
     }
@@ -1790,6 +1798,7 @@ body {
         margin-bottom: 2vh !important;
     } */
 
+ 
 
     .allnews a {
         font-size: clamp(1rem, 5vh, 2rem) !important;
