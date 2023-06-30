@@ -14,6 +14,10 @@
 //   screen.orientation.lock(orientation);
 // }
 
+// if ($('#appfeature1').css('left') == '1%') {
+//   $('#appfeature2').css('left', '40%');
+//   $('#appfeature3').css('left', '70%')
+// }
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -84,9 +88,25 @@ function Heightthumb() {
 window.addEventListener('resize', Heightthumb);
 
 // specialities animation start
-if (window.innerWidth <= 992) {
+if (window.innerWidth <= 577 && window.innerWidth > 200) {
   gsap.to('.scroller', {
-    xPercent: -200,
+    xPercent: -250,
+    width: '100%',
+    height: '100vh',
+    duration: 12,
+    scrollTrigger: {
+      start: 'top top',
+      end: '+=2500vh bottom',
+      pin: true,
+      scrub: 1,
+      trigger: '.specialities',
+      toggleActions: 'play none none none',
+    }
+  })
+
+} else if (window.innerWidth <= 992 && window.innerWidth > 576) {
+  gsap.to('.scroller', {
+    xPercent: -140,
     width: '100%',
     height: '100vh',
     duration: 12,
@@ -208,6 +228,15 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
     height: '60vh',
     duration: 0.5,
   })
+  ScrollTrigger.create({
+    animation: app,
+    start: '250vh top',
+    end: '+5000vh top',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+    toggleActions: 'restart restart reverse reverse'
+  })
 }
 if (window.innerWidth > 576 && window.innerWidth <= 1024) {
   app.to('#appfeature4_tab', {
@@ -306,6 +335,15 @@ if (window.innerWidth > 576 && window.innerWidth <= 1024) {
     opacity: 1,
     duration: 0.1,
   })
+  ScrollTrigger.create({
+    animation: app,
+    start: '200vh top',
+    end: '+5000vh top',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+    toggleActions: 'restart restart reverse reverse'
+  })
 }
 if (window.innerWidth > 1024) {
   app.to('#appheadline1', {
@@ -372,18 +410,26 @@ if (window.innerWidth > 1024) {
     height: '60vh',
     duration: 0.5,
   })
-
+  ScrollTrigger.create({
+    animation: app,
+    start: '100vh top',
+    end: '+5000vh top',
+    pin: '.aartasapp',
+    trigger: '.aartasapp',
+    scrub: 1,
+    toggleActions: 'restart restart reverse reverse'
+  })
 }
 
-ScrollTrigger.create({
-  animation: app,
-  start: '100vh top',
-  end: '+5000vh top',
-  pin: '.aartasapp',
-  trigger: '.aartasapp',
-  scrub: 1,
-  toggleActions: 'restart restart reverse reverse'
-})
+// ScrollTrigger.create({
+//   animation: app,
+//   start: '100vh top',
+//   end: '+5000vh top',
+//   pin: '.aartasapp',
+//   trigger: '.aartasapp',
+//   scrub: 1,
+//   toggleActions: 'restart restart reverse reverse'
+// })
 //aartas app animation end
 
 
@@ -402,27 +448,27 @@ if (window.innerWidth <= 992) {
   }).to(".slide1", {
     height: "100vh",
     paddingLeft: '5vh',
-    paddingTop: '40vh',
+    // paddingTop: '40vh',
     opacity: 1,
     duration: 5
   })
   tl.to('.slide2', {
     yPercent: -200,
     paddingLeft: '5vh',
-    paddingTop: '40vh',
+    // paddingTop: '40vh',
     duration: 5
   })
   tl.to('.slide3', {
     yPercent: -350,
     paddingLeft: '5vh',
-    paddingTop: '40vh',
+    // paddingTop: '40vh',
     duration: 5
   })
   tl.to('.slide4', {
     yPercent: -500,
     fontSize: '120%',
     paddingLeft: '5vh',
-    paddingTop: '40vh',
+    // paddingTop: '40vh',
     duration: 5
   })
 } else {
