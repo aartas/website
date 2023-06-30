@@ -827,7 +827,7 @@ p {
     }
 
     h6 {
-        font-size: clamp(1rem, 25px, 1.563rem) !important;
+        font-size: clamp(1rem, 18px, 1.125rem) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
         line-height: 1 !important;
