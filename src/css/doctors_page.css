@@ -14,14 +14,16 @@
           min-width: 100%;
         }
 
+        h1 {
+          line-height: 1.2 !important;
+        }
+
         nav {
           position: fixed !important;
           top: 0;
           left: 0;
           width: 100%;
           transition: top 0.3s;
-          font-size: 1.2rem !important;
-          font-weight: 600;
           z-index: 22 !important;
         }
 
@@ -41,8 +43,6 @@
         }
 
         .animated-title {
-          /* font-size: 10rem; */
-          font-size: clamp(5rem, 12vw, 20rem);
           z-index: 5;
           transition: all 0.5s;
         }
@@ -50,18 +50,14 @@
         .content {
           font-family: 'Urbanist' !important;
           letter-spacing: 0;
-          font-size: 3.4rem;
-          line-height: 3rem;
           height: 100vh;
           width: 100%;
           scale: 1;
           overflow: hidden;
         }
 
-
-
-        .content h1 {
-          letter-spacing: -0.8rem;
+        .mobile {
+          display: none;
         }
 
         .heading_animation {
@@ -80,15 +76,14 @@
           display: grid;
           place-items: center;
           width: 50vh;
-          /* min-height: 100%; */
           height: 50vh;
           background-color: #000;
           display: flex;
           justify-content: center;
           align-items: center;
           scale: 0;
-          border: 1px solid black !important;
-          border-radius: 50% !important;
+          border: 1px solid black;
+          border-radius: 50%;
         }
 
         .banner {
@@ -104,13 +99,11 @@
         }
 
         .banner h2 {
-          font-size: 100%;
           color: #fff;
           transition: all 0.5s;
         }
 
         .banner h4 {
-          font-size: 60%;
           color: #fff;
           transition: all 0.5s;
         }
@@ -126,16 +119,13 @@
           padding-left: clamp(2rem, 10vh, 5rem);
         }
 
-        .speciality h4 {
+        .speciality h5 {
           cursor: pointer;
           position: relative;
           display: inline-block;
-          font-size: 2.4rem;
-          letter-spacing: -1.5px;
-          line-height: 2.2rem;
         }
 
-        .speciality h4::after {
+        .speciality h5::after {
           content: "";
           position: absolute;
           left: 0;
@@ -149,7 +139,7 @@
         }
 
 
-        .speciality h4:hover::after {
+        .speciality h5:hover::after {
           transform: scaleX(1);
         }
 
@@ -250,25 +240,11 @@
         }
 
         .articles {
-          font-size: 8rem;
           width: 100%;
         }
 
-        .articles h2 {
-          padding-left: 1rem;
-          font-size: 4rem;
-          letter-spacing: -3px;
-        }
-
         .articles aside {
-          font-size: 30%;
-          letter-spacing: -2px;
           transition: all 0.5s;
-        }
-
-        .articles main {
-          font-size: 15%;
-          line-height: 1.5rem;
         }
 
         .article {
@@ -283,9 +259,6 @@
           transition: all 0.4s;
         }
 
-        .article :hover aside {
-          font-size: 40%;
-        }
 
         .article .articleimg {
           width: 9rem;
@@ -314,7 +287,7 @@
         }
 
         footer {
-          height: 100vh;
+          height: 100%;
           width: 100%;
           background-color: #000;
           display: flex;
@@ -328,25 +301,17 @@
         footer .footer-heading {
           color: #fff;
           width: 100%;
-          line-height: 1;
-          letter-spacing: -0.5rem;
-          font-weight: 700;
           text-align: center;
-          font-size: clamp(8rem, 10vw, 15rem);
         }
 
         footer .button-book-Appointment {
           margin-top: 4rem !important;
           height: 4.2rem;
           width: 28rem;
-          font-size: 140%;
-          font-weight: 600;
         }
 
         footer .links {
           margin-top: 4rem;
-          font-weight: 600;
-          font-size: 100%;
           color: #fff;
           cursor: pointer;
         }
@@ -440,6 +405,93 @@
           }
         }
 
+        /*------------------------------------------------------------- mobile animation ----------------------------------------------------- */
+        @keyframes changingtext1Anim_mobile {
+          0% {
+            bottom: -40%;
+
+          }
+
+          25% {
+            bottom: -40%;
+
+          }
+
+          50% {
+            bottom: -40%;
+
+          }
+
+          100% {
+            bottom: 0%;
+          }
+        }
+
+        @keyframes changingtext2Anim_mobile {
+          0% {
+            bottom: -80%;
+
+          }
+
+          25% {
+            bottom: -40%;
+
+          }
+
+          50% {
+            bottom: -40%;
+
+          }
+
+          100% {
+            bottom: 0%;
+          }
+        }
+
+        @keyframes changingtext3Anim_mobile {
+          0% {
+            bottom: -80%;
+
+          }
+
+
+          25% {
+            bottom: -40%;
+
+          }
+
+          50% {
+            bottom: -40%;
+
+          }
+
+          100% {
+            bottom: 0%;
+          }
+        }
+
+        @keyframes changingtext4Anim_mobile {
+          0% {
+            bottom: -80%;
+
+          }
+
+          25% {
+            bottom: -40%;
+
+          }
+
+          50% {
+            bottom: -40%;
+
+          }
+
+          100% {
+            bottom: -40%;
+          }
+        }
+
+        /*------------------------------------------------------------- mobile animation ----------------------------------------------------- */
         @keyframes zoomtext {
           from {
             opacity: 0.5;
@@ -452,18 +504,160 @@
           }
         }
 
-        @media (min-width:991px) and (max-width:1024px) {}
+        @media (min-width:991px) and (max-width:1024px) {
+          .desktop {
+            display: none;
+          }
+
+          .mobile {
+            display: block;
+          }
+
+          #hidder1 {
+            top: 60%;
+            padding-left: 0rem;
+            padding-right: 40rem;
+            z-index: -1 !important;
+            color: var(--pearl);
+            background-color: var(--pearl);
+          }
+
+          #hidder2 {
+            bottom: -80%;
+            padding-left: 0rem;
+            padding-right: 40rem;
+            color: var(--pearl);
+            z-index: -1 !important;
+            background-color: var(--pearl);
+          }
+
+          #changingtext1 {
+            padding-left: 0rem;
+            text-align: center;
+            transition: top, bottom 1.5s;
+            animation: changingtext1Anim_mobile 1.5s ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            z-index: -2;
+            bottom: -40%;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+          #changingtext2 {
+            padding-left: 0rem;
+            transition: top 1.5s;
+            transition: bottom 1.5s;
+            animation: changingtext2Anim_mobile 1.5s ease-in-out;
+            animation-delay: 2s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext3 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext3Anim_mobile 1.5s ease-in-out;
+            animation-delay: 3s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext4 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext4Anim_mobile 1.5s ease-in-out;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          .article .arrow {
+            width: 4rem;
+          }
+        }
 
         @media (min-width:577px) and (max-width:990px) {
-          .content {
-            font-size: clamp(2rem, 10vw, 4rem);
-
+          .desktop {
+            display: none;
           }
 
-          .content h1 {
-            letter-spacing: clamp(-0.2rem, 1vh, -0.3rem);
+          .mobile {
+            display: block;
           }
 
+          #hidder1 {
+            top: 60%;
+            padding-left: 0rem;
+            padding-right: 25rem;
+            z-index: -1 !important;
+            color: var(--pearl);
+            background-color: var(--pearl);
+          }
+
+          #hidder2 {
+            bottom: -80%;
+            padding-left: 0rem;
+            padding-right: 25rem;
+            color: var(--pearl);
+            z-index: -1 !important;
+            background-color: var(--pearl);
+          }
+
+          #changingtext1 {
+            padding-left: 0rem;
+            text-align: center;
+            transition: top, bottom 1.5s;
+            animation: changingtext1Anim_mobile 1.5s ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            z-index: -2;
+            bottom: -40%;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+          #changingtext2 {
+            padding-left: 0rem;
+            transition: top 1.5s;
+            transition: bottom 1.5s;
+            animation: changingtext2Anim_mobile 1.5s ease-in-out;
+            animation-delay: 2s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext3 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext3Anim_mobile 1.5s ease-in-out;
+            animation-delay: 3s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext4 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext4Anim_mobile 1.5s ease-in-out;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
 
           .banner {
             display: grid;
@@ -476,70 +670,31 @@
             width: 50vh;
           }
 
-          .banner h2 {
-            font-size: clamp(2rem, 10vw, 3rem);
-          }
-
-          .banner h4 {
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
-          }
-
           .doctors {
             margin-top: 2rem !important;
           }
 
           .speciality {
+            padding-left: 0;
             margin-top: 1rem !important;
           }
 
-          .speciality {
-            padding-left: 0;
+          .speciality h5 {
+            padding-left: 1rem !important;
           }
 
           .speciality section {
             padding-left: 0;
           }
 
-          .speciality h4 {
-            font-size: clamp(0.8rem, 4.5vw, 1.6rem);
-            letter-spacing: -1.5px;
-            width: 100%;
-            line-height: 2.2rem;
-            display: inline;
-          }
-
-          .Doctors_brief h5 {
-            font-size: clamp(1rem, 1vh, 1.5rem);
-          }
-
-          .Doctors_brief p {
-            font-size: clamp(0.5px, 2vh, 0.8rem);
-          }
-
-          .Doctors_brief small {
-            font-size: clamp(0.5rem, 2.5vh, 0.8rem);
-          }
 
           .articles {
-            font-size: 5rem;
             width: 100%;
           }
 
-          .articles h2 {
-            padding-left: 1.5rem;
-            font-size: 3rem;
-            letter-spacing: -3px;
-          }
 
           .articles aside {
-            font-size: 30%;
-            letter-spacing: -2px;
             transition: all 0.5s;
-          }
-
-          .articles main {
-            font-size: 18%;
-            line-height: 1rem;
           }
 
           .article {
@@ -552,10 +707,6 @@
             height: auto;
             object-fit: contain;
             transition: all 0.4s;
-          }
-
-          .article :hover aside {
-            font-size: 35%;
           }
 
           .article .articleimg {
@@ -576,6 +727,14 @@
         }
 
         @media (min-width:280px) and (max-width:576px) {
+          .desktop {
+            display: none;
+          }
+
+          .mobile {
+            display: block;
+          }
+
           .articles {
             display: none;
           }
@@ -588,28 +747,10 @@
             width: clamp(5rem, 25vw, 10rem)
           }
 
-          header p {
-            font-size: clamp(0.75rem, 5vh, 1rem);
-          }
-
-          .links a {
-            font-size: clamp(0.75rem, 5vh, 1rem);
-          }
-
-          .of {
-            width: 100%;
-            margin-left: clamp(-15rem, 15vw, -35rem);
-            margin-right: clamp(1rem, 15vw, 1rem);
-          }
 
           .animated-title {
-            font-size: clamp(3rem, 15vw, 15rem);
             z-index: 5;
             transition: all 0.5s;
-          }
-
-          .content h1 {
-            letter-spacing: clamp(-0.2rem, 6vh, -0.4rem);
           }
 
           .speciality section {
@@ -621,22 +762,14 @@
             padding-left: 0px;
           }
 
-          .speciality h4 {
-            line-height: 1;
-            margin: 0px 1rem;
-            font-size: clamp(0.75rem, 10vw, 1.5rem);
+
+          .speciality h5 {
             height: fit-content;
           }
 
           .Doctors_brief .col-6 {
             padding-left: 0 !important;
             padding-right: 0 !important;
-          }
-
-          .articles_mobile h2 {
-            font-size: clamp(1rem, 10vw, 2rem);
-            padding-left: 4vh;
-            letter-spacing: -0.1rem;
           }
 
           .article .articleimg {
@@ -647,11 +780,6 @@
             margin: 2.5vh 0;
           }
 
-          .articles_mobile .article h3 {
-            letter-spacing: -0.1rem;
-            font-size: clamp(0.75rem, 8vw, 1.6rem);
-          }
-
           .articles_mobile .articleimg {
             width: clamp(8rem, 10vh, 12rem)
           }
@@ -660,20 +788,79 @@
             text-align: center;
           }
 
-          .banner h2 {
-            font-size: clamp(1.5rem, 10vw, 3rem);
-          }
-
-          .banner h4 {
-            font-size: clamp(1rem, 5vw, 2.5rem);
-          }
 
           .cartoon img {
             width: clamp(15rem, 40vh, 20rem);
           }
 
+          #hidder1 {
+            top: 60%;
+            padding-left: 0rem;
+            padding-right: 25rem;
+            z-index: -1 !important;
+            color: var(--pearl);
+            background-color: var(--pearl);
+          }
+
+          #hidder2 {
+            bottom: -80%;
+            padding-left: 0rem;
+            padding-right: 25rem;
+            color: var(--pearl);
+            z-index: -1 !important;
+            background-color: var(--pearl);
+          }
+
+          #changingtext1 {
+            padding-left: 0rem;
+            text-align: center;
+            transition: top, bottom 1.5s;
+            animation: changingtext1Anim_mobile 1.5s ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            z-index: -2;
+            bottom: -40%;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+          #changingtext2 {
+            padding-left: 0rem;
+            transition: top 1.5s;
+            transition: bottom 1.5s;
+            animation: changingtext2Anim_mobile 1.5s ease-in-out;
+            animation-delay: 2s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext3 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext3Anim_mobile 1.5s ease-in-out;
+            animation-delay: 3s;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
+          #changingtext4 {
+            padding-left: 0rem;
+            transition: top, bottom 1.5s;
+            animation: changingtext4Anim_mobile 1.5s ease-in-out;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            bottom: -80%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -2;
+          }
+
           footer {
-            height: 100vh;
+            height: 100%;
             width: 100%;
             background-color: #000;
             display: flex;
@@ -692,40 +879,23 @@
           footer .footer-heading {
             color: #fff;
             width: 100%;
-            line-height: 1;
-            letter-spacing: -0.2rem;
-            font-weight: 700;
             text-align: center;
-            font-size: clamp(3rem, 10vw, 10rem);
           }
 
           footer .button-book-Appointment {
             margin-top: 1rem !important;
             height: 2.2rem;
             width: 10rem;
-            font-size: 80%;
-            font-weight: 600;
           }
 
           footer .links {
             margin-top: 1rem;
-            font-weight: 600;
-            font-size: 80%;
             color: #fff;
             cursor: pointer;
           }
 
           footer img {
             width: 2rem;
-          }
-
-          .footeranimation {
-            height: 100vh;
-            opacity: 1;
-          }
-
-          .copyright {
-            font-size: 60%;
           }
 
           .media .spacer {

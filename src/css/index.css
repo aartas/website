@@ -1358,16 +1358,6 @@ body {
         line-height: 1.5;
     }
 
-    /* .media-content h1 {
-        line-height: 0.8;
-    } */
-
-    /* .media-content h1 {
-        font-weight: 700 !important;
-        letter-spacing: -0.5rem !important;
-        font-size: clamp(2rem, 20vw, 10rem) !important;
-        margin-top: 20vh;
-    } */
 
     .media-content h4 {
         font-weight: 700;
@@ -1853,11 +1843,6 @@ body {
 
     footer img {
         width: 2rem;
-    }
-
-    .footeranimation {
-        height: 100vh;
-        opacity: 1;
     }
 
     .copyright {

@@ -512,7 +512,6 @@ ScrollTrigger.create({
   pin: '.slides',
   end: "+=5000vh bottom",
   scrub: 1,
-  markers: true,
 })
 
 //------------------------------------aartas space end------------------------------------------------
