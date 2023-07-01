@@ -640,7 +640,7 @@ p {
 
     h5 {
         font-size: clamp(2rem, 30px, 2.5rem) !important;
-        letter-spacing: -0.2rem !important;
+        letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
         line-height: 1 !important;
     }
@@ -831,8 +831,8 @@ p {
     }
 
     h5 {
-        font-size: clamp(2rem, 40px, 2.5rem) !important;
-        letter-spacing: -0.2rem !important;
+        font-size: clamp(2rem, 25px, 1.563rem) !important;
+        letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
         line-height: 1 !important;
     }

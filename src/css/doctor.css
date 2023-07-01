@@ -1,31 +1,30 @@
-.doctorname {
+/* .doctorname {
     font-size: clamp(8rem, 5vw, 12rem);
     font-weight: 600;
     letter-spacing: -0.5rem;
     line-height: 7rem;
 
-}
+} */
 
-.doctorintro {
+/* .doctorintro {
     font-size: 5rem;
-}
+} */
 
 .doctorintro .para {
     margin-top: 10vh;
 }
 
-.doctorprofession {
+/* .doctorprofession {
     font-size: clamp(3rem, 1vw, 12rem);
     font-weight: 600;
     letter-spacing: -0.2rem;
     line-height: 7rem;
-}
+} */
 
 .doctorphoto {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -1;
 }
 
 .image-container {
@@ -62,47 +61,47 @@
     transform: scale(1);
 }
 
-.paragraph {
+/* .paragraph {
     font-size: clamp(1rem, 1vw, 2rem);
     font-weight: 600;
     letter-spacing: -0.05rem;
     line-height: -1rem;
-}
+} */
 
 .hr {
     height: 1px;
 }
 
 .sub-article {
-    font-size: 50%;
+    /* font-size: 50%;
     font-weight: 700;
     letter-spacing: -0.1rem;
-    line-height: 120%;
+    line-height: 120%; */
     padding-bottom: 5vh;
     cursor: pointer;
     width: 85%;
 }
 
 .heading {
-    font-size: clamp(1.5rem, 1.3vw, 2rem);
+    /* font-size: clamp(1.5rem, 1.3vw, 2rem);
     font-weight: 700;
     letter-spacing: -0.1rem;
-    line-height: 120%;
+    line-height: 120%; */
     padding-top: 5vh;
 }
 
 .heading2 {
-    font-size: clamp(1.3rem, 1vw, 2rem);
+    /* font-size: clamp(1.3rem, 1vw, 2rem);
     font-weight: 700;
     letter-spacing: -0.1rem;
-    line-height: 120%;
+    line-height: 120%; */
     padding-top: 3vh;
 }
 
 .anim-border {
-    font-weight: 700;
+    /* font-weight: 700;
     letter-spacing: -0.1rem;
-    line-height: 120%;
+    line-height: 120%; */
     position: relative;
 }
 
@@ -124,9 +123,10 @@
     height: 10px;
 }
 
-.sub-article2 {
+/* .sub-article2 {
     font-size: 50%;
-}
+} */
+
 
 @media (min-width:991px) and (max-width:1024px) {}
 
@@ -152,17 +152,17 @@
         width: clamp(5rem, 50vh, 40rem);
     }
 
-    .doctorname {
+    /* .doctorname {
         font-size: clamp(2rem, 10vh, 3rem);
         line-height: 0.5;
         font-weight: 600;
         letter-spacing: -0.5rem;
-    }
-
+    } */
+    /* 
     .doctorprofession {
         font-size: clamp(2rem, 10vh, 3rem);
         line-height: 2;
-    }
+    } */
 
     .doctorintro .para {
         margin-top: 0;
@@ -182,13 +182,13 @@
         width: clamp(5rem, 25vw, 10rem)
     }
 
-    header p {
+    /* header p {
         font-size: clamp(0.75rem, 5vh, 1rem);
     }
 
     .links a {
         font-size: clamp(0.75rem, 5vh, 1rem);
-    }
+    } */
 
     .doctorphoto {
         position: relative;
@@ -211,18 +211,18 @@
         width: clamp(5rem, 40vh, 40rem);
     }
 
-    .doctorname {
+    /* .doctorname {
         font-size: clamp(2rem, 10vh, 3rem);
         line-height: 1;
         font-weight: 600;
         letter-spacing: -0.2rem;
-    }
+    } */
 
     .doctorprofession {
         padding-top: 2vh;
-        line-height: 1;
+        /* line-height: 1;
         letter-spacing: -0.1rem;
-        font-size: clamp(1.5rem, 6vh, 1.8rem);
+        font-size: clamp(1.5rem, 6vh, 1.8rem); */
         margin-bottom: 5vh;
     }
 
@@ -244,7 +244,7 @@
     }
 
     footer {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-color: #000;
         display: flex;
@@ -288,11 +288,6 @@
 
     footer img {
         width: 2rem;
-    }
-
-    .footeranimation {
-        height: 100vh;
-        opacity: 1;
     }
 
     .copyright {
