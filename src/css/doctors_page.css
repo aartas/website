@@ -764,6 +764,7 @@
 
 
           .speciality h5 {
+            margin-right:1rem;
             height: fit-content;
           }
 
@@ -781,7 +782,7 @@
           }
 
           .articles_mobile .articleimg {
-            width: clamp(8rem, 10vh, 12rem)
+            width: clamp(8rem, 10vh, 12rem);
           }
 
           .banner {
