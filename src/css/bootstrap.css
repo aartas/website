@@ -729,7 +729,7 @@ p {
     }
 
     h4 {
-        font-size: clamp(1rem, 28px, 2rem) !important;
+        font-size: clamp(1rem, 32px, 2rem) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
         line-height: 1 !important;
@@ -774,7 +774,7 @@ p {
     }
 
     .s4 {
-        font-size: clamp(1.5rem, 30px, 1.875rem) !important;
+        font-size: clamp(1.5rem, 30px, 1.575rem) !important;
         font-weight: 600 !important;
     }
 
