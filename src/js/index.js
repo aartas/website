@@ -457,7 +457,6 @@ if (window.innerWidth <= 992) {
   })
   tl.to('.slide4', {
     yPercent: -500,
-    paddingLeft: '20vh',
     // paddingTop: '25vh',
     duration: 5
   })
