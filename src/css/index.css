@@ -657,9 +657,13 @@ body {
         height: 0;
         overflow: hidden;
         transition: all 0.5s;
-        background-color: white;
+        background-color: #00000012;
         z-index: -1;
-
+        color: white;
+        box-sizing: content-box;
+    }
+    .routes{
+        color:#fff;
     }
 
     .button-nav img {
@@ -1788,7 +1792,7 @@ body {
         margin-bottom: 2vh !important;
     } */
 
- 
+
 
     .allnews a {
         font-size: clamp(1rem, 5vh, 2rem) !important;

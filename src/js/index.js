@@ -455,6 +455,12 @@ if (window.innerWidth <= 992) {
     // paddingTop: '40vh',
     duration: 5
   })
+  tl.to('.slide4', {
+    yPercent: -500,
+    paddingLeft: '20vh',
+    // paddingTop: '25vh',
+    duration: 5
+  })
 } else {
   tl.to('.slide0', {
     opacity: 0.5,
@@ -500,7 +506,7 @@ ScrollTrigger.create({
   trigger: '.slide0',
   start: 'top top',
   end: "+=5000vh +=1500vh",
-  scrub: 1,
+  scrub: 2,
   pin: '.slide0',
   pinSpacing: false
 
@@ -511,7 +517,7 @@ ScrollTrigger.create({
   start: 'top top',
   pin: '.slides',
   end: "+=5000vh bottom",
-  scrub: 1,
+  scrub: 2,
 })
 
 //------------------------------------aartas space end------------------------------------------------

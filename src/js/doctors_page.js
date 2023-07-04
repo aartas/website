@@ -28,11 +28,18 @@ window.addEventListener("scroll", function () {
         $('nav').css('background-color', '#f2f2f2')
         $('.logo_dark').css('display', 'block')
         $('.logo_white').css('display', 'none')
+        $('.ham-menu').css('backgroundColor', '#fff')
+        $('.routes').css('color', '#000')
+        $('.icon').attr('src', 'images/hamburger_black.png')
     } else {
         $('.links').css('color', '#fff')
         $('nav').css('background-color', 'transparent')
         $('.logo_dark').css('display', 'none')
         $('.logo_white').css('display', 'block')
+        $('.ham-menu').css('backgroundColor', '#00000012')
+        $('.routes').css('color', '#fff')
+        $('.icon').attr('src', 'images/hamburger.png')
+
     }
 });
 
