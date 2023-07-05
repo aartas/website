@@ -1,4 +1,39 @@
+var navbar = document.getElementById("navbar");
+let prevScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset;
 
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
+
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+  }
+
+  prevScrollPos = currentScrollPos;
+};
+
+window.addEventListener("scroll", function () {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrolled > 0) {
+    $('.links').css('color', '#000')
+    $('nav').css('background-color', '#fff')
+    $('.logo_dark').css('display', 'block')
+    $('.logo_white').css('display', 'none')
+    $('.ham-menu').css('backgroundColor', '#fff')
+    $('.routes').css('color', '#000')
+    $('.icon').attr('src', 'images/hamburger_black.png')
+  } else {
+    $('.links').css('color', '#fff')
+    $('nav').css('background-color', 'transparent')
+    $('.logo_dark').css('display', 'none')
+    $('.logo_white').css('display', 'block')
+    $('.ham-menu').css('backgroundColor', '#00000012')
+    $('.routes').css('color', '#fff')
+    $('.icon').attr('src', 'images/hamburger.png')
+
+  }
+});
 
 
 
@@ -504,8 +539,8 @@ ScrollTrigger.create({
   animation: tl,
   trigger: '.slide0',
   start: 'top top',
-  end: "+=5000vh +=1500vh",
-  scrub: 2,
+  end: "+=10000vh +=1500vh",
+  scrub: 3,
   pin: '.slide0',
   pinSpacing: false
 
@@ -515,8 +550,8 @@ ScrollTrigger.create({
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
-  end: "+=5000vh bottom",
-  scrub: 2,
+  end: "+=10000vh bottom",
+  scrub: 3,
 })
 
 //------------------------------------aartas space end------------------------------------------------
