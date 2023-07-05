@@ -660,8 +660,9 @@ body {
         color: white;
         box-sizing: content-box;
     }
-    .routes{
-        color:#fff;
+
+    .routes {
+        color: #fff;
     }
 
     .button-nav img {
@@ -1140,6 +1141,21 @@ body {
         height: 50vh;
         max-height: 50vh;
     }
+
+    .media-content .image2:hover h5 {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+
+    .media-content .image2:hover a {
+        opacity: 1;
+        transform: translateY(-40%);
+    }
+
+    .media-content .image2:hover p {
+        transform: translateY(-40%);
+        opacity: 1;
+    }
 }
 
 @media (min-width:577px) and (max-width:990px) {
@@ -1412,6 +1428,21 @@ body {
         height: 50vh;
         max-height: 50vh;
     }
+
+    .media-content .image2:hover h5 {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+
+    .media-content .image2:hover a {
+        opacity: 1;
+        transform: translateY(-40%);
+    }
+
+    .media-content .image2:hover p {
+        transform: translateY(-40%);
+        opacity: 1;
+    }
 }
 
 @media (min-width:280px) and (max-width:576px) {
@@ -1598,7 +1629,7 @@ body {
         transition: all 0.5s;
         justify-content: center;
         /* padding-bottom:3vh; */
-        z-index: 1
+        z-index: 1;
     }
 
     .aartasapp #appheadline2 {
@@ -1780,6 +1811,21 @@ body {
 
     .media-content {
         font-size: 6rem;
+    }
+
+    .media-content .image2:hover h5 {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+
+    .media-content .image2:hover a {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+    .media-content .image2:hover p {
+        transform: translateY(-30%);
+        opacity: 1;
     }
 
     /* .media-content h1 {
