@@ -70,10 +70,11 @@ if (window.innerWidth <= 1024) {
     scrollTrigger: {
       pin: '.cardtrigger',
       trigger: '.cardtrigger',
-      start: '-100vh top',
-      end: 'bottom bottom',
+      start: '-600vh top',
+      end: 'bottom top',
+      toggleActions: 'play none none none',
       pinSpacing: false,
-      scrub: 2
+      scrub: 3
     }
   })
   gsap.to('.aboutslot2', {
@@ -82,10 +83,11 @@ if (window.innerWidth <= 1024) {
     scrollTrigger: {
       pin: '.cardtrigger',
       trigger: '.cardtrigger',
-      start: '-100vh top',
-      end: 'bottom bottom',
+      start: '-600vh top',
+      end: 'bottom top',
+      toggleActions: 'play none none none',
       pinSpacing: false,
-      scrub: 2
+      scrub: 3
     }
   })
 }
