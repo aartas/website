@@ -34,7 +34,9 @@ input[type='date'] {
     -webkit-appearance: none;
 
 }
-
+h1{
+    line-height: normal !important;
+}
 input[type='text'] {
     -webkit-appearance: none;
 
@@ -438,7 +440,7 @@ h1 {
     font-size: clamp(10rem, 200px, 14vw) !important;
     letter-spacing: -0.6rem !important;
     font-weight: 700 !important;
-    /* line-height: 0.9 !important; */
+    line-height: 0.9 !important;
 }
 
 h2 {

@@ -162,7 +162,6 @@
           top: 0%;
           padding-left: 10rem;
           padding-right: 15rem;
-          width: 100vh;
           z-index: -1 !important;
           color: var(--pearl);
           background-color: var(--pearl);
@@ -216,7 +215,7 @@
         }
 
         .Doctors_brief {
-          height: max-content;
+          height: 100vh;
         }
 
         .Doctors_brief .cards {
@@ -273,6 +272,10 @@
 
         .article :hover .articleimg {
           transform: scale(1.2);
+        }
+
+        .arrow {
+          width: 2vw !important;
         }
 
         .article :hover .arrow {
@@ -515,13 +518,14 @@
 
         @media (min-width:1025px) and (max-width:1300px) {
           #hidder1 {
+            min-width: 100vh;
             top: 15%;
             padding-left: 0rem;
             padding-right: 25rem;
             z-index: -1 !important;
             color: var(--pearl);
             background-color: var(--pearl);
-            transform: translate(0%,-15%);
+            transform: translate(0%, -15%);
           }
 
         }
@@ -532,9 +536,9 @@
             display: block;
           }
 
-          .expanded-nav {
+          /* .expanded-nav {
             display: none;
-          }
+          } */
 
           .ham-menu {
             width: 100%;

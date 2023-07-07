@@ -9,11 +9,10 @@ video.onload = function () {
 }
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
-  const currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.pageYOffset + 200;
 
   if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = "0";
-
+    navbar.style.top = "0"
   } else {
     navbar.style.top = `-${navbar.offsetHeight}px`;
   }

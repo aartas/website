@@ -8,10 +8,10 @@ html {
     width: clamp(8rem, 15vw, 15rem);
 }
 
-.doctorintro .para {
+/* .doctorintro .para {
     height: 100vh;
     overflow: scroll;
-}
+} */
 
 .links {
     text-decoration: none;
