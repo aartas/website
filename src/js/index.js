@@ -1,4 +1,12 @@
 var navbar = document.getElementById("navbar");
+var video = document.getElementsByClassName('video');
+
+function playVideo() {
+  video.play();
+}
+video.onload = function () {
+  playVideo();
+}
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
