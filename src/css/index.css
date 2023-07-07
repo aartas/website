@@ -1892,13 +1892,9 @@ footer .links {
         justify-content: center;
         align-items: center;
         padding: 20px;
-        padding-bottom: 10rem;
         width: 100%;
     }
 
-    footer .heading {
-        margin-top: 18vh;
-    }
 
     footer .footer-heading {
         color: #fff;

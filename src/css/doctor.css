@@ -61,9 +61,6 @@ html {
     width: 85%;
 }
 
-.heading {
-    padding-top: 5vh;
-}
 
 .heading2 {
     padding-top: 3vh;
@@ -273,12 +270,7 @@ footer .links {
         justify-content: center;
         align-items: center;
         padding: 20px;
-        padding-bottom: 10rem;
         width: 100%;
-    }
-
-    footer .heading {
-        margin-top: 18vh;
     }
 
     footer .footer-heading {
