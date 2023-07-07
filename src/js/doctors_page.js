@@ -9,16 +9,16 @@
 var navbar = document.getElementById("navbar");
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
-    const currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
-        navbar.style.top = "0";
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
 
-    } else {
-        navbar.style.top = `-${navbar.offsetHeight}px`;
-    }
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+  }
 
-    prevScrollPos = currentScrollPos;
+  prevScrollPos = currentScrollPos;
 };
 
 
@@ -60,3 +60,20 @@ ScrollTrigger.create({
     trigger: '.content',
     scrub: 1
 })
+
+
+function showmenu() {
+    let height = $('.ham-menu').height()
+    if (height == 0) {
+        $('.ham-menu').height('max-content');
+    }
+    if (height != 0) {
+        $('.ham-menu').height('0');
+    }
+    window.onscroll = function () {
+        let prevScrollPos = window.pageYOffset;
+        if (prevScrollPos > 10) {
+            $('.ham-menu').height('0');
+        }
+    }
+}

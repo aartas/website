@@ -18,8 +18,6 @@
     --charcoal50: #22202331;
     --charcoal75: #222023ad;
     --lightred50: #e8ad988a;
-
-
 }
 html {
     font-family: 'Urbanist' !important;
@@ -437,10 +435,10 @@ br {
 }
 
 h1 {
-    font-size: clamp(10rem, 200px, 12.5rem) !important;
+    font-size: clamp(10rem, 200px, 14vw) !important;
     letter-spacing: -0.6rem !important;
     font-weight: 700 !important;
-    line-height: 0.9 !important;
+    /* line-height: 0.9 !important; */
 }
 
 h2 {

@@ -16,6 +16,16 @@ body {
     padding: 0;
 }
 
+.logo_dark {
+    display: none;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--pearl);
+    background-color: transparent;
+}
+
 .herosection {
     height: 100vh;
     min-height: 100vh;
@@ -501,8 +511,6 @@ body {
     background-color: white;
 }
 
-
-
 .aartasapp #appheadline1 {
     height: 70vh;
     margin: 0 auto;
@@ -695,9 +703,17 @@ footer .links {
         color: white;
         box-sizing: content-box;
     }
+    
+    #navbar .expanded-nav {
+        display: none;
+    }
 
     .routes {
         color: #fff;
+    }
+
+    #navbar .expanded-nav {
+        display: none;
     }
 
     .button-nav img {

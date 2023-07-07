@@ -20,21 +20,36 @@
 </head>
 
 <body>
-    <header class="p-0 m-0">
-        <nav id="navbar" class=" pt-2 bg-white">
-            <div class="row justify-content-between p-0 m-0">
-                <div class="col-auto logo">
-                    <img src="../src/images/logo.png" class="logo_dark" href="index.html" alt="aartas.com">
-                </div>
-                <div class="col-auto links ">
-                    <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Locations</a>
-                    <a href="#" class="text-decoration-none text-charcoal fw-bold align-self-center mx-2">Doctors</a>
+
+    <nav id='navbar' class="navbar navbar-expand-lg bg-pearl px-lg-4">
+        <div class="row justify-content-between align-items-center p-0 m-0 w-100">
+            <div class="navbar-brand ps-1 ps-md-2 ps-lg-3 col-auto logo ps-4">
+                <img src="../src/images/logo.png" class="ps-lg-4 ps-md-3 ps-sm-2 ps-1 img-fluid logo_dark"
+                    href="index.html" alt="aartas.com">
+            </div>
+            <div class="col-auto expanded-nav">
+                <div class="row expanded-nav pe-lg-4 pe-md-4 pe-sm-1 ">
+                    <a class="col-auto fw-bold links" aria-current="page" href="#">Locations</a>
+                    <a class="col-auto fw-bold links" href="#">Doctors</a>
                 </div>
             </div>
-            <p class="container-fluid text-white bg-burntumber text-center p-0 m-0 mt-2 p-1">Download the Aartas
-                Healthcare App</p>
-        </nav>
-    </header>
+            <div class="col-auto button-nav ">
+                <div class="btn text-white p-0 m-0" onclick="showmenu()">
+                    <img src="images/hamburger_black.png" alt="menu" class="img-fluid icon">
+                </div>
+                <div class="row w-100 position-absolute top-0 end-0 ham-menu pe-3 ps-5 text-end">
+                    <div class="col-12 mt-5 pt-2 ps-3 pt-2">
+                        <a class=" col-auto mx-md-2 text-decoration-none text-charcoal" href="#">Locations</a>
+                    </div>
+                    <div class="col-12 pt-2">
+                        <a class=" col-auto mx-md-2 text-decoration-none text-charcoal" href="#">Doctors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="container-fluid text-white bg-burntumber text-center p-0 m-0 mt-2 p-1">Download
+            the Aartas Healthcare App</p> -->
+    </nav>
     <section class="content d-flex align-items-center">
         <h1 class="animated-title desktop mx-auto fw-semibold position-relative text-center">Leading
             Doctors<br class="" /> <span class="of">of</span>
@@ -239,14 +254,14 @@
         <h4 class="text-start fw-bold pt-5">Articles about</h4>
         <h4 class="text-start fw-bold">Doctors & Speciality</h4>
         <div class="fade-line2 ms-3 my-5"></div>
-        <section class="row p-0 m-0">
+        <section class="row p-0 m-0 justify-content-between">
             <section class="article align-items-center">
                 <a class="text-decoration-none align-items-center text-charcoal" href="">
                     <div class="row p-0 m-0 align-items-center">
                         <aside class="col-3 fw-bolder">
                             <h5>Paediatrics</h5>
                         </aside>
-                        <aside class="col-2 ">
+                        <aside class="col-3 d-flex ">
                             <img class='articleimg' src="../src/images/Child_Health.png" alt="">
                         </aside>
 
@@ -263,7 +278,10 @@
 
 
                         </main>
-                        <img class="col-sm-auto col-1 arrow" src="../src/images/arrow.png" />
+                        <div class="col-1">
+                            <img class="img-fluid arrow" src="../src/images/arrow.png" />
+                        </div>
+               
                     </div>
                     <div class="fade-line1 my-5"></div>
                 </a>
@@ -274,7 +292,7 @@
                         <aside class="col-3 fw-bolder">
                             <h5>Paediatrics</h5>
                         </aside>
-                        <aside class="col-2 ">
+                        <aside class="col-3 d-flex ">
                             <img class='articleimg' src="../src/images/Child_Health.png" alt="">
                         </aside>
 
@@ -291,7 +309,10 @@
 
 
                         </main>
-                        <img class="col-sm-auto col-1 arrow" src="../src/images/arrow.png" />
+                        <div class="col-1">
+                            <img class="img-fluid arrow" src="../src/images/arrow.png" />
+                        </div>
+               
                     </div>
                     <div class="fade-line1 my-5"></div>
                 </a>
@@ -302,7 +323,7 @@
                         <aside class="col-3 fw-bolder">
                             <h5>Paediatrics</h5>
                         </aside>
-                        <aside class="col-2 ">
+                        <aside class="col-3 d-flex ">
                             <img class='articleimg' src="../src/images/Child_Health.png" alt="">
                         </aside>
 
@@ -319,7 +340,10 @@
 
 
                         </main>
-                        <img class="col-sm-auto col-1 arrow" src="../src/images/arrow.png" />
+                        <div class="col-1">
+                            <img class="img-fluid arrow" src="../src/images/arrow.png" />
+                        </div>
+               
                     </div>
                     <div class="fade-line1 my-5"></div>
                 </a>
@@ -330,7 +354,7 @@
                         <aside class="col-3 fw-bolder">
                             <h5>Paediatrics</h5>
                         </aside>
-                        <aside class="col-2 ">
+                        <aside class="col-3 d-flex ">
                             <img class='articleimg' src="../src/images/Child_Health.png" alt="">
                         </aside>
 
@@ -347,7 +371,10 @@
 
 
                         </main>
-                        <img class="col-sm-auto col-1 arrow" src="../src/images/arrow.png" />
+                        <div class="col-1">
+                            <img class="img-fluid arrow" src="../src/images/arrow.png" />
+                        </div>
+               
                     </div>
                     <div class="fade-line1 my-5"></div>
                 </a>
