@@ -19,6 +19,7 @@
     --charcoal75: #222023ad;
     --lightred50: #e8ad988a;
 }
+
 html {
     font-family: 'Urbanist' !important;
     margin: 0;
@@ -30,13 +31,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
 input[type='date'] {
     -webkit-appearance: none;
 
 }
-h1{
+
+h1 {
     line-height: normal !important;
 }
+
 input[type='text'] {
     -webkit-appearance: none;
 
@@ -768,7 +772,7 @@ p {
     }
 
     .s1 {
-        font-size: clamp(1rem, 30px, 1.875rem) !important;
+        font-size: clamp(1rem, 30px, 6vw) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 600 !important;
         line-height: 1 !important;

@@ -564,7 +564,9 @@
           .mobile {
             display: block;
           }
-
+          .about_mobile h6{
+            text-align: center;
+          }
           #hidder1 {
             top: 60%;
             padding-left: 0rem;
