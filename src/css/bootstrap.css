@@ -817,8 +817,15 @@ p {
         letter-spacing: -0.4rem !important;
     }
 
-    h1 {
-        font-size: clamp(3rem, 90px, 23vw) !important;
+    .h1 {
+        font-size: clamp(3rem, 90px, 23vw);
+        letter-spacing: -0.3rem;
+        font-weight: 700;
+        line-height: 0.9;
+    }
+
+    .h1-small {
+        font-size: clamp(3rem, 70px, 4.375rem) !important;
         letter-spacing: -0.3rem !important;
         font-weight: 700 !important;
         line-height: 0.9 !important;

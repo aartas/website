@@ -203,7 +203,7 @@ if (window.innerWidth <= 577 && window.innerWidth > 200) {
 //aartas app animation start
 const app = gsap.timeline()
 
-if (window.innerWidth > 300 && window.innerWidth <= 576) {
+if (window.innerWidth > 280 && window.innerWidth <= 576) {
   app.to('#appheadline1', {
     opacity: 0,
     duration: 0.1,
@@ -269,7 +269,7 @@ if (window.innerWidth > 300 && window.innerWidth <= 576) {
   })
   ScrollTrigger.create({
     animation: app,
-    start: '250vh top',
+    start: '200vh top',
     end: '+5000vh top',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -449,6 +449,7 @@ if (window.innerWidth > 1024) {
     height: '60vh',
     duration: 0.5,
   })
+
   ScrollTrigger.create({
     animation: app,
     start: '100vh top',
@@ -467,10 +468,10 @@ if (window.innerWidth > 1024) {
 //-----------------------------aartas space start----------------------------------------------------
 const tl = gsap.timeline();
 if (window.innerWidth <= 992) {
-  tl.to('.slide0', {
+  tl.to('.slide_text', {
     opacity: 0.5,
     duration: 5
-  }).to('.slide0', {
+  }).to('.slide_text', {
     opacity: 0.2,
     duration: 5
   }).to(".slide1", {
@@ -501,10 +502,10 @@ if (window.innerWidth <= 992) {
   })
 
 } else {
-  tl.to('.slide0', {
+  tl.to('.slide_text', {
     opacity: 0.5,
     duration: 3
-  }).to('.slide0', {
+  }).to('.slide_text', {
     opacity: 0.2,
     duration: 3
   }).to(".slide1", {
@@ -539,10 +540,10 @@ ScrollTrigger.create({
   animation: tl,
   trigger: '.slide0',
   start: 'top top',
-  end: "+=15000vh +=1500vh",
+  end: "+=10000vh bottom",
   scrub: 1,
   pin: '.slide0',
-  pinSpacing: false
+  pinSpacing: false,
 
 })
 ScrollTrigger.create({
@@ -550,8 +551,9 @@ ScrollTrigger.create({
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
-  end: "+=15000vh bottom",
+  end: "+=10000vh bottom",
   scrub: 1,
+  // pinSpacing: false,
 })
 
 //------------------------------------aartas space end------------------------------------------------
