@@ -417,7 +417,6 @@ body {
 .about .aboutpara {
     height: 60vh;
     margin: 5vh 0vh;
-    width: 60%;
 }
 
 .about_mobile {
@@ -703,7 +702,7 @@ footer .links {
         color: white;
         box-sizing: content-box;
     }
-    
+
     #navbar .expanded-nav {
         display: none;
     }
