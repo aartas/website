@@ -273,7 +273,7 @@ if (window.innerWidth > 270 && window.innerWidth <= 576) {
     end: '+5000vh top',
     pin: '.aartasapp',
     trigger: '.aartasapp',
-    scrub: true,
+    scrub: 1,
     toggleActions: 'restart restart reverse reverse'
   })
 }

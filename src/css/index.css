@@ -615,7 +615,7 @@ body {
 
 .aartasapp #appfeature1 {
     position: absolute;
-    left: 50%;
+    left: 30%;
     height: 60vh;
     width: 28vh;
     transform: scale(0.8);
@@ -625,7 +625,7 @@ body {
 
 .aartasapp #appfeature2 {
     position: absolute;
-    left: 75%;
+    left: 55%;
     height: 60vh;
     width: 28vh;
     transform: scale(0.8);
@@ -636,7 +636,7 @@ body {
 
 .aartasapp #appfeature3 {
     position: absolute;
-    left: 100%;
+    left: 80%;
     width: 28vh;
     z-index: -1;
     height: 60vh;
