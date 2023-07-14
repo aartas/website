@@ -136,7 +136,7 @@ if (window.innerWidth <= 577 && window.innerWidth > 200) {
     scrollTrigger: {
       start: 'top top',
       end: '+=2500vh bottom',
-      pin: true,
+      pin: '.specialities',
       scrub: 1,
       trigger: '.specialities',
       toggleActions: 'play none none none',
@@ -471,9 +471,6 @@ if (window.innerWidth <= 992) {
   tl.to('.slide_text', {
     opacity: 0.5,
     duration: 5
-  }).to('.slide_text', {
-    opacity: 0.2,
-    duration: 5
   }).to(".slide1", {
     height: "100vh",
     paddingLeft: '5vh',
@@ -504,9 +501,6 @@ if (window.innerWidth <= 992) {
 } else {
   tl.to('.slide_text', {
     opacity: 0.5,
-    duration: 3
-  }).to('.slide_text', {
-    opacity: 0.2,
     duration: 3
   }).to(".slide1", {
     height: "100vh",
@@ -540,8 +534,8 @@ ScrollTrigger.create({
   animation: tl,
   trigger: '.slide0',
   start: 'top top',
-  end: "+=10000vh bottom",
-  scrub: 1,
+  end: "+=4000vh bottom",
+  scrub: 0.5,
   pin: '.slide0',
   pinSpacing: false,
 
@@ -551,8 +545,8 @@ ScrollTrigger.create({
   trigger: '.slides',
   start: 'top top',
   pin: '.slides',
-  end: "+=10000vh bottom",
-  scrub: 1,
+  end: "+=4000vh bottom",
+  scrub: 0.5,
   // pinSpacing: false,
 })
 

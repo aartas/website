@@ -434,7 +434,7 @@ br {
 }
 
 .hs {
-    font-size: clamp(1rem, 18vw, 15rem) !important;
+    font-size: clamp(1rem, 16vw, 15rem) !important;
     letter-spacing: -0.6rem !important;
     font-weight: 700 !important;
     line-height: 0.9 !important;
@@ -530,9 +530,13 @@ p {
 }
 
 
-
 @media (min-width:769px) and (max-width:1024px) {
-
+    .hs {
+        font-size: clamp(1rem, 16vw, 13rem) !important;
+        letter-spacing: -0.6rem !important;
+        font-weight: 700 !important;
+        line-height: 0.9 !important;
+    }
     h1 {
         font-size: clamp(5rem, 180px, 10rem) !important;
         letter-spacing: -0.5rem !important;
@@ -817,11 +821,11 @@ p {
         letter-spacing: -0.4rem !important;
     }
 
-    .h1 {
-        font-size: clamp(3rem, 90px, 23vw);
-        letter-spacing: -0.3rem;
-        font-weight: 700;
-        line-height: 0.9;
+    h1 {
+        font-size: clamp(3rem, 90px, 23vw) !important;
+        letter-spacing: -0.3rem !important;
+        font-weight: 700 !important;
+        line-height: 0.9 !important;
     }
 
     .h1-small {
@@ -832,7 +836,7 @@ p {
     }
 
     h2 {
-        font-size: clamp(3rem, 60px, 4.375rem) !important;
+        font-size: clamp(2rem, 60px, 4.375rem) !important;
         letter-spacing: clamp(-0.2rem, -0.3rem, -0.32rem) !important;
         font-weight: 700 !important;
         line-height: 0.9 !important;

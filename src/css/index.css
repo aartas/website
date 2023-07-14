@@ -104,6 +104,15 @@ body {
     min-height: 100vh;
 }
 
+.aboutinfo h6 {
+    border-bottom: 1px solid transparent;
+}
+
+.aboutinfo h6:hover {
+    cursor: pointer;
+    display: inline;
+    border-bottom: 1px solid black;
+}
 
 .about_mobile {
     display: none;
@@ -218,176 +227,158 @@ body {
     width: 100%;
 }
 
-
-.media-content h4 {
-    color: white;
-    transition: all 0.3s;
-
+.media_section {
+    width: 95%;
+    height: 100%;
+    flex-direction: row;
 }
 
-.media-content .s4 {
-    color: white;
-    transition: all 0.67s;
-}
-
-.image2 {
+.grids {
     overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
-    transform: scale(1);
-    transition: transform 0.5s;
+    width: 50%;
 }
 
-.image2:hover {
-    transform: scale(1.2);
+.more {
+    height: 50vh;
+    display: grid;
+    place-content: center;
 }
 
-.image2 a {
+.effect {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.zoom:hover .effect {
+    scale: 1.2;
+}
+
+
+.image1 {
+    margin-top: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.grids p {
+    width: 60%;
     opacity: 0;
-    color: white;
+    transform: translateY(50%);
+    transition: all 0.5s;
+}
+
+
+.content a {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s;
     border-bottom: 1px solid transparent;
+}
+
+.grids .s4 {
+    opacity: 1;
     transform: translateY(0%);
-    transition: all 0.6s;
+    transition: all 0.5s;
 }
 
-.image2 a:hover {
+.zoom h4 {
+    transition: all 0.5s;
+}
+
+.zoom :hover h4 {
+    font-size: 350% !important;
+}
+
+.zoom :hover .s4 {
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.zoom :hover p {
+    opacity: 1;
+    transform: translateY(-10%);
+}
+
+.zoom :hover a {
+    opacity: 1;
+    transform: translateY(-10%);
+}
+
+.content a:hover {
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
 }
 
-/* .media .content{
+.image22 {
+    margin-top: 2.5%;
+    width: 90%;
+    margin-left: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image3 {
+    overflow: hidden;
+    width: 90%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.image4 {
+    overflow: hidden;
+    margin-top: 2.5%;
+    position: relative;
+}
+
+.bg_img1 {
+    background-image: url('../images/townhall1.png');
+    height: 120vh;
+}
+
+.bg_img2 {
+    height: 70vh;
+    background-image: url('../images/waitingroom1.png');
+}
+
+.bg_img3 {
+    background-image: url('../images/alldoctors.png');
+    height: 70vh;
+}
+
+.bg_img4 {
+    background-image: url('../images/townhall2.png');
+    height: 120vh;
+}
+
+.text_media {
+    height: fit-content;
     display: grid;
     place-items: center;
-} */
-.image2 p {
-    display: none;
-    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    transform: translateY(0%);
-    transition: all 0.6s;
-    width: 100%;
-    padding: 0vh 8vw;
+    color: var(--pearl);
+    display: grid;
+    place-items: center;
+    height: 100%;
+    overflow: visible;
 }
 
-.media-content .image2:hover h4 {
-    font-size: clamp(1rem, 40px, 2.5rem) !important;
+.more .s4 {
+    border-bottom: 1px solid transparent;
 }
 
-.media-content .image2:hover .s4 {
-    transform: translateY(-50%);
-    opacity: 0;
-}
-
-.media-content .image2:hover p {
-    display: block;
-    transform: translateY(-40%);
-}
-
-.media-content .image2:hover a {
-    opacity: 1;
-    transform: translateY(-50%);
-}
-
-.media-content .townhall1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transform: scale(1);
-    overflow-y: hidden;
-    transition: all 0.5s;
-    background-image: url('../images/townhall1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    min-height: 40vh;
-    max-height: 100vh;
-    transform: scale(1);
-}
-
-.media-content .townhall1:hover {
-    overflow: hidden;
-    transform: scale(1.1)
-}
-
-.media-content .waiting {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-    transform: scale(1);
-    transition: all 0.5s;
-    background-image: url('../images/waitingroom1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-
-}
-
-.media-content .waiting:hover {
-    transform: scale(1.1);
-}
-
-.waiting h4 {
-    padding-left: 0;
-}
-
-.media-content .alldoctors {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    transform: scale(1);
-    transition: all 0.5s;
-    background-image: url('../images/alldoctors.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.media-content .alldoctors:hover {
-    transform: scale(1.1);
-}
-
-.media-content .townhall2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    transform: scale(1);
-    transition: all 0.5s;
-    overflow: hidden;
-    background-image: url('../images/townhall2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-}
-
-.media-content .townhall2:hover {
-    transform: scale(1.1);
-}
-
-.news1,
-.news2 {
-    overflow: hidden;
-}
-
-.news .col-1 {
-    width: 1rem !important;
-    padding: 0 !important;
-    margin: 0 !important;
+.more .s4:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
 }
 
 .about {
@@ -661,18 +652,6 @@ body {
     transition: all 0.1s;
 }
 
-.allnews {
-    display: grid;
-    place-items: center;
-    height: 100%;
-}
-
-.allnews h6 {
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-
-}
 
 footer {
     height: 100%;
@@ -909,65 +888,6 @@ footer .links {
         color: var(--charcoal);
         word-wrap: unset;
     }
-
-    .media-content h4 {
-        color: white;
-        transition: all 0.3s;
-
-    }
-
-    .media-content h5 {
-        text-align: center;
-    }
-
-    .media-content .image2:hover h4 {
-        font-size: 20%;
-    }
-
-    .media-content .townhall1 {
-        width: 100%;
-        height: 70vh;
-        max-height: 70vh;
-    }
-
-    .media-content .waiting {
-        width: 100%;
-        height: 70vh;
-        max-height: 70vh;
-    }
-
-    .media-content .alldoctors {
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .townhall2 {
-        font-weight: 700;
-        width: 100%;
-        height: 70vh;
-        max-height: 70vh;
-    }
-
-    .specialities {
-        margin-top: 10vh !important;
-    }
-
-    .media-content .image2:hover h5 {
-        transform: translateY(-40%);
-        opacity: 0;
-    }
-
-    .media-content .image2:hover a {
-        opacity: 1;
-        transform: translateY(-40%);
-    }
-
-    .media-content .image2:hover p {
-        transform: translateY(-40%);
-        opacity: 1;
-    }
-
 }
 
 @media (min-width:991px) and (max-width:1024px) {
@@ -1178,64 +1098,6 @@ footer .links {
         height: 100vh;
     }
 
-
-
-    .media-content h4 {
-        color: white;
-        transition: all 0.3s;
-    }
-
-    .media-content h4 {
-        font-size: clamp(1rem, 10vw, 3rem);
-    }
-
-    .media-content h5 {
-        text-align: center;
-        font-size: clamp(0.75rem, 10vw, 2rem);
-    }
-
-    .media-content .image2:hover h4 {
-        font-size: 20%;
-    }
-
-    .media-content .townhall1 {
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .waiting {
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .alldoctors {
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .townhall2 {
-        width: 100%;
-        height: 50vh;
-        max-height: 50vh;
-    }
-
-    .media-content .image2:hover h5 {
-        transform: translateY(-40%);
-        opacity: 0;
-    }
-
-    .media-content .image2:hover a {
-        opacity: 1;
-        transform: translateY(-40%);
-    }
-
-    .media-content .image2:hover p {
-        transform: translateY(-40%);
-        opacity: 1;
-    }
 }
 
 @media (min-width:577px) and (max-width:990px) {
@@ -1465,70 +1327,124 @@ footer .links {
         line-height: 1.5;
     }
 
-
-    .media-content h4 {
-        font-weight: 700;
-        letter-spacing: -0.12rem;
-        font-size: clamp(4rem, 1vw, 10rem);
-        color: white;
-        transition: all 0.3s;
-
+    .media_section {
+        width: 98%;
+        height: 100%;
+        flex-direction: row;
     }
 
-    .media-content h4 {
-        font-size: clamp(1rem, 10vw, 3rem);
+
+    .effect {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.5s;
     }
 
-    .media-content h5 {
-        text-align: center;
-        font-size: clamp(0.75rem, 10vw, 2rem);
+    .zoom:hover .effect {
+        scale: 1.2;
     }
 
-    .media-content .image2:hover h4 {
-        font-size: 20%;
+
+    .image1 {
+        margin-top: 20vh;
+        overflow: hidden;
+        position: relative;
     }
 
-    .media-content .townhall1 {
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
 
-    .media-content .waiting {
-        font-size: 120%;
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .alldoctors {
-        font-size: 120%;
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .townhall2 {
-        font-size: 120%;
-        font-weight: 700;
-        width: 100%;
-        height: 60vh;
-        max-height: 60vh;
-    }
-
-    .media-content .image2:hover h5 {
-        transform: translateY(-30%);
+    .grids p {
+        width: 60%;
         opacity: 0;
+        transform: translateY(50%);
+        transition: all 0.5s;
     }
 
-    .media-content .image2:hover a {
-        opacity: 1;
-        transform: translateY(-60%);
+    .grids a {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 0.5s;
     }
 
-    .media-content .image2:hover p {
-        transform: translateY(-30%);
+    .grids .s4 {
         opacity: 1;
+        transform: translateY(0%);
+        transition: all 0.5s;
+    }
+
+    .zoom :hover .s4 {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    .zoom :hover p {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+
+    .zoom :hover a {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+
+    .image22 {
+        margin-top: 2.5%;
+        width: 98%;
+        margin-left: 1%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .image3 {
+        overflow: hidden;
+        width: 98%;
+        margin-right: 1%;
+        position: relative;
+    }
+
+    .image4 {
+        overflow: hidden;
+        margin-top: 2.5%;
+        position: relative;
+    }
+
+    .bg_img1 {
+        background-image: url('../images/townhall1.png');
+        height: 80vh;
+    }
+
+    .bg_img2 {
+        height: 50vh;
+        background-image: url('../images/waitingroom1.png');
+    }
+
+    .bg_img3 {
+        background-image: url('../images/alldoctors.png');
+        height: 50vh;
+    }
+
+    .bg_img4 {
+        background-image: url('../images/townhall2.png');
+        height: 80vh;
+    }
+
+    .text_media {
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--pearl);
+        display: grid;
+        place-items: center;
+        height: 100%;
+        overflow: visible;
     }
 }
 
@@ -1552,6 +1468,15 @@ footer .links {
     .about_mobile {
         display: block;
         height: 100%;
+    }
+
+    .aboutpara h4 {
+        width: fit-content;
+    }
+
+    .aboutinfo h6:hover {
+        display: inline-block;
+        width: fit-content;
     }
 
     .about_mobile .cardtrigger {
@@ -1683,14 +1608,6 @@ footer .links {
         height: 60vh;
     }
 
-    /* .aartasapp h1 {
-        font-weight: 700;
-        letter-spacing: -0.3rem;
-        line-height: 1;
-        padding-left: 0;
-        font-size: clamp(4rem, 20vw, 10rem);
-    } */
-
     .headline1 {
         display: none;
     }
@@ -1709,11 +1626,7 @@ footer .links {
         text-align: center;
     }
 
-    /* .aartasapp h6 {
-        font-weight: 700;
-        font-size: 15%;
-        letter-spacing: normal;
-    } */
+
 
     .aartasapp #appheadline1 {
         height: clamp(50vh, 20vw, 70vh);
@@ -1890,45 +1803,125 @@ footer .links {
         transform: translateY(150%);
     }
 
-    .media .spacer {
-        height: 2rem !important;
+    .media_section {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
     }
 
-    .media-content {
-        font-size: 6rem;
+    .grids {
+        overflow: hidden;
+        width: 100%
     }
 
-    .media-content .image2:hover h5 {
-        transform: translateY(-20%);
+    .image1 {
+        margin-top: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .grids p {
+        width: 80%;
         opacity: 0;
+        transform: translateY(50%);
+        transition: all 0.5s;
     }
 
-    .media-content .image2:hover a {
+    .grids a {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 0.5s;
+    }
+
+    .grids .s4 {
         opacity: 1;
-        transform: translateY(-60%);
+        transform: translateY(0%);
+        transition: all 0.5s;
     }
 
-    .media-content .image2:hover p {
-        transform: translateY(-20%);
+    .zoom :hover .s4 {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    .zoom :hover p {
         opacity: 1;
+        transform: translateY(-10%);
     }
 
-    /* .media-content h1 {
-        font-weight: 700 !important;
-        letter-spacing: -0.2rem !important;
-        font-size: clamp(2rem, 15vw, 10rem) !important;
-        margin-top: 20vh;
-        margin-bottom: 2vh !important;
-    } */
+    .zoom :hover a {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
 
+    .image22 {
+        margin-top: 10%;
+        width: 100%;
+        margin-left: 0%;
+        overflow: hidden;
+        position: relative;
+    }
 
+    .image3 {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 10%;
+        margin-right: 0%;
+        position: relative;
+    }
 
-    .allnews a {
-        font-size: clamp(1rem, 5vh, 2rem) !important;
-        font-weight: 700;
-        text-decoration: none;
-        color: #000;
-        cursor: pointer;
+    .image4 {
+        overflow: hidden;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .bg_img1 {
+        background-image: url('../images/townhall1.png');
+        height: 80vh;
+    }
+
+    .bg_img2 {
+        height: 80vh;
+        background-image: url('../images/waitingroom1.png');
+    }
+
+    .bg_img3 {
+        background-image: url('../images/alldoctors.png');
+        height: 80vh;
+    }
+
+    .bg_img4 {
+        background-image: url('../images/townhall2.png');
+        height: 80vh;
+    }
+
+    .zoom h4:hover {
+        font-size: 50% !important;
+    }
+
+    .text_media {
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--pearl);
+        display: grid;
+        place-items: center;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .more {
+        height: 30vh;
     }
 
     footer {
