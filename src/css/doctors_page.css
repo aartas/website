@@ -214,9 +214,6 @@
           z-index: -2;
         }
 
-        .Doctors_brief {
-          height: 100vh;
-        }
 
         .Doctors_brief .cards {
           overflow: hidden;
@@ -516,6 +513,14 @@
           }
         }
 
+        @media (min-width:576px) {
+          .speciality {
+            position: sticky;
+            top: 10vh;
+          }
+
+        }
+
         @media (min-width:1025px) and (max-width:1300px) {
           #hidder1 {
             min-width: 100vh;
@@ -564,9 +569,11 @@
           .mobile {
             display: block;
           }
-          .about_mobile h6{
+
+          .about_mobile h6 {
             text-align: center;
           }
+
           #hidder1 {
             top: 60%;
             padding-left: 0rem;

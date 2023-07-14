@@ -486,6 +486,7 @@ body {
     color: var(--charcoal);
 }
 
+/* 
 .specialities .scroll-line {
     position: absolute;
     left: 1%;
@@ -505,7 +506,7 @@ body {
     position: absolute;
     transform: translateY(0);
     z-index: 10;
-}
+} */
 
 .aartasapp {
     position: relative;
@@ -793,7 +794,7 @@ footer .links {
         min-height: 30vh;
     }
 
-    .specialities .scroll-line {
+    /* .specialities .scroll-line {
         position: absolute;
         left: 1%;
         margin-top: 5vh;
@@ -812,7 +813,7 @@ footer .links {
         position: absolute;
         transform: translateY(0);
         z-index: 10;
-    }
+    } */
 
     .appfeatures_tab {
         display: block;
@@ -976,6 +977,7 @@ footer .links {
         width: 100%;
         top: 0;
         left: 50%;
+        padding-top: 10vh;
         transform: translate(-50%);
         color: black;
     }
@@ -992,7 +994,7 @@ footer .links {
         min-height: 30vh;
     }
 
-    .specialities .scroll-line {
+    /* .specialities .scroll-line {
         position: absolute;
         left: 1%;
         margin-top: 5vh;
@@ -1011,7 +1013,7 @@ footer .links {
         position: absolute;
         transform: translateY(0);
         z-index: 10;
-    }
+    } */
 
     .appfeatures_mobile {
         display: none;
@@ -1197,11 +1199,12 @@ footer .links {
         margin-top: 30vh;
     }
 
-    .specialities h4 {
+    .specialities h2 {
         position: absolute;
         width: 100%;
         top: 0;
         left: 50%;
+        padding-top: 10vh;
         transform: translate(-50%);
         color: black;
     }
@@ -1218,7 +1221,7 @@ footer .links {
         min-height: 30vh;
     }
 
-    .specialities .scroll-line {
+    /* .specialities .scroll-line {
         position: absolute;
         left: 1%;
         margin-top: 5vh;
@@ -1237,7 +1240,7 @@ footer .links {
         position: absolute;
         transform: translateY(0);
         z-index: 10;
-    }
+    } */
 
     .appfeatures_mobile {
         display: none;
@@ -1446,6 +1449,10 @@ footer .links {
         height: 100%;
         overflow: visible;
     }
+
+    .more {
+        height: 20vh;
+    }
 }
 
 @media (min-width:280px) and (max-width:576px) {
@@ -1551,13 +1558,14 @@ footer .links {
         transform: translateX(-60%);
     }
 
-    .specialities h4 {
+    .specialities h2 {
         position: absolute;
         width: 100%;
         top: 0;
         left: 50%;
         transform: translate(-50%);
         font-weight: 700;
+        padding-top: 10vh;
         letter-spacing: -0.3rem;
         color: black;
         font-size: clamp(4rem, 10vw, 6rem);
@@ -1584,13 +1592,13 @@ footer .links {
 
     }
 
-    .specialities .scroll-line {
+    /* .specialities .scroll-line {
         display: none;
-    }
+    } */
 
-    .specialities .scroll-thumb {
+    /* .specialities .scroll-thumb {
         display: none;
-    }
+    } */
 
     .aartasapp .appfeatures {
         display: block;
@@ -1649,7 +1657,7 @@ footer .links {
         display: grid;
         width: 100%;
         line-height: 1;
-        place-items: center;
+        place-items: start;
         transition: all 0.5s;
         justify-content: center;
         /* opacity:0; */
@@ -1662,7 +1670,7 @@ footer .links {
         height: clamp(50vh, 20vw, 70vh);
         width: 100%;
         display: grid;
-        place-items: center;
+        place-items: start;
         line-height: 1;
         transition: all 0.5s;
         justify-content: center;
@@ -1676,7 +1684,7 @@ footer .links {
         z-index: -1;
         line-height: 1;
         display: grid;
-        place-items: center;
+        place-items: start;
         transition: all 0.5s;
         justify-content: center;
     }
@@ -1921,7 +1929,7 @@ footer .links {
     }
 
     .more {
-        height: 30vh;
+        height: 15vh;
     }
 
     footer {

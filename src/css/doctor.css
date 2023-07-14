@@ -17,7 +17,8 @@ html {
     text-decoration: none;
     color: var(--charcoal);
     background-color: transparent;
-  }
+}
+
 .doctorphoto {
 
     height: 100vh;
@@ -126,6 +127,10 @@ footer .links {
 }
 
 @media (min-width:1024px) {
+    .doctorphoto {
+        position: sticky;
+        top: 0;
+    }
 
     .image-container {
         height: 80%;

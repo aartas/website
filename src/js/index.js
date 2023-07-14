@@ -22,7 +22,7 @@ window.onscroll = function () {
 
 window.addEventListener("scroll", function () {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 0) {
+  if (scrolled > 100) {
     $('.links').css('color', '#000')
     $('nav').css('background-color', '#fff')
     $('.logo_dark').css('display', 'block')
@@ -81,7 +81,7 @@ if (window.innerWidth <= 1024) {
       end: 'bottom top',
       toggleActions: 'play none none none',
       pinSpacing: false,
-      scrub: 3
+      scrub: true
     }
   })
   gsap.to('.aboutslot2', {
@@ -94,7 +94,7 @@ if (window.innerWidth <= 1024) {
       end: 'bottom top',
       toggleActions: 'play none none none',
       pinSpacing: false,
-      scrub: 3
+      scrub: true
     }
   })
 }
@@ -203,7 +203,7 @@ if (window.innerWidth <= 577 && window.innerWidth > 200) {
 //aartas app animation start
 const app = gsap.timeline()
 
-if (window.innerWidth > 280 && window.innerWidth <= 576) {
+if (window.innerWidth > 270 && window.innerWidth <= 576) {
   app.to('#appheadline1', {
     opacity: 0,
     duration: 0.1,
@@ -220,7 +220,7 @@ if (window.innerWidth > 280 && window.innerWidth <= 576) {
   })
   app.to('#appheadline2', {
     opacity: 1,
-    duration: 0.1,
+    duration: 0,
   })
   app.to('#appfeature2', {
     left: '40%',
@@ -247,7 +247,7 @@ if (window.innerWidth > 280 && window.innerWidth <= 576) {
   })
   app.to('#appheadline3', {
     opacity: 1,
-    duration: 0.1,
+    duration: 0,
   })
   app.to('#appfeature3', {
     left: '1%',
@@ -258,7 +258,7 @@ if (window.innerWidth > 280 && window.innerWidth <= 576) {
   })
   app.to('#appheadline4', {
     opacity: 1,
-    duration: 0.1,
+    duration: 0,
   })
 
   app.to('#appfeature3', {
@@ -269,11 +269,11 @@ if (window.innerWidth > 280 && window.innerWidth <= 576) {
   })
   ScrollTrigger.create({
     animation: app,
-    start: '200vh top',
+    start: '150vh top',
     end: '+5000vh top',
     pin: '.aartasapp',
     trigger: '.aartasapp',
-    scrub: 1,
+    scrub: true,
     toggleActions: 'restart restart reverse reverse'
   })
 }
@@ -376,7 +376,7 @@ if (window.innerWidth > 576 && window.innerWidth <= 1024) {
   })
   ScrollTrigger.create({
     animation: app,
-    start: '200vh top',
+    start: 'top top',
     end: '+5000vh top',
     pin: '.aartasapp',
     trigger: '.aartasapp',
@@ -468,10 +468,7 @@ if (window.innerWidth > 1024) {
 //-----------------------------aartas space start----------------------------------------------------
 const tl = gsap.timeline();
 if (window.innerWidth <= 992) {
-  tl.to('.slide_text', {
-    opacity: 0.5,
-    duration: 5
-  }).to(".slide1", {
+  tl.to(".slide1", {
     height: "100vh",
     paddingLeft: '5vh',
     // paddingTop: '40vh',
@@ -499,10 +496,7 @@ if (window.innerWidth <= 992) {
   })
 
 } else {
-  tl.to('.slide_text', {
-    opacity: 0.5,
-    duration: 3
-  }).to(".slide1", {
+  tl.to(".slide1", {
     height: "100vh",
     paddingLeft: '20vh',
     // paddingTop: '25vh',
@@ -538,7 +532,6 @@ ScrollTrigger.create({
   scrub: 0.5,
   pin: '.slide0',
   pinSpacing: false,
-
 })
 ScrollTrigger.create({
   animaton: tl,
@@ -578,7 +571,8 @@ function showmenu() {
   }
   window.onscroll = function () {
     let prevScrollPos = window.pageYOffset;
-    if (prevScrollPos > 10) {
+    console.log(prevScrollPos)
+    if (prevScrollPos > 100) {
       $('.ham-menu').height('0');
     }
   }
