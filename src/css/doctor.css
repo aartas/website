@@ -125,6 +125,10 @@ footer .links {
     color: #fff;
     cursor: pointer;
 }
+footer img {
+    image-rendering: crisp-edges;
+    image-rendering: auto;
+}
 
 @media (min-width:1024px) {
     .doctorphoto {

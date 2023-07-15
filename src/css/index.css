@@ -390,6 +390,7 @@ body {
     overflow: hidden;
 }
 
+
 .about .row {
     flex-wrap: nowrap;
 }
@@ -682,6 +683,11 @@ footer .links {
     margin-top: 4rem;
     color: #fff;
     cursor: pointer;
+}
+
+footer img {
+    image-rendering: crisp-edges;
+    image-rendering: auto;
 }
 
 @media (max-width:782px) {
@@ -1964,6 +1970,7 @@ footer .links {
     }
 
     footer img {
+        image-rendering: auto;
         width: 2rem;
     }
 

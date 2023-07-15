@@ -330,6 +330,11 @@
           cursor: pointer;
         }
 
+        footer img {
+          image-rendering: crisp-edges;
+          image-rendering: auto;
+        }
+
         @keyframes changingtext1Anim {
           0% {
             bottom: 0%;
