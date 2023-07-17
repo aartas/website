@@ -697,7 +697,7 @@ footer img {
     }
 }
 
-@media (min-width:1024px) {
+@media (max-width:1080px) {
     .aartasapp #appfeature1 {
         position: absolute;
         left: 50%;
@@ -1752,7 +1752,7 @@ footer img {
 
     .aartasapp #appfeature1 {
         position: absolute;
-        left: 50%;
+        left: 60%;
         max-height: 55vh;
         bottom: 0.5%;
         height: 55vh;

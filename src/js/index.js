@@ -44,18 +44,6 @@ window.addEventListener("scroll", function () {
 
 
 
-// function lock(orientation) {
-
-//   let de = document.documentElement;
-//   if (de.requestFullscreen) { de.requestFullscreen(); }
-//   else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
-//   else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
-//   else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
-
-
-//   screen.orientation.lock(orientation);
-// }
-
 
 gsap.registerPlugin(ScrollTrigger)
 //hero section animation start
@@ -172,30 +160,30 @@ if (window.innerWidth <= 577 && window.innerWidth > 200) {
   })
 } else {
   gsap.to('.scroller', {
-    x: -500,
+    x: -1500,
     width: '100%',
     height: '100vh',
     scrollTrigger: {
       start: 'top top',
       end: `+=2500vh bottom`,
       pin: true,
-      scrub: 1,
+      scrub: 3,
       trigger: '.specialities',
       toggleActions: 'play none none none'
     }
   })
 
-  gsap.to('.scroll-thumb', {
-    y: Heightthumb(),
-    duration: 12,
-    scrollTrigger: {
-      start: 'top top',
-      end: '+=2000vh',
-      scrub: 1,
-      trigger: '.scroller',
-      toggleActions: 'play none none none'
-    }
-  })
+  // gsap.to('.scroll-thumb', {
+  //   y: Heightthumb(),
+  //   duration: 12,
+  //   scrollTrigger: {
+  //     start: 'top top',
+  //     end: '+=2000vh',
+  //     scrub: 1,
+  //     trigger: '.scroller',
+  //     toggleActions: 'play none none none'
+  //   }
+  // })
 }
 // specialities animation end
 
@@ -223,7 +211,7 @@ if (window.innerWidth > 270 && window.innerWidth <= 576) {
     duration: 0,
   })
   app.to('#appfeature2', {
-    left: '40%',
+    left: '55%',
     right: 0,
     scale: 0.8,
     marginRight: 0,
