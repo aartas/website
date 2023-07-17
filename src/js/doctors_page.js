@@ -9,16 +9,16 @@
 var navbar = document.getElementById("navbar");
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
-  const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = "0";
+    if (prevScrollPos > currentScrollPos) {
+        navbar.style.top = "0";
 
-  } else {
-    navbar.style.top = `-${navbar.offsetHeight}px`;
-  }
+    } else {
+        navbar.style.top = `-${navbar.offsetHeight}px`;
+    }
 
-  prevScrollPos = currentScrollPos;
+    prevScrollPos = currentScrollPos;
 };
 
 
@@ -50,7 +50,10 @@ headline.to('.animation_background', {
     duration: 2,
 }).to('.animation_background', {
     scale: 5,
-    duration: 2,
+    duration: 5,
+}).to('.animation_background', {
+    scale: 5,
+    duration: 5,
 })
 ScrollTrigger.create({
     animation: headline,

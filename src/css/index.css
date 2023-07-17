@@ -697,6 +697,48 @@ footer img {
     }
 }
 
+@media (min-width:1024px) {
+    .aartasapp #appfeature1 {
+        position: absolute;
+        left: 50%;
+        height: 60vh;
+        width: 28vh;
+        transform: scale(0.8);
+        transition: all 0.1s;
+        z-index: -1;
+    }
+
+    .aartasapp #appfeature2 {
+        position: absolute;
+        left: 60%;
+        height: 60vh;
+        width: 28vh;
+        transform: scale(0.8);
+        transition: all 0.1s;
+        z-index: -1;
+
+    }
+
+    .aartasapp #appfeature3 {
+        position: absolute;
+        left: 70%;
+        width: 28vh;
+        z-index: -1;
+        height: 60vh;
+        transform: scale(0.8);
+        transition: all 0.1s;
+    }
+
+    .aartasapp #appfeature4 {
+        position: absolute;
+        left: 1%;
+        width: 28vh;
+        z-index: -1;
+        height: 60vh;
+        transition: all 0.1s;
+    }
+}
+
 @media (max-width:992px) {
 
     .ham-menu {

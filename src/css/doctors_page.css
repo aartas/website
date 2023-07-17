@@ -148,8 +148,9 @@
         }
 
         .of {
-          margin-left: clamp(-30rem, 15vw, -35rem);
-          margin-right: clamp(1rem, 15vw, 1rem);
+          margin-left: -45vw;
+          transform: translateX(45vw);
+          margin-right: clamp(1rem, 15vw, 1rem);  
         }
 
         .doctors {
@@ -263,12 +264,6 @@
 
         .article .articleimg {
           width: 9rem;
-          transition: all 0.5s;
-          transform: scale(0);
-        }
-
-        .article :hover .articleimg {
-          transform: scale(1.2);
         }
 
         .arrow {
@@ -517,6 +512,8 @@
 
           }
         }
+
+
 
         @media (min-width:576px) {
           .speciality {
@@ -780,12 +777,8 @@
             display: grid;
             place-items: end;
             transition: all 0.5s;
-            margin-left: 25%;
-            transform: scale(0);
-          }
+            margin-left: 10%;
 
-          .article :hover .articleimg {
-            transform: scale(0.6);
           }
 
           .article .arrow {
@@ -964,5 +957,17 @@
 
           .media .spacer {
             height: 2rem !important;
+          }
+        }
+
+        @media (min-width:1024px) {
+          article .articleimg {
+            transform: scale(1);
+            transition: all 0.5s;
+            transform: scale(0);
+          }
+
+          .article :hover .articleimg {
+            transform: scale(1);
           }
         }

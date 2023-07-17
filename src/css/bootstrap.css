@@ -455,7 +455,7 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(5.5rem, 100px, 6.25rem) !important;
+    font-size: clamp(5.5rem, 80px, 5.25rem) !important;
     letter-spacing: -0.3rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
@@ -864,7 +864,7 @@ p {
     }
 
     h5 {
-        font-size: clamp(2rem, 25px, 1.563rem) !important;
+        font-size: clamp(1.5rem, 20px, 1.563rem) !important;
         letter-spacing: -0.1rem !important;
         font-weight: 700 !important;
         line-height: 1 !important;
@@ -878,7 +878,7 @@ p {
     }
 
     a {
-        font-size: clamp(1rem, 20px, 1.25rem) !important;
+        font-size: clamp(0.75rem, 18px, 1.25rem) !important;
         letter-spacing: -0.05rem !important;
         font-weight: 600 !important;
         line-height: 1 !important;

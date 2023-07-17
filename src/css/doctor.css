@@ -125,12 +125,13 @@ footer .links {
     color: #fff;
     cursor: pointer;
 }
+
 footer img {
     image-rendering: crisp-edges;
     image-rendering: auto;
 }
 
-@media (min-width:1024px) {
+@media (min-width:992px) {
     .doctorphoto {
         position: sticky;
         top: 0;
@@ -151,7 +152,7 @@ footer img {
         width: clamp(5rem, 80vh, 90vh);
     }
 }
-
+/* 
 @media (min-width:991px) and (max-width:1024px) {
     .doctorphoto {
         position: relative;
@@ -172,7 +173,7 @@ footer img {
         top: 0;
         width: clamp(5rem, 50vh, 40rem);
     }
-}
+} */
 
 @media (min-width:577px) and (max-width:990px) {
     .doctorintro .para {
