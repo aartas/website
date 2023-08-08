@@ -27,7 +27,7 @@
     background: #fff;
   }
   .nav-container img {
-    margin-left: 7.375rem;
+    margin-left: 6.375rem;
     align-items: center;
   }
 
@@ -65,7 +65,7 @@
   }
 
   .menu.active {
-    left: -80px;
+    left: -83px;
   }
 
   /* Hero section */
@@ -76,13 +76,13 @@
     flex-direction: column;
   }
   .hero h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     align-items: center;
     justify-content: center;
   }
 
   .heading-main {
-    inline-size: 28.3rem;
+    inline-size: 26.3rem;
     line-height: 1;
 
     justify-content: center;
@@ -105,8 +105,8 @@
   }
 
   .slide {
-    margin-top: 27rem;
-    margin-left: -21rem;
+    margin-top: 30rem;
+    margin-left: -20rem;
     display: flex;
     justify-content: center;
     align-items: center;
