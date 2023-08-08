@@ -34,14 +34,14 @@
   .hamberger {
     display: block;
     margin: 1.25rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .hamberger.active .bar:nth-child(2) {
     opacity: 0;
   }
   .hamberger.active .bar:nth-child(1) {
-    transform: translateY(0.4rem) rotate(45deg);
+    transform: translateY(0.41rem) rotate(45deg);
   }
   .hamberger.active .bar:nth-child(3) {
     transform: translateY(-0.41rem) rotate(-45deg);
@@ -65,7 +65,7 @@
   }
 
   .menu.active {
-    left: 0;
+    left: -80px;
   }
 
   /* Hero section */
