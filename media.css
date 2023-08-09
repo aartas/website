@@ -177,9 +177,13 @@
 
   .about_doctor {
     flex-direction: column;
-    position: relative;
     height: 100vh;
     margin-top: 0;
+  }
+
+  .row_1 .cards {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about_doctor_tabVersion {
