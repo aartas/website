@@ -4,6 +4,36 @@
 
 // Text slide up js code
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const textArray = ["Aartas", "Delhi", "Mumbai", "Gurgram"]; 
+//   let currentTextIndex = 0;
+//   const slideText = document.getElementById("slide-text");
+
+//   function changeSlideText() {
+//     gsap.to(slideText, {
+//       y: -slideText.offsetHeight, // Slide up by the height of the element
+//       duration: 0.4, // Initial animation duration (in seconds)
+//       ease: "power4.out", // Easing function for smooth slide
+//       onComplete: function () {
+//         slideText.textContent = textArray[currentTextIndex];
+//         gsap.set(slideText, { y: slideText.offsetHeight }); // Reset the position for the next animation
+//         gsap.to(slideText, { y: 0, duration: 0.4, ease: "power4.out" }); // Slide up from the initial position
+//         currentTextIndex++;
+//         if (currentTextIndex >= textArray.length) {
+//           currentTextIndex = 0;
+//         }
+//       },
+//     });
+//   }
+
+//   // Start the text sliding process after a brief delay to ensure the initial text is displayed
+//   setTimeout(() => {
+//     changeSlideText();
+//     // Start the interval after the initial animation is complete
+//     setInterval(changeSlideText, 1500); // Adjust the interval (milliseconds) for text change
+//   }, 100);
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const textArray = ["Aartas", "Delhi", "Mumbai", "Gurgram"]; 
   let currentTextIndex = 0;
@@ -15,8 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 0.4, // Initial animation duration (in seconds)
       ease: "power4.out", // Easing function for smooth slide
       onComplete: function () {
+        if (textArray[currentTextIndex] === "Aartas" || textArray[currentTextIndex] === "Delhi") {
+          gsap.to(slideText, { x: "-1rem", duration: 0.4, ease: "power4.out" }); // Shift to the left by 1rem
+        }
+        
         slideText.textContent = textArray[currentTextIndex];
-        gsap.set(slideText, { y: slideText.offsetHeight }); // Reset the position for the next animation
+        gsap.set(slideText, { y: slideText.offsetHeight, x: 0 }); // Reset the position for the next animation
         gsap.to(slideText, { y: 0, duration: 0.4, ease: "power4.out" }); // Slide up from the initial position
         currentTextIndex++;
         if (currentTextIndex >= textArray.length) {
@@ -26,13 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Start the text sliding process after a brief delay to ensure the initial text is displayed
-  setTimeout(() => {
-    changeSlideText();
-    // Start the interval after the initial animation is complete
-    setInterval(changeSlideText, 1500); // Adjust the interval (milliseconds) for text change
-  }, 100);
+  // Call the changeSlideText function initially and then at intervals
+  changeSlideText();
+  setInterval(changeSlideText, 3000); // Call every 3 seconds
 });
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
