@@ -144,11 +144,11 @@
   }
 
   .scroll-container {
-    display: none;
+    display: block;
   }
 
   .scroll-container-mobile {
-    display: block;
+    display: none;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
