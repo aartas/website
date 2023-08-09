@@ -428,9 +428,9 @@
 
   .scroll-container {
     position: absolute;
-    height: 100vh;
+    height: 115vh;
     width: 100%;
-    top: 35%;
+    top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -481,7 +481,7 @@
 
   .about_doctor_tabVersion {
     display: flex;
-    margin-top: 2rem;
+    margin-top: -4rem;
   }
 
   .about_doctor {
