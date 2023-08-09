@@ -65,16 +65,28 @@
   }
 
   .menu.active {
-    left: -83px;
+    left: 0rem;
   }
 
+    /* Heading */
+
+    .heading a i {
+      display: inline-block;
+      cursor: pointer;
+    }
+
   /* Hero section */
+
+  .heading-main {
+    padding: 0 0.4rem;
+  }
 
   .hero {
     display: flex;
     top: -15%;
     flex-direction: column;
     overflow: hidden;
+    max-height: 100vh;
   }
   .hero h1 {
     font-size: 4.5rem;
@@ -89,7 +101,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: -0.55rem;
+    margin-left: -1.55rem;
   }
 
   .break-on-mobile {
@@ -106,8 +118,8 @@
   } */
 
   .slide {
-    margin-top: 32rem;
-    margin-left: -21rem;
+    margin-top: 30.5rem;
+    margin-left: -18.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
