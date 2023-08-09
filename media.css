@@ -382,11 +382,11 @@
   /* about doctor page */
 
   .about-doctor {
-    display: none;
+    display: block;
   }
 
   .about-doctor-mobile {
-    display: block;
+    display: none;
   }
 
   .about-doctor-tabletVersion {
@@ -408,11 +408,13 @@
   #image-section {
     position: absolute;
     flex: 1;
-   margin: 0.75rem;
+   margin: 1.75rem;
+   /* padding: 0 auto; */
+   margin-left: 1rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
 
     background-color: #ba7c5d;
   }
