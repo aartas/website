@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power4.out", // Easing function for smooth slide
       onComplete: function () {
         if (textArray[currentTextIndex] === "Aartas" || textArray[currentTextIndex] === "Delhi") {
-          gsap.to(slideText, { x: "5rem", duration: 0.4, ease: "power4.out" }); // Shift to the left by 1rem
+          gsap.to(slideText, { x: "5rem", duration: 0.1, ease: "power4.out" }); // Shift to the left by 1rem
         }
         
         slideText.textContent = textArray[currentTextIndex];
