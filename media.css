@@ -197,11 +197,13 @@
   }
 
   .card-img img {
-    max-width: 90%;
+    max-width: 97%;
   }
 
   .card-title {
     font-size: 0.9rem;
+    padding-top: 0.5rem;
+    line-height: 1;
   }
 
   .card-intro p {
