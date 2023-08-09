@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Text slide up js code
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const textArray = ["Aartas", "Delhi", "Mumbai", "Gurgram"]; 
   let currentTextIndex = 0;
@@ -29,6 +29,43 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start the text sliding process after a brief delay to ensure the initial text is displayed
   setTimeout(() => {
     changeSlideText();
+    // Start the interval after the initial animation is complete
+    setInterval(changeSlideText, 1500); // Adjust the interval (milliseconds) for text change
+  }, 100);
+});
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const textArray = ["Aartas", "Delhi", "Mumbai", "Gurgram"];
+  const slideText = document.getElementById("slide-text");
+  const maxLength = Math.max(...textArray.map(arr => arr.length));
+  const paddedArrays = textArray.map(arr => arr.padStart(maxLength, ' '));
+  let currentTextIndex = 0;
+
+  function slideArraysUp(offset) {
+    slideText.innerHTML = paddedArrays.map(arr => arr.slice(offset)).join("<br>");
+  }
+
+  function changeSlideText() {
+    gsap.to(slideText, {
+      y: -slideText.offsetHeight, // Slide up by the height of the element
+      duration: 0.4, // Initial animation duration (in seconds)
+      ease: "power4.out", // Easing function for smooth slide
+      onComplete: function () {
+        currentTextIndex++;
+        if (currentTextIndex >= maxLength) {
+          currentTextIndex = 0;
+        }
+        slideArraysUp(currentTextIndex);
+        gsap.set(slideText, { y: slideText.offsetHeight }); // Reset the position for the next animation
+        gsap.to(slideText, { y: 0, duration: 0.4, ease: "power4.out" }); // Slide up from the initial position
+      },
+    });
+  }
+
+  // Start the text sliding process after a brief delay to ensure the initial text is displayed
+  setTimeout(() => {
+    slideArraysUp(currentTextIndex);
     // Start the interval after the initial animation is complete
     setInterval(changeSlideText, 1500); // Adjust the interval (milliseconds) for text change
   }, 100);
