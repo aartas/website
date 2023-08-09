@@ -197,11 +197,15 @@
   }
 
   .card-img img {
-    max-width: 70%;
+    max-width: 90%;
   }
 
   .card-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .card-intro p {
+    font-size: 0.9rem;
   }
 
   .about_doctor_tabVersion {
