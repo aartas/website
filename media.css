@@ -181,9 +181,12 @@
     margin-top: 0;
   }
 
-   .cards {
+  .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 0rem;
   }
 
   .about_doctor_tabVersion {
@@ -248,14 +251,6 @@
 
   .scroll-doctor-info-mobile {
     display: none;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin-left: 0rem;
   }
 
   .card {
