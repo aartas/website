@@ -186,6 +186,15 @@
     display: none;
   }
 
+  .scroll-doctor-info {
+    display: block;
+    height: 120vh;
+    width: 100vw;
+    margin-top: 0.5rem;
+    overflow-x: hidden;
+    margin-left: 0rem;
+  }
+
   .scroll-menu {
     padding-top: 1.125rem;
     display: flex;
