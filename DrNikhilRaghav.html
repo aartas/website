@@ -266,14 +266,22 @@
         }
 
         #image-section {
-          margin: 9.5rem;
-          margin-top: 3rem;
-          position: relative;
+          position: absolute;
+          flex: 1;
+          margin: 0 auto;
+          margin-left: 1rem;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          height: 40vh;
+
+          background-color: #ba7c5d;
         }
 
-         .doctor-avtar {
-          max-width: 30rem;
-          max-height: 30rem;
+        .doctor-avtar img {
+          object-fit: cover;
+          display: block;
+          transition: 0.3s ease-in-out;
         }
 
         #text-section {
@@ -412,7 +420,7 @@
 
         .hr-container {
           width: 70%;
-          margin-left: 7rem;
+          margin-left: rem;
           background: #000;
         }
       }
