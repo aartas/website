@@ -654,9 +654,8 @@
   }
 
   .doctor-avtar img {
-    object-fit: cover;
-    display: block;
-    transition: 0.3s ease-in-out;
+    max-height: 100%;
+    max-width: 100%;
   }
 
   #text-section {
