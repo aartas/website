@@ -161,84 +161,84 @@
       }
 
       @media screen and (max-width: 768px) {
-         /* navigation bar */
+        /* navigation bar */
 
-  .navbar {
-    position: fixed;
-    z-index: 999;
-    transition: top 0.3s;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #f2f2f2;
-    overflow: hidden;
-  }
+        .navbar {
+          position: fixed;
+          z-index: 999;
+          transition: top 0.3s;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: #f2f2f2;
+          overflow: hidden;
+        }
 
-  .navbar-sticky {
-    opacity: 0.8;
-  }
+        .navbar-sticky {
+          opacity: 0.8;
+        }
 
-  .sticky-top {
-    position: sticky;
-  }
+        .sticky-top {
+          position: sticky;
+        }
 
-  .nav-container {
-    background: #fff;
-  }
-  .nav-container img {
-    margin-left: 6.375rem;
-    align-items: center;
-  }
+        .nav-container {
+          background: #fff;
+        }
+        .nav-container img {
+          margin-left: 6.375rem;
+          align-items: center;
+        }
 
-  .hamberger {
-    display: block;
-    margin: 1.25rem;
-    margin-right: 2rem;
-  }
+        .hamberger {
+          display: block;
+          margin: 1.25rem;
+          margin-right: 2rem;
+        }
 
-  .hamberger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamberger.active .bar:nth-child(1) {
-    transform: translateY(0.41rem) rotate(45deg);
-  }
-  .hamberger.active .bar:nth-child(3) {
-    transform: translateY(-0.41rem) rotate(-45deg);
-  }
+        .hamberger.active .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .hamberger.active .bar:nth-child(1) {
+          transform: translateY(0.41rem) rotate(45deg);
+        }
+        .hamberger.active .bar:nth-child(3) {
+          transform: translateY(-0.41rem) rotate(-45deg);
+        }
 
-  .menu {
-    position: fixed;
-    left: -130%;
-    top: 3.75rem;
-    align-items: center;
-    gap: 0;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-  }
+        .menu {
+          position: fixed;
+          left: -130%;
+          top: 3.75rem;
+          align-items: center;
+          gap: 0;
+          flex-direction: column;
+          background-color: #fff;
+          width: 100%;
+          text-align: center;
+          transition: 0.5s ease-in-out;
+          overflow: hidden;
+        }
 
-  .menu-item {
-    margin: 1rem;
-  }
+        .menu-item {
+          margin: 1rem;
+        }
 
-  .menu.active {
-    left: 0;
-  }
+        .menu.active {
+          left: 0;
+        }
 
-    /* Heading */
+        /* Heading */
 
-    .heading a i {
-      display: inline-block;
-      cursor: pointer;
-    }
+        .heading a i {
+          display: inline-block;
+          cursor: pointer;
+        }
 
-    .goclick {
-      position: relative;
-      z-index: 9;
-    }
+        .goclick {
+          position: relative;
+          z-index: 9;
+        }
         /* about doctor page */
 
         .about-doctor {
@@ -336,142 +336,90 @@
       }
 
       @media screen and (min-width: 770px) and (max-width: 1023px) {
+        /* about doctor page */
 
+        .about-doctor {
+          display: none;
+        }
 
-  /* footer */
+        .about-doctor-mobile {
+          display: none;
+        }
 
-  footer {
-    margin-top: 2rem;
-    height: 60vh;
-  }
+        .about-doctor-tabletVersion {
+          display: block;
+        }
 
-  .footer-header {
-    margin-top: 0.5rem;
-  }
+        #main-container {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+        }
 
-  .footer-header h1 {
-    font-size: 7rem;
-    line-height: 1;
-  }
+        #image-section {
+          margin: 9.5rem;
+          margin-top: 3rem;
+        }
 
-  .footer-btn .btn {
-    height: 4rem;
-    width: 20rem;
-    font-size: 2rem;
-    margin-left: 0;
-  }
+        .image-container {
+          display: flex;
+          justify-content: start;
+        }
 
-  .footer-menu ul {
-    align-items: center;
-    margin-left: 1.9rem;
-  }
+        .doctor-avtar {
+          max-width: 30rem;
+          max-height: 30rem;
+        }
 
-  .footer-menu ul li {
-    margin-bottom: 0.2rem;
-  }
+        #text-section {
+          justify-content: center;
+          margin-top: -1rem;
+        }
 
-  .footer-icons {
-    margin-top: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 3.25rem;
-    margin-right: 3.375rem;
-    cursor: pointer;
-  }
+        .doctor-name {
+          margin-left: 7.5rem;
+        }
 
-  .footer-icons-right {
-    margin-right: 0;
-  }
+        .doctor-speciality {
+          margin-left: 10.5rem;
+          margin-top: 1rem;
+        }
 
-  .footer-icons-left {
-    margin-right: 1rem;
-  }
+        .doctor-name h2 {
+          font-size: 4.688rem;
+        }
 
-  /* about doctor page */
+        .doctor-speciality {
+          margin-top: -2rem;
+        }
 
-  .about-doctor {
-    display: none;
-  }
+        .doctor-speciality h4 {
+          font-size: 1.5rem;
+        }
 
-  .about-doctor-mobile {
-    display: none;
-  }
+        .doctor-about-para {
+          flex-direction: column;
+          gap: 1rem;
+        }
 
-  .about-doctor-tabletVersion {
-    display: block;
-  }
+        .doctor-quote {
+          margin-top: 0rem;
+        }
 
-  #main-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-  }
+        .doctor-quote h2 {
+          font-size: 2rem;
+        }
 
-  #image-section {
-    margin: 7.5rem;
-    margin-top: 3rem;
-  }
+        .doctor-blog-links {
+          margin: 0rem;
+          margin-left: 1rem;
+        }
 
-  .image-container {
-    display: flex;
-    justify-content: start;
-  }
-
-  .doctor-avtar {
-    max-width: 35rem;
-    max-height: 35rem;
-  }
-
-  #text-section {
-    justify-content: center;
-    margin-top: -1rem;
-  }
-
-  .doctor-name {
-    margin-left: 7.5rem;
-  }
-
-  .doctor-speciality {
-    margin-left: 10.5rem;
-    margin-top: 1rem;
-  }
-
-  .doctor-name h2 {
-    font-size: 4.688rem;
-  }
-
-  .doctor-speciality {
-    margin-top: -2rem;
-  }
-
-  .doctor-speciality h4 {
-    font-size: 1.5rem;
-  }
-
-  .doctor-about-para {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .doctor-quote {
-    margin-top: 0rem;
-  }
-
-  .doctor-quote h2 {
-    font-size: 2rem;
-  }
-
-  .doctor-blog-links {
-    margin: 0rem;
-    margin-left: 1rem;
-  }
-
-  .doctor-news-cards {
-    flex-direction: column;
-  }
-}
-
+        .doctor-news-cards {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
@@ -479,7 +427,9 @@
 
     <nav class="navbar sticky-top" id="navbar">
       <div class="nav-container">
-        <a href="https://aartas.com/"><img src="./img/logo.png" alt="" class="logo-img" /></a>
+        <a href="https://aartas.com/"
+          ><img src="./img/logo.png" alt="" class="logo-img"
+        /></a>
         <ul id="menu" class="menu">
           <li class="menu-item"><a href="#">Locations</a></li>
           <li class="menu-item"><a href="#">Doctors</a></li>
