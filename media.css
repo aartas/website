@@ -635,13 +635,8 @@
   }
 
   #image-section {
-    position: absolute;
-    margin: 1.75rem;
-    overflow: hidden;
-    margin-right: 15rem;
-    height: 50vh;
-    display: flex;
-    justify-content: space-evenly;
+    margin: 7.5rem;
+    margin-top: 3rem;
   }
 
   .image-container {
@@ -656,7 +651,7 @@
 
   #text-section {
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: -5rem;
   }
 
   .doctor-name {
