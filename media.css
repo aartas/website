@@ -484,6 +484,10 @@
     margin-top: -10rem;
   }
 
+  .about-doctor-tabletVersion .content-wrapper {
+    max-width: 100%;
+  }
+
   .about_doctor {
     display: none;
     
