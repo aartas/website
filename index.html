@@ -1167,7 +1167,7 @@ function applyAnimationsBasedOnScreenWidth() {
       });
 
       container.addEventListener("mouseleave", () => {
-        gsap.to(heading, { x: "-0.5rem", fontSize: "16px", ease: "power2.inOut" });
+        gsap.to(heading, { fontSize: "16px", ease: "power2.inOut" });
         gsap.to(articleImg, { scale: 0, opacity: 0, ease: "power2.inOut" });
         gsap.to(cardFont, { rotate: 0, ease: "power2.inOut" });
       });
