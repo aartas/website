@@ -545,6 +545,7 @@
   .card-heading h2 {
     font-size: 1.3rem;
     margin-left: 0rem;
+    transition: font-size 0.2s ease-in-out;
   }
 
   .card-article-intro {
