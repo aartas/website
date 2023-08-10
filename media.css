@@ -430,7 +430,7 @@
     position: absolute;
     height: 145vh;
     width: 100%;
-    top: -30%;
+    top: -25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -481,7 +481,7 @@
 
   .about_doctor_tabVersion {
     display: flex;
-    margin-top: -20rem;
+    margin-top: -15rem;
   }
 
   .about_doctor {
