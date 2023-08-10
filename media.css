@@ -484,8 +484,8 @@
     margin-top: -10rem;
   }
 
-  .about-doctor-tabletVersion .content-wrapper {
-    max-width: 100%;
+  .content-wrapper {
+    margin-left: 0.5rem;
   }
 
   .about_doctor {
@@ -543,7 +543,7 @@
     margin-left: -5rem;
   }
   .card-heading h2 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-left: 0rem;
   }
 
