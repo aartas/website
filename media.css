@@ -654,7 +654,8 @@
   }
 
   .doctor-avtar {
-    max-height: 50%;
+   max-width: 35rem;
+   max-height: 35rem;
   }
 
   #text-section {
