@@ -122,8 +122,8 @@
   } */
 
   .slide-container {
-    text-align: center;
-    width:35%;
+    text-align: -webkit-center;
+    width:50%;
     margin:0 auto;
   }
 
