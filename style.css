@@ -7,13 +7,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: scroll;
-  height: 120vh;
+  height: 100%;
 }
 
-/* 
 .hero,
 .scroll-container,
 .about_doctor,
@@ -26,7 +25,7 @@ html {
 .about_doctor_tabVersion {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-} */
+}
 
 /* Navigation */
 
@@ -546,7 +545,7 @@ html.is-animating .transition-swipe {
 footer {
   /* margin-top: 100px; */
   background-color: #000;
-  height: 110vh;
+  height: 113vh;
   color: #fff;
   flex-grow: 1;
   margin-top: 6.25rem;
