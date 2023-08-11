@@ -130,12 +130,8 @@
   }
 
   .slide {
-    margin-top: 30.5rem;
-    margin-left: -18.5rem;
-    text-align: center;
-  
-    width:35%;
-    margin:0 auto;
+      
+    float:left;
   }
 
   .headline-hero {
