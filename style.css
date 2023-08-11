@@ -210,7 +210,7 @@ h1 {
 
 .headline-text {
   color: #fff;
-  margin-left: 4rem;
+  margin: 1.875rem;
   font-size: 2.5rem;
 }
 
@@ -223,7 +223,7 @@ h1 {
 .headline-img {
   width: 48rem;
   height: 48rem;
-  margin-right: 2.875rem;
+  margin-right: 1.875rem;
 }
 
 .inner {
@@ -235,7 +235,7 @@ h1 {
 
 .about_doctor {
   margin-top: 9.375rem;
-  max-height: 120vh;
+  max-height: 100vh;
   width: 100%;
   display: flex;
   flex-grow: 1;

@@ -123,15 +123,3 @@ hamberger.addEventListener("click", ()=> {
   hamberger.classList.toggle("active");
   menu.classList.toggle("active");
 })
-
-// gsap smooth scrolling
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-const smoother = ScrollSmoother.create({
- content: "#main",
- smooth: 3,
- effects: true
-});
-
-smoother.effects("img", { speed: "auto" });
