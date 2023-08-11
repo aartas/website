@@ -123,15 +123,8 @@
 
   .slide-container {
     text-align: center;
-    
-  
     width:35%;
     margin:0 auto;
-  }
-
-  .slide {
-      
-    float:left;
   }
 
   .headline-hero {
