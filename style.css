@@ -6,9 +6,9 @@
   font-family: "Urbanist", sans-serif;
 }
 
-html {
-  scroll-snap-type: y mandatory;
+body {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100%;
 }
