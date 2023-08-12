@@ -160,6 +160,20 @@
         font-size: 20px;
       }
 
+      /* section reveal css code */
+
+.reveal {
+  position: relative;
+  transform: translateY(10rem);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.reveal.active {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
       @media screen and (max-width: 768px) {
         /* navigation bar */
 
@@ -800,7 +814,7 @@
 
     <!-- Footer section -->
 
-    <footer class="footer" id="swup">
+    <footer class="footer reveal" id="swup">
       <div class="footer-header">
         <h1>
           We bring you <br />
@@ -879,6 +893,27 @@
       scrollToTop.addEventListener("click", ()=> { 
         window.scrollToTop( { top: 0, behavior: "smooth" })
        })
+
+       // section reveal on scroll
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+  let reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight ;
+    var rvealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(rvealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active')
+    } else {
+      reveals[i].classList.remove('active')
+    }
+
+  }
+}
     </script>
   </body>
 </html>

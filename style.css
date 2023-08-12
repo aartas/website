@@ -137,15 +137,15 @@ li a {
   z-index: 0;
   display: block;
   position: relative;
-  margin-top: -4.188rem;
-  top: 15%;
+  margin-top: 2.188rem;
+  top: 20%;
 }
 
 .scroll-container {
   position: absolute;
-  height: 335vh;
+  height: 290vh;
   width: 100%;
-  top: -116%;
+  top: -70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +232,7 @@ h1 {
 /* Doctor's info page */
 
 .about_doctor {
-  margin-top: 6.375rem;
+  margin-top: 9.375rem;
   max-height: 100vh;
   width: 100%;
   display: flex;
@@ -665,7 +665,7 @@ footer h1 {
   position: relative;
   transform: translateY(10rem);
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease;
 }
 
 .reveal.active {
