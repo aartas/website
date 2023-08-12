@@ -33,12 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-   // Initial call to apply the class to the first element
-   slideText.classList.add("indented-text");
-
-   // Call the function to start the slide animation
-   changeSlideText();
-
   // Start the text sliding process after a brief delay to ensure the initial text is displayed
   setTimeout(() => {
     changeSlideText();

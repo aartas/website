@@ -134,12 +134,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    text-indent: 5%;
   }
 
-  /* .indented-text {
-    text-indent: 20%;
-  } */
+  .indented-text {
+    text-indent: 15%;
+  }
 
   .headline-hero {
     flex-direction: column;
