@@ -5,7 +5,7 @@
 // Text slide up js code
 
 document.addEventListener("DOMContentLoaded", function () {
-  const textArray = ["Aartas", "Delhi", "Mumbai", "Gurgram"]; 
+  const textArray = ["Aartas", "Gurgram", "Mumbai", "Delhi"]; 
   let currentTextIndex = 0;
   const slideText = document.getElementById("slide-text");
 
