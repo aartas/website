@@ -665,7 +665,7 @@ footer h1 {
   position: relative;
   transform: translateY(10rem);
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
 
 .reveal.active {
