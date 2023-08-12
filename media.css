@@ -69,6 +69,10 @@
 
   /* Heading */
 
+  .heading h3{
+    font-size: 0.8rem;
+  }
+
   .heading a i {
     display: inline-block;
     cursor: pointer;
