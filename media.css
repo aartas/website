@@ -140,15 +140,15 @@
     text-align: center;
   }
 
-  .indented-text {
+  /* .indented-text {
     text-indent: 25%;
-  }
+  } */
 
   .indented-text:first-child {
-    text-indent: 18%;
+    text-indent: 15%;
   }
   .indented-text:last-child {
-    text-indent: 30%;
+    text-indent: 35%;
   }
 
   .headline-hero {
