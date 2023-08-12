@@ -133,8 +133,10 @@
     margin-left: -18.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+  }
+
+  .indented-text {
+    text-indent: 20%;
   }
 
   .headline-hero {
