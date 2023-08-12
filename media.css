@@ -133,6 +133,8 @@
     margin-left: -18.5rem;
     display: flex;
     justify-content: center;
+    text-align: left;
+    text-justify: auto;
   }
 
   /* .indented-text {
