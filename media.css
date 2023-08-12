@@ -145,7 +145,10 @@
   }
 
   .indented-text:first-child {
-    text-indent: 20%;
+    text-indent: 18%;
+  }
+  .indented-text:last-child {
+    text-indent: 30%;
   }
 
   .headline-hero {
