@@ -7,13 +7,13 @@
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  height: 100vh;
+  /* overflow-y: scroll; */
+  scroll-padding-top: 60px;
 }
 
-.hero,
+/* .hero,
 .scroll-container,
 .about_doctor,
 .articles,
@@ -25,7 +25,7 @@ html {
 .about_doctor_tabVersion {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-}
+} */
 
 /* Navigation */
 
@@ -137,15 +137,15 @@ li a {
   z-index: 0;
   display: block;
   position: relative;
-  margin-top: 2.188rem;
-  top: 20%;
+  margin-top: -4.188rem;
+  top: 15%;
 }
 
 .scroll-container {
   position: absolute;
-  height: 290vh;
+  height: 335vh;
   width: 100%;
-  top: -70%;
+  top: -116%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +232,7 @@ h1 {
 /* Doctor's info page */
 
 .about_doctor {
-  margin-top: 9.375rem;
+  margin-top: 6.375rem;
   max-height: 100vh;
   width: 100%;
   display: flex;
@@ -389,7 +389,7 @@ ul {
 /* Articles */
 
 .articles {
-  margin-top: 9.375rem;
+  margin-top: 7.375rem;
   margin-left: 3.125rem;
   margin-right: 3.125rem;
   flex-grow: 1;
@@ -545,10 +545,10 @@ html.is-animating .transition-swipe {
 footer {
   /* margin-top: 100px; */
   background-color: #000;
-  height: 113vh;
+  height: 110vh;
   color: #fff;
   flex-grow: 1;
-  margin-top: 6.25rem;
+  margin-top: 5.25rem;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -656,4 +656,19 @@ footer h1 {
 
 .about-doctor-mobile {
   display: none;
+}
+
+
+/* section reveal css code */
+
+.reveal {
+  position: relative;
+  transform: translateY(10rem);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.reveal.active {
+  transform: translateY(0rem);
+  opacity: 1;
 }

@@ -130,3 +130,24 @@ hamberger.addEventListener("click", ()=> {
   hamberger.classList.toggle("active");
   menu.classList.toggle("active");
 })
+
+// section reveal on scroll
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+  let reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight ;
+    var rvealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(rvealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active')
+    } else {
+      reveals[i].classList.remove('active')
+    }
+
+  }
+}
