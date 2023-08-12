@@ -121,12 +121,20 @@
     display: none;
   } */
 
+  /* .slide-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
   .slide {
     margin-top: 30.5rem;
     margin-left: -18.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .headline-hero {
