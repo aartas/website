@@ -231,6 +231,10 @@ h1 {
 
 /* Doctor's info page */
 
+.about_doctor_mobile {
+  display: none;
+}
+
 .about_doctor {
   margin-top: 9.375rem;
   max-height: 100vh;

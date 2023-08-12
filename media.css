@@ -207,8 +207,13 @@
   /* About doctor section */
 
   .about_doctor {
+    display: none;
+  }
+
+  .about_doctor_mobile {
+    display: block;
     flex-direction: column;
-    height: 100vh;
+    height: 115vh;
     margin-top: 10rem;
   }
 
@@ -500,6 +505,10 @@
   }
 
   .about_doctor {
+    display: none;
+  }
+
+  .about_doctor_mobile {
     display: none;
   }
 
