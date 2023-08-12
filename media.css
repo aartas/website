@@ -145,7 +145,7 @@
   } */
 
   .indented-text:first-child {
-    text-indent: 15%;
+    text-indent: 10%;
   }
   .indented-text:last-child {
     text-indent: 35%;
