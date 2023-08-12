@@ -288,11 +288,15 @@ ul {
   bottom: 0.375rem;
   height: 0.063rem;
   background: #000;
-  transition: width 0.3s ease;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
-.doctor_list a:hover:before {
-  width: 90%;
+.doctor_list a:hover::before {
+  width: 85%;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .about_doctor_tabVersion {
