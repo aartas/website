@@ -144,6 +144,10 @@
     text-indent: 25%;
   }
 
+  .indented-text:first-child {
+    text-indent: 20%;
+  }
+
   .headline-hero {
     flex-direction: column;
     height: 100vh;
