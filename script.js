@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Remove the class from all elements
         slideText.classList.remove("indented-text");
         // Add class based on index
-        if (currentTextIndex === 0 || currentTextIndex === 1) {
+        if (currentTextIndex === 0) {
           slideText.classList.add("indented-text");
         }
       },

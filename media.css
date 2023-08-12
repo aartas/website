@@ -140,9 +140,9 @@
     text-align: center;
   }
 
-  .indented-text {
-    text-indent: 10%;
-  }
+  /* .indented-text:first-child {
+    text-indent: 20%;
+  } */
 
   .indented-text:last-child {
     text-indent: 40%;
