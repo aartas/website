@@ -133,7 +133,7 @@
   } */
 
   .slide {
-    margin-top: 29rem;
+    margin-top: 28.5rem;
     margin-left: -18.5rem;
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@
     text-indent: 20%;
   } */
 
-  .indented-text:last-child {
+  .indented-text:first-child {
     text-indent: 40%;
   }
 
