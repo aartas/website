@@ -144,8 +144,8 @@
     text-indent: 20%;
   } */
 
-  .indented-text:first-child {
-    text-indent: 40%;
+  .indented-text {
+    text-indent: 20%;
   }
 
   .headline-hero {
