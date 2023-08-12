@@ -167,7 +167,7 @@
 
   .scroll-container {
     position: absolute;
-    height: 100vh;
+    height: 101vh;
     width: 100%;
     top: 35%;
     display: flex;
