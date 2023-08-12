@@ -129,15 +129,15 @@
   } */
 
   .slide {
-    margin-top: 29.5rem;
+    margin-top: 29rem;
     margin-left: -18.5rem;
     display: flex;
     justify-content: center;
   }
 
-  .indented-text {
+  /* .indented-text {
     text-indent: 20%;
-  }
+  } */
 
   .headline-hero {
     flex-direction: column;
